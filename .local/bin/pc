@@ -1,0 +1,11 @@
+#!/bin/bash
+
+filename=$(echo $1 | sed s,"\.",_,g)
+pyuic5 ~/Documents/Codes/Python/UI/$1 --output  ~/Documents/Codes/Python/UI/"$filename".py
+cp ~/Documents/Codes/Python/UI/"$filename".py  ~/Documents/Codes/Python/pyqt/4.Designeer
+
+
+
+
+
+

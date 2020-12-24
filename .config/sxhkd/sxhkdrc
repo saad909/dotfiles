@@ -1,0 +1,87 @@
+# increase and decrease brightness
+# decrease
+alt + shift + j
+  xbacklight -dec 10
+# increase
+alt + shift + k
+  xbacklight -inc 10
+
+ctrl+F4
+  ssn
+ctrl+shift+F4
+  ssp
+
+ctrl+F5
+  pssn
+ctrl+shift+F5
+  pssp
+
+ctrl+F6
+  ntime
+ctrl+shift+F6
+  ptime
+
+# ScreenRecording and webCam
+ctrl+F7
+  dmenurecord
+
+
+# qutebrowser
+super+F2
+  qutebrowser
+# ranger
+super+F3
+  "alacritty -e ranger &"
+# calculator
+ctrl+0
+  galculator
+# mount drives
+ctrl+F9
+  udiskie-dmenu
+# un-mount drives
+ctrl+shift+F9
+  dmenuumount
+# wifi
+ctrl+F10
+  networkmanager_dmenu
+# Bluetooth
+ctrl+shift+F10
+  btmenu
+# Multi Monitor - External Monitor
+ctrl+F11
+  displayselect
+
+
+# Download youtube videos/playlist
+ctrl+F2
+  playlistDownload.sh
+# Download audio of a youtube video
+ctrl+F1
+  audio_download.sh
+#shutdown menu
+super+shift+e
+  sysact
+
+# hostspot
+ctrl+F8
+  shareInternet
+
+#cmus
+ctrl+shift+l 
+  cmus-remote -C "seek +5"
+ctrl+shift+h 
+  cmus-remote -C "seek -5"
+ctrl+shift+r  
+ cmus-remote -C "toggle repeat_current" && cmus-remote -C "toggle repeat"
+ctrl+shift+k 
+ cmus-remote -r
+ctrl+shift+j  
+ cmus-remote -n
+ctrl+shift+s 
+  cmusToggle
+# ------------ rofi --------------------
+super+d
+  dmenu_run -b
+super+F1
+  gns3
+

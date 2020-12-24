@@ -1,0 +1,144 @@
+#!/bin/bash
+
+shopt -s nocasematch
+case $1 in
+           gtk) i=;;
+           man) i=;;
+           ocr) i=廓;;
+          apps) i=;;
+          grab) i=;;
+          kino) i=;;
+          pass) i=聾;;
+          vbox) i=;;
+          wifi) i=;;
+          wiki) i=;;
+         bloge) i=;;
+         files) i=;;
+         games) i=;;
+         mixer) i=;;
+         repos) i=;;
+         start) i=;;
+         theme) i=;;
+        editor) i=;;
+        emojis) i=;;
+        picker) i=;;
+        qrcode) i=;;
+       browser) i=;;
+       symbols) i=;;
+       systemp) i=糖;;
+       windows) i=;;
+      calendar) i=;;
+      document) i=;;
+      dotfiles) i=;;
+      terminal) i=;;
+     nerdfonts) i=;;
+     wallpaper) i=;;
+     wikipedia) i=;;
+    screenshot) i=;;
+
+    redshift- ) i=;;
+    redshift-*) i=;;
+    redshift  ) i=$($0 redshift-$(pidof redshift));;
+
+    network-w*) i=;;
+    network-e*) i=;;
+    network-?*) i=;;
+    network-  ) i=;;
+    network   ) i=$($0 network-$(ip r g 1 | awk '{ print $5 }'));;
+
+    inbox-0) i=;;
+  # inbox-*) i=;;
+  # inbox-0) i=;;
+    inbox-*) i=;;
+    inbox  ) i=$($0 inbox-$(inbox | wc -l));;
+
+    days-0) i=;;
+    days-1) i=;;
+    days-*) i=;;
+    days  ) i=$($0 days-$(days | grep -c 🎂));;
+
+    os-alpi*) i=;;
+    os-arch*) i=;;
+    os-*mint) i=;;
+    os-ubun*) i=;;
+    os-*bsd*) i=;;
+    os-win* ) i=;;
+    os      ) source /etc/os-release; i=$($0 os-${ID:-$(uname -s)});;
+    os-*    ) i=$(nerdfonts | awk "/linux-${1:3}/ { print \$1 }") i=${i:-};;
+
+    torrents       ) i=;;
+    torrents-[Dda]*) i=;;
+    torrents-[Qq]* ) i=;;
+    torrents-Seed* ) i=;;
+    torrents-uplo* ) i=;;
+    torrents-[Sp]* ) i=;;
+    torrents-*DL   ) i=;;
+    torrents-*UP   ) i=;;
+    torrents-Idle  ) i=;;
+    torrents-*     ) i=;;
+
+    system         ) i=;;
+    system-lock    ) i=;;
+    system-quit    ) i=;;
+    system-sleep   ) i=鈴;;
+    system-reload  ) i=;;
+    system-reboot  ) i=;;
+    system-restart ) i=;;
+    system-poweroff) i=;;
+
+    audio      ) i=蓼;;
+    audio-*usb*) i=禍;;
+    audio-*    ) i=菉;;
+
+    battery-full) i=;;
+    battery-nor*) i=;;
+    battery-low ) i=;;
+    battery-*   ) i=;;
+    battery     ) i=$($0 battery-$(battery | awk '{ print $NF; exit }'));;
+
+    weather-☀️ ) i=;;
+    weather-☁️ ) i=;;
+    weather-⛅️) i=;;
+    weather-⛈ ) i=;;
+    weather-✨) i=;;
+    weather-❄️ ) i=;;
+    weather-🌦) i=;;
+    weather-🌧) i=;;
+    weather-🌨) i=;;
+    weather-🌩) i=朗;;
+    weather-🌫) i=;;
+    weather-* ) i=;;
+    weather   ) i=$($0 weather-$(< ~/.cache/weather.ico));;
+
+    moonday-🌑) i=;;
+    moonday-🌒) i=;;
+    moonday-🌓) i=;;
+    moonday-🌔) i=;;
+    moonday-🌕) i=;;
+    moonday-🌖) i=;;
+    moonday-🌗) i=;;
+    moonday-🌘) i=;;
+    moonday-* ) i=;;
+    moonday   ) i=$($0 moonday-$(< ~/.cache/moonday.ico));;
+
+    music-play   ) i=;;
+    music-pause  ) i=;;
+    music-stop   ) i=;;
+    music-prev   ) i=;;
+    music-next   ) i=;;
+    music-seek*+*) i=;;
+    music-seek*-*) i=;;
+    music        ) i=$(music) i=${i%% *};;
+
+    news          ) i=;;
+    news-*youtube*) i=輸;;
+    news-*reddit* ) i=樓;;
+    news-*        ) i=留;;
+
+     ?) i=$1;;
+   *-*) i=$($0 ${1%-*});;
+    '') grep -o '^\s\+\w\+' $0 | tr -d ' ' | sort -u;;
+     *) i=$(nerdfonts | awk "/$1/ { print \$1; exit }") i=${i:-};;
+esac 2>&-
+
+echo "${i// } ${2:+ }${@:2}"

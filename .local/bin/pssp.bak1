@@ -1,0 +1,2 @@
+#!/bin/bash
+[ -z $ssp ] && (echo "ssp script is not running " && notify-send "ssp script is not running"  && exit) ;   (echo "Programming stoped at: " $(ptime) && notify-send "Programming stoped at: " $(ntime) && echo "Programming stoped at: " $(ntime)  >> ~/Documents/stime && exit );echo "stopped unsuccessful" && notify-send "stopped unsuccessful"

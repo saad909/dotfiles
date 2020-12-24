@@ -1,0 +1,1 @@
+ip a | grep $(wiface) | sed -n /192/p | awk '{print $2}'

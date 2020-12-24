@@ -1,0 +1,1 @@
+tB | grep "★" | sed s/★//g

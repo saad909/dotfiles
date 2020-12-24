@@ -1,0 +1,1 @@
+cat /tmp/time | awk '{print $6}'

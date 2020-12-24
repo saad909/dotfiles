@@ -1,0 +1,2 @@
+iface=$( ls /sys/class/net/ | grep w )
+printf "$iface"

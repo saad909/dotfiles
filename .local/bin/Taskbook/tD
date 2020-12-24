@@ -1,0 +1,13 @@
+taskbook -i
+printf "From: "
+read from
+printf "To: "
+read to
+
+i=$from
+
+while [ $i -le $to ]
+do
+	taskbook -d $i
+	i=$[i+1]
+done

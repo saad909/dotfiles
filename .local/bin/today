@@ -1,0 +1,12 @@
+#!/bin/bash
+day=$(date | cut -d " " -f 1 )
+if [[  $day == "we" || $day == "We" || $day == "Wed" || $day == "wed"  ]]
+  then
+        echo "Its Day 6 - Practice Day"
+
+elif [[ $day == "thu" || $day == "Thu" || $day == "Th" || $day == "th"  ]]
+  then
+        echo "Its Day 7 - Notes Taking Day"
+else
+        echo "Its study day"
+fi

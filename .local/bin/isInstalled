@@ -1,0 +1,4 @@
+installed=$( whereis $1 | grep /bin | wc -l )
+
+[ -z $installed ] && exit
+echo $installed

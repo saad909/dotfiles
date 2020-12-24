@@ -1,0 +1,12 @@
+updateicon() { \
+	echo "$1" > /tmp/recordingicon
+	pkill -RTMIN+9 "${STATUSBAR:-dwmblocks}"
+	}
+	recpid="$(cat /tmp/recordingpid)"
+	kill -15 "$recpid"
+	rm -f /tmp/recordingpid
+	updateicon ""
+	pkill -RTMIN+9 "${STATUSBAR:-dwmblocks}"
+	sleep 3
+	kill -9 "$recpid"
+  notify-send "Recording Finished  "

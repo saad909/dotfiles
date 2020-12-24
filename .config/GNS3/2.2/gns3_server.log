@@ -1,0 +1,385 @@
+2020-12-24 16:51:13 INFO run.py:219 GNS3 server version 2.2.17
+2020-12-24 16:51:13 INFO run.py:221 Copyright (c) 2007-2020 GNS3 Technologies Inc.
+2020-12-24 16:51:13 INFO run.py:224 Config file /home/saad/.config/GNS3/2.2/gns3_server.conf loaded
+2020-12-24 16:51:13 WARNING run.py:230 Local mode is enabled. Beware, clients will have full control on your filesystem
+2020-12-24 16:51:13 INFO run.py:237 HTTP authentication is enabled with username 'admin'
+2020-12-24 16:51:13 INFO run.py:243 Running with Python 3.8.5 and has PID 32963
+2020-12-24 16:51:13 INFO run.py:79 Current locale is en_US.UTF-8
+2020-12-24 16:51:13 INFO web_server.py:318 Starting server on localhost:3080
+2020-12-24 16:51:13 INFO __init__.py:62 Load controller configuration file /home/saad/.config/GNS3/2.2/gns3_controller.conf
+2020-12-24 16:51:13 INFO __init__.py:66 Controller is starting
+2020-12-24 16:51:13 INFO compute.py:64 Create compute local
+2020-12-24 16:51:13 INFO compute.py:364 Connecting to compute 'local'
+2020-12-24 16:51:13 INFO web_log.py:233 ::1 [24/Dec/2020:11:51:13 +0000] "GET /v2/compute/capabilities HTTP/1.1" 200 552 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 16:51:13 INFO web_log.py:233 ::1 [24/Dec/2020:11:51:13 +0000] "GET /v2/version HTTP/1.1" 200 227 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 16:51:13 INFO notification_handler.py:50 New client has connected to compute WebSocket
+2020-12-24 16:51:13 INFO compute.py:434 Connected to compute 'local' WebSocket 'http://localhost:3080/v2/compute/notifications/ws'
+2020-12-24 16:51:13 INFO web_log.py:233 ::1 [24/Dec/2020:11:51:13 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 16:51:13 INFO web_log.py:233 ::1 [24/Dec/2020:11:51:13 +0000] "GET /v2/templates HTTP/1.1" 200 4801 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 16:51:13 INFO web_log.py:233 ::1 [24/Dec/2020:11:51:13 +0000] "GET /v2/appliances?symbol_theme=Affinity-square-red HTTP/1.1" 200 742216 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 16:51:13 INFO web_log.py:233 ::1 [24/Dec/2020:11:51:13 +0000] "GET /v2/projects HTTP/1.1" 200 5178 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 16:51:13 INFO web_log.py:233 ::1 [24/Dec/2020:11:51:13 +0000] "GET /v2/version HTTP/1.1" 200 227 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 16:51:13 INFO web_log.py:233 ::1 [24/Dec/2020:11:51:13 +0000] "GET /v2/projects HTTP/1.1" 200 5178 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 16:51:13 INFO notification_handler.py:73 New client has connected to controller WebSocket
+2020-12-24 16:51:17 INFO project.py:78 Project 7b29473a-8454-4757-9758-a6cf9033d449 with path '/home/saad/GNS3/projects/untitled' created
+2020-12-24 16:51:17 INFO web_log.py:233 ::1 [24/Dec/2020:11:51:17 +0000] "POST /v2/compute/projects HTTP/1.1" 201 303 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 16:51:17 INFO qemu_vm.py:201 QEMU VM "S1" [40f59df5-ea8e-41df-9027-78fac9866913] has set the QEMU path to /usr/bin/qemu-system-x86_64
+2020-12-24 16:51:17 INFO qemu_vm.py:603 QEMU VM "S1" [40f59df5-ea8e-41df-9027-78fac9866913]: MAC address changed to 0c:d4:49:69:13:00
+2020-12-24 16:51:17 INFO qemu_vm.py:551 QEMU VM "S1" [40f59df5-ea8e-41df-9027-78fac9866913]: number of Ethernet adapters changed to 1
+2020-12-24 16:51:17 INFO qemu_vm.py:128 QEMU VM "S1" [40f59df5-ea8e-41df-9027-78fac9866913] has been created
+2020-12-24 16:51:17 INFO base_node.py:282 Qemu: S1 [40f59df5-ea8e-41df-9027-78fac9866913] created
+2020-12-24 16:51:17 INFO qemu_vm.py:551 QEMU VM "S1" [40f59df5-ea8e-41df-9027-78fac9866913]: number of Ethernet adapters changed to 8
+2020-12-24 16:51:17 INFO qemu_vm.py:244 QEMU VM "S1" [40f59df5-ea8e-41df-9027-78fac9866913] has set the QEMU hda_disk_image path to /home/saad/GNS3/images/QEMU/vios_l2-adventerprisek9-m.03.2017.qcow2
+2020-12-24 16:51:17 INFO qemu_vm.py:348 QEMU VM "S1" [40f59df5-ea8e-41df-9027-78fac9866913] has set the QEMU hda disk interface to virtio
+2020-12-24 16:51:17 INFO qemu_vm.py:720 QEMU VM "S1" [40f59df5-ea8e-41df-9027-78fac9866913] has set the process priority to normal
+2020-12-24 16:51:17 INFO qemu_vm.py:743 QEMU VM "S1" [40f59df5-ea8e-41df-9027-78fac9866913] has set the RAM to 768
+2020-12-24 16:51:17 INFO web_log.py:233 127.0.0.1 [24/Dec/2020:11:51:17 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/qemu/nodes HTTP/1.1" 201 1773 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 16:51:17 INFO iou_vm.py:73 IOU "R1" [fc84e7fe-6850-4b74-b18a-4e7a4c9ce548]: assigned with application ID 1
+2020-12-24 16:51:17 INFO iou_vm.py:848 IOU "R1" [fc84e7fe-6850-4b74-b18a-4e7a4c9ce548]: number of Ethernet adapters changed to 2
+2020-12-24 16:51:17 INFO iou_vm.py:876 IOU "R1" [fc84e7fe-6850-4b74-b18a-4e7a4c9ce548]: number of Serial adapters changed to 2
+2020-12-24 16:51:17 INFO iou_vm.py:316 IOU "R1" [fc84e7fe-6850-4b74-b18a-4e7a4c9ce548]: NVRAM updated from 128KB to 64KB
+2020-12-24 16:51:17 INFO iou_vm.py:848 IOU "R1" [fc84e7fe-6850-4b74-b18a-4e7a4c9ce548]: number of Ethernet adapters changed to 1
+2020-12-24 16:51:17 INFO iou_vm.py:145 IOU "R1" [fc84e7fe-6850-4b74-b18a-4e7a4c9ce548]: IOU image updated to "/home/saad/GNS3/images/IOU/i86bi-linux-l3-adventerprisek9-15.5.2T.bin"
+2020-12-24 16:51:17 INFO iou_vm.py:876 IOU "R1" [fc84e7fe-6850-4b74-b18a-4e7a4c9ce548]: number of Serial adapters changed to 1
+2020-12-24 16:51:17 INFO web_log.py:233 ::1 [24/Dec/2020:11:51:17 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/iou/nodes HTTP/1.1" 201 867 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 16:51:17 INFO base_node.py:655 Starting new uBridge hypervisor localhost:43669
+2020-12-24 16:51:17 INFO hypervisor.py:169 starting ubridge: ['/usr/bin/ubridge', '-H', 'localhost:43669']
+2020-12-24 16:51:17 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/untitled/project-files/builtin/3d8f46ce-940b-4bd5-a6d0-87e0eba7574f/ubridge.log
+2020-12-24 16:51:17 INFO hypervisor.py:179 ubridge started PID=32994
+2020-12-24 16:51:17 INFO base_node.py:658 Hypervisor localhost:43669 has successfully started
+2020-12-24 16:51:17 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:43669 after 0.1033 seconds
+2020-12-24 16:51:18 INFO cloud.py:215 Cloud "Cloud1" [3d8f46ce-940b-4bd5-a6d0-87e0eba7574f] has been created
+2020-12-24 16:51:18 INFO web_log.py:233 127.0.0.1 [24/Dec/2020:11:51:17 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/cloud/nodes HTTP/1.1" 201 1838 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 16:51:18 INFO docker_vm.py:1058 Docker container "debian-1" [eddcffe7-8b07-46bc-8f8a-93b6c40518ac]: number of Ethernet adapters changed to 2
+2020-12-24 16:51:19 INFO docker_vm.py:406 Docker container 'debian-1' [eddcffe7-8b07-46bc-8f8a-93b6c40518ac] created
+2020-12-24 16:51:19 INFO web_log.py:233 ::1 [24/Dec/2020:11:51:18 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/docker/nodes HTTP/1.1" 201 924 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 16:51:19 INFO web_log.py:233 127.0.0.1 [24/Dec/2020:11:51:19 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/ports/udp HTTP/1.1" 201 243 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 16:51:19 INFO web_log.py:233 ::1 [24/Dec/2020:11:51:19 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/ports/udp HTTP/1.1" 201 243 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 16:51:19 INFO iou_vm.py:902 IOU "R1" [fc84e7fe-6850-4b74-b18a-4e7a4c9ce548]: NIO UDP added to 0/0
+2020-12-24 16:51:19 INFO web_log.py:233 127.0.0.1 [24/Dec/2020:11:51:19 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/iou/nodes/fc84e7fe-6850-4b74-b18a-4e7a4c9ce548/adapters/0/ports/0/nio HTTP/1.1" 201 377 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 16:51:19 INFO qemu_vm.py:1346 QEMU VM "S1" [40f59df5-ea8e-41df-9027-78fac9866913]: NIO UDP added to adapter 1
+2020-12-24 16:51:19 INFO web_log.py:233 ::1 [24/Dec/2020:11:51:19 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/qemu/nodes/40f59df5-ea8e-41df-9027-78fac9866913/adapters/1/ports/0/nio HTTP/1.1" 201 378 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 16:51:19 INFO web_log.py:233 127.0.0.1 [24/Dec/2020:11:51:19 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/ports/udp HTTP/1.1" 201 243 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 16:51:19 INFO web_log.py:233 ::1 [24/Dec/2020:11:51:19 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/ports/udp HTTP/1.1" 201 243 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 16:51:19 INFO qemu_vm.py:1346 QEMU VM "S1" [40f59df5-ea8e-41df-9027-78fac9866913]: NIO UDP added to adapter 0
+2020-12-24 16:51:19 INFO web_log.py:233 127.0.0.1 [24/Dec/2020:11:51:19 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/qemu/nodes/40f59df5-ea8e-41df-9027-78fac9866913/adapters/0/ports/0/nio HTTP/1.1" 201 378 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 16:51:19 INFO cloud.py:396 Cloud "Cloud1" [3d8f46ce-940b-4bd5-a6d0-87e0eba7574f]: NIO NIO UDP bound to port 3
+2020-12-24 16:51:19 INFO web_log.py:233 ::1 [24/Dec/2020:11:51:19 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/cloud/nodes/3d8f46ce-940b-4bd5-a6d0-87e0eba7574f/adapters/0/ports/3/nio HTTP/1.1" 201 379 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 16:51:19 INFO web_log.py:233 127.0.0.1 [24/Dec/2020:11:51:19 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/ports/udp HTTP/1.1" 201 243 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 16:51:19 INFO web_log.py:233 ::1 [24/Dec/2020:11:51:19 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/ports/udp HTTP/1.1" 201 243 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 16:51:19 INFO qemu_vm.py:1346 QEMU VM "S1" [40f59df5-ea8e-41df-9027-78fac9866913]: NIO UDP added to adapter 2
+2020-12-24 16:51:19 INFO web_log.py:233 127.0.0.1 [24/Dec/2020:11:51:19 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/qemu/nodes/40f59df5-ea8e-41df-9027-78fac9866913/adapters/2/ports/0/nio HTTP/1.1" 201 378 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 16:51:19 INFO docker_vm.py:960 Docker container 'debian-1' [eddcffe7-8b07-46bc-8f8a-93b6c40518ac]: NIO UDP added to adapter 0
+2020-12-24 16:51:19 INFO web_log.py:233 ::1 [24/Dec/2020:11:51:19 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/docker/nodes/eddcffe7-8b07-46bc-8f8a-93b6c40518ac/adapters/0/ports/0/nio HTTP/1.1" 201 380 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 16:51:19 INFO web_log.py:233 ::1 [24/Dec/2020:11:51:17 +0000] "POST /v2/projects/7b29473a-8454-4757-9758-a6cf9033d449/open HTTP/1.1" 201 743 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 16:51:19 INFO project_handler.py:271 New client has connected to the notification stream for project ID '7b29473a-8454-4757-9758-a6cf9033d449' (WebSocket method)
+2020-12-24 16:51:19 INFO web_log.py:233 ::1 [24/Dec/2020:11:51:19 +0000] "GET /v2/projects/7b29473a-8454-4757-9758-a6cf9033d449/nodes HTTP/1.1" 200 17243 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 16:51:19 INFO web_log.py:233 ::1 [24/Dec/2020:11:51:19 +0000] "GET /v2/projects/7b29473a-8454-4757-9758-a6cf9033d449/links HTTP/1.1" 200 4125 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 16:51:19 INFO web_log.py:233 ::1 [24/Dec/2020:11:51:19 +0000] "GET /v2/projects/7b29473a-8454-4757-9758-a6cf9033d449/drawings HTTP/1.1" 200 205 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 16:51:22 INFO web_log.py:233 127.0.0.1 [24/Dec/2020:11:51:22 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/cloud/nodes/3d8f46ce-940b-4bd5-a6d0-87e0eba7574f/start HTTP/1.1" 204 246 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 16:51:22 INFO iou_vm.py:414 Checking IOU license in '/tmp/tmpfgwinha_/iourc'
+2020-12-24 16:51:22 WARNING iou_vm.py:427 Older IOU images may not boot because hostname 'saad-latitudee6430' length is above 15 characters
+2020-12-24 16:51:22 INFO base_node.py:655 Starting new uBridge hypervisor localhost:43487
+2020-12-24 16:51:22 INFO hypervisor.py:169 starting ubridge: ['/usr/bin/ubridge', '-H', 'localhost:43487']
+2020-12-24 16:51:22 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/untitled/project-files/iou/fc84e7fe-6850-4b74-b18a-4e7a4c9ce548/ubridge.log
+2020-12-24 16:51:22 INFO hypervisor.py:179 ubridge started PID=33344
+2020-12-24 16:51:22 INFO base_node.py:658 Hypervisor localhost:43487 has successfully started
+2020-12-24 16:51:22 INFO qemu_vm.py:1621 logging to /home/saad/GNS3/projects/untitled/project-files/qemu/40f59df5-ea8e-41df-9027-78fac9866913/qemu-img.log
+2020-12-24 16:51:22 INFO qemu_vm.py:1623 Executing qemu-img with: /usr/bin/qemu-img check /home/saad/GNS3/images/QEMU/vios_l2-adventerprisek9-m.03.2017.qcow2
+2020-12-24 16:51:22 INFO qemu_vm.py:1627 /usr/bin/qemu-img returned with 0
+2020-12-24 16:51:22 INFO base_node.py:822 Qemu: 'S1' [40f59df5-ea8e-41df-9027-78fac9866913]:local UDP tunnel created between port 10006 and 10007
+2020-12-24 16:51:22 INFO base_node.py:822 Qemu: 'S1' [40f59df5-ea8e-41df-9027-78fac9866913]:local UDP tunnel created between port 10008 and 10009
+2020-12-24 16:51:22 INFO base_node.py:822 Qemu: 'S1' [40f59df5-ea8e-41df-9027-78fac9866913]:local UDP tunnel created between port 10010 and 10011
+2020-12-24 16:51:22 INFO base_node.py:822 Qemu: 'S1' [40f59df5-ea8e-41df-9027-78fac9866913]:local UDP tunnel created between port 10012 and 10013
+2020-12-24 16:51:22 INFO base_node.py:822 Qemu: 'S1' [40f59df5-ea8e-41df-9027-78fac9866913]:local UDP tunnel created between port 10014 and 10015
+2020-12-24 16:51:22 INFO base_node.py:822 Qemu: 'S1' [40f59df5-ea8e-41df-9027-78fac9866913]:local UDP tunnel created between port 10016 and 10017
+2020-12-24 16:51:22 INFO base_node.py:822 Qemu: 'S1' [40f59df5-ea8e-41df-9027-78fac9866913]:local UDP tunnel created between port 10018 and 10019
+2020-12-24 16:51:22 INFO base_node.py:822 Qemu: 'S1' [40f59df5-ea8e-41df-9027-78fac9866913]:local UDP tunnel created between port 10020 and 10021
+2020-12-24 16:51:22 INFO qemu_vm.py:1011 Starting QEMU with: /usr/bin/qemu-system-x86_64 -name S1 -m 768M -smp cpus=1,sockets=1 -enable-kvm -machine smm=off -boot order=c -drive file=/home/saad/GNS3/projects/untitled/project-files/qemu/40f59df5-ea8e-41df-9027-78fac9866913/hda_disk.qcow2,if=virtio,index=0,media=disk,id=drive0 -uuid 40f59df5-ea8e-41df-9027-78fac9866913 -serial telnet:127.0.0.1:5000,server,nowait -monitor tcp:127.0.0.1:38565,server,nowait -net none -device e1000,mac=0c:d4:49:69:13:00,netdev=gns3-0 -netdev socket,id=gns3-0,udp=127.0.0.1:10007,localaddr=127.0.0.1:10006 -device e1000,mac=0c:d4:49:69:13:01,netdev=gns3-1 -netdev socket,id=gns3-1,udp=127.0.0.1:10009,localaddr=127.0.0.1:10008 -device e1000,mac=0c:d4:49:69:13:02,netdev=gns3-2 -netdev socket,id=gns3-2,udp=127.0.0.1:10011,localaddr=127.0.0.1:10010 -device e1000,mac=0c:d4:49:69:13:03,netdev=gns3-3 -netdev socket,id=gns3-3,udp=127.0.0.1:10013,localaddr=127.0.0.1:10012 -device e1000,mac=0c:d4:49:69:13:04,netdev=gns3-4 -netdev socket,id=gns3-4,udp=127.0.0.1:10015,localaddr=127.0.0.1:10014 -device e1000,mac=0c:d4:49:69:13:05,netdev=gns3-5 -netdev socket,id=gns3-5,udp=127.0.0.1:10017,localaddr=127.0.0.1:10016 -device e1000,mac=0c:d4:49:69:13:06,netdev=gns3-6 -netdev socket,id=gns3-6,udp=127.0.0.1:10019,localaddr=127.0.0.1:10018 -device e1000,mac=0c:d4:49:69:13:07,netdev=gns3-7 -netdev socket,id=gns3-7,udp=127.0.0.1:10021,localaddr=127.0.0.1:10020 -display none
+2020-12-24 16:51:22 INFO qemu_vm.py:1013 logging to /home/saad/GNS3/projects/untitled/project-files/qemu/40f59df5-ea8e-41df-9027-78fac9866913/qemu.log
+2020-12-24 16:51:22 INFO qemu_vm.py:1021 QEMU VM "S1" started PID=33372
+2020-12-24 16:51:22 INFO base_node.py:655 Starting new uBridge hypervisor localhost:34479
+2020-12-24 16:51:22 INFO hypervisor.py:169 starting ubridge: ['/usr/bin/ubridge', '-H', 'localhost:34479']
+2020-12-24 16:51:22 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/untitled/project-files/qemu/40f59df5-ea8e-41df-9027-78fac9866913/ubridge.log
+2020-12-24 16:51:22 INFO hypervisor.py:179 ubridge started PID=33382
+2020-12-24 16:51:22 INFO base_node.py:658 Hypervisor localhost:34479 has successfully started
+2020-12-24 16:51:22 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:43487 after 0.1167 seconds
+2020-12-24 16:51:22 INFO iou_vm.py:753 IOU R1 [id=fc84e7fe-6850-4b74-b18a-4e7a4c9ce548]: NETMAP file created
+2020-12-24 16:51:22 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:34479 after 0.1064 seconds
+2020-12-24 16:51:22 INFO iou_vm.py:551 Starting IOU: ['/home/saad/GNS3/images/IOU/i86bi-linux-l3-adventerprisek9-15.5.2T.bin', '-e', '1', '-s', '1', '1']
+2020-12-24 16:51:22 INFO iou_vm.py:560 IOU instance fc84e7fe-6850-4b74-b18a-4e7a4c9ce548 started PID=33418
+2020-12-24 16:51:22 INFO web_log.py:233 127.0.0.1 [24/Dec/2020:11:51:22 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/iou/nodes/fc84e7fe-6850-4b74-b18a-4e7a4c9ce548/start HTTP/1.1" 200 959 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 16:51:22 INFO base_node.py:655 Starting new uBridge hypervisor localhost:40763
+2020-12-24 16:51:22 INFO hypervisor.py:169 starting ubridge: ['/usr/bin/ubridge', '-H', 'localhost:40763']
+2020-12-24 16:51:22 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/untitled/project-files/docker/eddcffe7-8b07-46bc-8f8a-93b6c40518ac/ubridge.log
+2020-12-24 16:51:22 INFO hypervisor.py:179 ubridge started PID=33452
+2020-12-24 16:51:22 INFO base_node.py:658 Hypervisor localhost:40763 has successfully started
+2020-12-24 16:51:22 INFO qemu_vm.py:1147 Connected to QEMU monitor on 127.0.0.1:38565 after 0.0110 seconds
+2020-12-24 16:51:22 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-3 off
+2020-12-24 16:51:22 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-4 off
+2020-12-24 16:51:22 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-5 off
+2020-12-24 16:51:22 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-6 off
+2020-12-24 16:51:22 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-7 off
+2020-12-24 16:51:22 INFO web_log.py:233 ::1 [24/Dec/2020:11:51:22 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/qemu/nodes/40f59df5-ea8e-41df-9027-78fac9866913/start HTTP/1.1" 200 3171 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 16:51:22 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:40763 after 0.1030 seconds
+2020-12-24 16:51:23 INFO docker_vm.py:499 Docker container 'debian-1' [debian:latest] started listen for telnet on 5002
+2020-12-24 16:51:23 INFO web_log.py:233 ::1 [24/Dec/2020:11:51:22 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/docker/nodes/eddcffe7-8b07-46bc-8f8a-93b6c40518ac/start HTTP/1.1" 204 247 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 16:51:23 INFO web_log.py:233 ::1 [24/Dec/2020:11:51:22 +0000] "POST /v2/projects/7b29473a-8454-4757-9758-a6cf9033d449/nodes/start HTTP/1.1" 204 222 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 16:51:23 INFO web_log.py:233 ::1 [24/Dec/2020:11:51:23 +0000] "GET /v2/computes HTTP/1.1" 200 1032 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 16:52:36 INFO web_log.py:233 ::1 [24/Dec/2020:11:52:36 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 16:58:10 INFO qemu_vm.py:1162 Execute QEMU monitor command: set_link gns3-2 off
+2020-12-24 16:58:10 INFO qemu_vm.py:1147 Connected to QEMU monitor on 127.0.0.1:38565 after 0.0107 seconds
+2020-12-24 16:58:10 INFO qemu_vm.py:1399 QEMU VM "S1" [40f59df5-ea8e-41df-9027-78fac9866913]: NIO UDP removed from adapter 2
+2020-12-24 16:58:10 INFO web_log.py:233 ::1 [24/Dec/2020:11:58:10 +0000] "DELETE /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/qemu/nodes/40f59df5-ea8e-41df-9027-78fac9866913/adapters/2/ports/0/nio HTTP/1.1" 204 297 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 16:58:10 INFO docker_vm.py:1005 Docker VM 'debian-1' [eddcffe7-8b07-46bc-8f8a-93b6c40518ac]: tap-gns3-e0 removed from adapter 0
+2020-12-24 16:58:10 INFO web_log.py:233 127.0.0.1 [24/Dec/2020:11:58:10 +0000] "DELETE /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/docker/nodes/eddcffe7-8b07-46bc-8f8a-93b6c40518ac/adapters/0/ports/0/nio HTTP/1.1" 204 299 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 16:58:10 INFO base_node.py:331 Docker: 'debian-1' [eddcffe7-8b07-46bc-8f8a-93b6c40518ac]: is closing
+2020-12-24 16:58:10 INFO base_node.py:669 Stopping uBridge hypervisor localhost:40763
+2020-12-24 16:58:10 INFO hypervisor.py:208 Stopping uBridge process PID=33452
+2020-12-24 16:58:10 INFO docker_vm.py:533 Docker container 'debian-1' fix ownership, state = running
+2020-12-24 16:58:12 INFO docker_vm.py:793 Docker container 'debian-1' [debian:latest] stopped
+2020-12-24 16:58:13 INFO web_log.py:233 ::1 [24/Dec/2020:11:58:13 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 16:58:24 INFO docker_vm.py:872 Docker container 'debian-1' [debian:latest] removed
+2020-12-24 16:58:24 INFO web_log.py:233 ::1 [24/Dec/2020:11:58:10 +0000] "DELETE /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/docker/nodes/eddcffe7-8b07-46bc-8f8a-93b6c40518ac HTTP/1.1" 204 241 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 16:58:24 INFO web_log.py:233 ::1 [24/Dec/2020:11:58:10 +0000] "DELETE /v2/projects/7b29473a-8454-4757-9758-a6cf9033d449/nodes/eddcffe7-8b07-46bc-8f8a-93b6c40518ac HTTP/1.1" 204 226 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 16:59:24 INFO web_log.py:233 ::1 [24/Dec/2020:11:59:24 +0000] "GET /v2/gns3vm HTTP/1.1" 200 377 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 16:59:24 INFO web_log.py:233 ::1 [24/Dec/2020:11:59:24 +0000] "GET /v2/iou_license HTTP/1.1" 200 289 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 16:59:24 INFO __init__.py:62 Load controller configuration file /home/saad/.config/GNS3/2.2/gns3_controller.conf
+2020-12-24 16:59:24 INFO web_log.py:233 ::1 [24/Dec/2020:11:59:24 +0000] "GET /v2/gns3vm/engines HTTP/1.1" 200 1316 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 16:59:25 INFO __init__.py:572 Searching for VMware VMs in inventory file "/home/saad/.vmware/inventory.vmls"
+2020-12-24 16:59:25 INFO web_log.py:233 ::1 [24/Dec/2020:11:59:24 +0000] "GET /v2/gns3vm/engines/vmware/vms HTTP/1.1" 200 296 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 16:59:38 INFO __init__.py:572 Searching for VMware VMs in inventory file "/home/saad/.vmware/inventory.vmls"
+2020-12-24 16:59:38 INFO web_log.py:233 ::1 [24/Dec/2020:11:59:37 +0000] "GET /v2/compute/vmware/vms HTTP/1.1" 200 456 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 16:59:38 INFO web_log.py:233 ::1 [24/Dec/2020:11:59:37 +0000] "GET /v2/computes/local/vmware/vms HTTP/1.1" 200 482 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 16:59:45 INFO __init__.py:572 Searching for VMware VMs in inventory file "/home/saad/.vmware/inventory.vmls"
+2020-12-24 16:59:45 INFO web_log.py:233 127.0.0.1 [24/Dec/2020:11:59:44 +0000] "GET /v2/compute/vmware/vms HTTP/1.1" 200 456 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 16:59:45 INFO web_log.py:233 ::1 [24/Dec/2020:11:59:44 +0000] "GET /v2/computes/local/vmware/vms HTTP/1.1" 200 482 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 16:59:53 INFO web_log.py:233 ::1 [24/Dec/2020:11:59:53 +0000] "GET /v2/symbols HTTP/1.1" 200 66258 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:00:02 INFO web_log.py:233 ::1 [24/Dec/2020:12:00:02 +0000] "POST /v2/templates HTTP/1.1" 201 877 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:00:02 INFO web_log.py:233 ::1 [24/Dec/2020:12:00:02 +0000] "POST /v2/templates HTTP/1.1" 201 911 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:00:03 INFO config.py:231 Load configuration file /home/saad/.config/GNS3/2.2/gns3_server.conf
+2020-12-24 17:00:14 INFO web_log.py:233 ::1 [24/Dec/2020:12:00:14 +0000] "PUT /v2/templates/b41aa5b8-21ac-4069-a045-1b67fc2e23e0 HTTP/1.1" 200 886 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:00:16 INFO __init__.py:390 Executing vmrun with command: /usr/bin/vmrun -T ws clone '/home/saad/Vmware/Debian 10.x 64-bit/Debian 10.x 64-bit.vmx' /home/saad/GNS3/projects/untitled/project-files/vmware/1f2b269f-ee21-4688-a299-1a04bc9e79a7/Debian-1.vmx linked '-snapshot=GNS3 Linked Base for clones' -cloneName=Debian-1
+2020-12-24 17:00:16 INFO vmware_vm.py:660 VMware VM 'Debian-1' [1f2b269f-ee21-4688-a299-1a04bc9e79a7] has changed the number of Ethernet adapters to 1
+2020-12-24 17:00:16 INFO web_log.py:233 ::1 [24/Dec/2020:12:00:16 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/vmware/nodes HTTP/1.1" 201 849 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:00:16 INFO web_log.py:233 ::1 [24/Dec/2020:12:00:16 +0000] "POST /v2/projects/7b29473a-8454-4757-9758-a6cf9033d449/templates/b41aa5b8-21ac-4069-a045-1b67fc2e23e0 HTTP/1.1" 201 1822 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:00:16 INFO web_log.py:233 127.0.0.1 [24/Dec/2020:12:00:16 +0000] "PUT /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/vmware/nodes/1f2b269f-ee21-4688-a299-1a04bc9e79a7 HTTP/1.1" 200 854 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:00:16 INFO web_log.py:233 ::1 [24/Dec/2020:12:00:16 +0000] "PUT /v2/projects/7b29473a-8454-4757-9758-a6cf9033d449/nodes/1f2b269f-ee21-4688-a299-1a04bc9e79a7 HTTP/1.1" 200 1894 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:00:17 INFO web_log.py:233 ::1 [24/Dec/2020:12:00:17 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:00:18 INFO web_log.py:233 ::1 [24/Dec/2020:12:00:18 +0000] "PUT /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/vmware/nodes/1f2b269f-ee21-4688-a299-1a04bc9e79a7 HTTP/1.1" 200 854 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:00:18 INFO web_log.py:233 ::1 [24/Dec/2020:12:00:18 +0000] "PUT /v2/projects/7b29473a-8454-4757-9758-a6cf9033d449/nodes/1f2b269f-ee21-4688-a299-1a04bc9e79a7 HTTP/1.1" 200 1895 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:00:22 INFO web_log.py:233 127.0.0.1 [24/Dec/2020:12:00:22 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/ports/udp HTTP/1.1" 201 243 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:00:22 INFO web_log.py:233 ::1 [24/Dec/2020:12:00:22 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/ports/udp HTTP/1.1" 201 243 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:00:22 INFO __init__.py:390 Executing vmrun with command: /usr/bin/vmrun -T ws list
+2020-12-24 17:00:22 ERROR route.py:217 Node error detected: VMwareError
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/gns3_server-2.2.17-py3.8.egg/gns3server/web/route.py", line 198, in control_schema
+    await func(request, response)
+  File "/usr/local/lib/python3.8/dist-packages/gns3_server-2.2.17-py3.8.egg/gns3server/handlers/api/compute/vmware_handler.py", line 260, in create_nio
+    await vm.adapter_add_nio_binding(int(request.match_info["adapter_number"]), nio)
+  File "/usr/local/lib/python3.8/dist-packages/gns3_server-2.2.17-py3.8.egg/gns3server/compute/vmware/vmware_vm.py", line 737, in adapter_add_nio_binding
+    raise VMwareError("Attachment '{attachment}' is already configured on network adapter {adapter_number}. "
+gns3server.compute.vmware.vmware_error.VMwareError: Attachment 'nat' is already configured on network adapter 0. Please remove it or allow VMware VM 'Debian-1' to use any adapter.
+2020-12-24 17:00:22 INFO web_log.py:233 127.0.0.1 [24/Dec/2020:12:00:22 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/vmware/nodes/1f2b269f-ee21-4688-a299-1a04bc9e79a7/adapters/0/ports/0/nio HTTP/1.1" 409 490 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:00:22 INFO web_log.py:233 ::1 [24/Dec/2020:12:00:22 +0000] "POST /v2/projects/7b29473a-8454-4757-9758-a6cf9033d449/links HTTP/1.1" 409 375 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:00:25 INFO web_log.py:233 ::1 [24/Dec/2020:12:00:25 +0000] "GET /v2/gns3vm HTTP/1.1" 200 377 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:00:25 INFO web_log.py:233 ::1 [24/Dec/2020:12:00:25 +0000] "GET /v2/iou_license HTTP/1.1" 200 289 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:00:25 INFO __init__.py:62 Load controller configuration file /home/saad/.config/GNS3/2.2/gns3_controller.conf
+2020-12-24 17:00:25 INFO web_log.py:233 ::1 [24/Dec/2020:12:00:25 +0000] "GET /v2/gns3vm/engines HTTP/1.1" 200 1316 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:00:26 INFO __init__.py:572 Searching for VMware VMs in inventory file "/home/saad/.vmware/inventory.vmls"
+2020-12-24 17:00:26 INFO web_log.py:233 ::1 [24/Dec/2020:12:00:25 +0000] "GET /v2/gns3vm/engines/vmware/vms HTTP/1.1" 200 296 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:00:38 INFO config.py:231 Load configuration file /home/saad/.config/GNS3/2.2/gns3_server.conf
+2020-12-24 17:00:42 INFO web_log.py:233 ::1 [24/Dec/2020:12:00:42 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/ports/udp HTTP/1.1" 201 243 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:00:42 INFO web_log.py:233 127.0.0.1 [24/Dec/2020:12:00:42 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/ports/udp HTTP/1.1" 201 243 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:00:42 INFO __init__.py:390 Executing vmrun with command: /usr/bin/vmrun -T ws list
+2020-12-24 17:00:42 ERROR route.py:217 Node error detected: VMwareError
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/gns3_server-2.2.17-py3.8.egg/gns3server/web/route.py", line 198, in control_schema
+    await func(request, response)
+  File "/usr/local/lib/python3.8/dist-packages/gns3_server-2.2.17-py3.8.egg/gns3server/handlers/api/compute/vmware_handler.py", line 260, in create_nio
+    await vm.adapter_add_nio_binding(int(request.match_info["adapter_number"]), nio)
+  File "/usr/local/lib/python3.8/dist-packages/gns3_server-2.2.17-py3.8.egg/gns3server/compute/vmware/vmware_vm.py", line 737, in adapter_add_nio_binding
+    raise VMwareError("Attachment '{attachment}' is already configured on network adapter {adapter_number}. "
+gns3server.compute.vmware.vmware_error.VMwareError: Attachment 'nat' is already configured on network adapter 0. Please remove it or allow VMware VM 'Debian-1' to use any adapter.
+2020-12-24 17:00:42 INFO web_log.py:233 ::1 [24/Dec/2020:12:00:42 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/vmware/nodes/1f2b269f-ee21-4688-a299-1a04bc9e79a7/adapters/0/ports/0/nio HTTP/1.1" 409 490 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:00:42 INFO web_log.py:233 ::1 [24/Dec/2020:12:00:42 +0000] "POST /v2/projects/7b29473a-8454-4757-9758-a6cf9033d449/links HTTP/1.1" 409 375 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:00:53 INFO web_log.py:233 ::1 [24/Dec/2020:12:00:53 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/ports/udp HTTP/1.1" 201 243 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:00:53 INFO web_log.py:233 127.0.0.1 [24/Dec/2020:12:00:53 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/ports/udp HTTP/1.1" 201 243 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:00:53 INFO __init__.py:390 Executing vmrun with command: /usr/bin/vmrun -T ws list
+2020-12-24 17:00:53 ERROR route.py:217 Node error detected: VMwareError
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/gns3_server-2.2.17-py3.8.egg/gns3server/web/route.py", line 198, in control_schema
+    await func(request, response)
+  File "/usr/local/lib/python3.8/dist-packages/gns3_server-2.2.17-py3.8.egg/gns3server/handlers/api/compute/vmware_handler.py", line 260, in create_nio
+    await vm.adapter_add_nio_binding(int(request.match_info["adapter_number"]), nio)
+  File "/usr/local/lib/python3.8/dist-packages/gns3_server-2.2.17-py3.8.egg/gns3server/compute/vmware/vmware_vm.py", line 737, in adapter_add_nio_binding
+    raise VMwareError("Attachment '{attachment}' is already configured on network adapter {adapter_number}. "
+gns3server.compute.vmware.vmware_error.VMwareError: Attachment 'nat' is already configured on network adapter 0. Please remove it or allow VMware VM 'Debian-1' to use any adapter.
+2020-12-24 17:00:53 INFO web_log.py:233 ::1 [24/Dec/2020:12:00:53 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/vmware/nodes/1f2b269f-ee21-4688-a299-1a04bc9e79a7/adapters/0/ports/0/nio HTTP/1.1" 409 490 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:00:53 INFO web_log.py:233 ::1 [24/Dec/2020:12:00:53 +0000] "POST /v2/projects/7b29473a-8454-4757-9758-a6cf9033d449/links HTTP/1.1" 409 375 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:00:59 INFO base_node.py:331 VMware: 'Debian-1' [1f2b269f-ee21-4688-a299-1a04bc9e79a7]: is closing
+2020-12-24 17:00:59 INFO vmware_vm.py:609 VMware VM "Debian-1" [1f2b269f-ee21-4688-a299-1a04bc9e79a7] set the close action to "power_off"
+2020-12-24 17:00:59 INFO __init__.py:390 Executing vmrun with command: /usr/bin/vmrun -T ws list
+2020-12-24 17:00:59 INFO vmware_vm.py:513 VMware VM 'Debian-1' [1f2b269f-ee21-4688-a299-1a04bc9e79a7] stopped
+2020-12-24 17:00:59 INFO web_log.py:233 127.0.0.1 [24/Dec/2020:12:00:59 +0000] "DELETE /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/vmware/nodes/1f2b269f-ee21-4688-a299-1a04bc9e79a7 HTTP/1.1" 204 241 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:00:59 INFO web_log.py:233 ::1 [24/Dec/2020:12:00:59 +0000] "DELETE /v2/projects/7b29473a-8454-4757-9758-a6cf9033d449/nodes/1f2b269f-ee21-4688-a299-1a04bc9e79a7 HTTP/1.1" 204 226 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:01:00 INFO web_log.py:233 ::1 [24/Dec/2020:12:01:00 +0000] "GET /v2/computes HTTP/1.1" 200 1032 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:01:06 INFO web_log.py:233 ::1 [24/Dec/2020:12:01:06 +0000] "PUT /v2/templates/b41aa5b8-21ac-4069-a045-1b67fc2e23e0 HTTP/1.1" 200 885 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:01:09 INFO __init__.py:390 Executing vmrun with command: /usr/bin/vmrun -T ws clone '/home/saad/Vmware/Debian 10.x 64-bit/Debian 10.x 64-bit.vmx' /home/saad/GNS3/projects/untitled/project-files/vmware/6ea927fc-fedd-4650-a557-441c6af284ea/Debian-1.vmx linked '-snapshot=GNS3 Linked Base for clones' -cloneName=Debian-1
+2020-12-24 17:01:09 INFO vmware_vm.py:660 VMware VM 'Debian-1' [6ea927fc-fedd-4650-a557-441c6af284ea] has changed the number of Ethernet adapters to 1
+2020-12-24 17:01:09 INFO vmware_vm.py:706 VMware VM 'Debian-1' [6ea927fc-fedd-4650-a557-441c6af284ea] is allowed to use any adapter
+2020-12-24 17:01:09 INFO web_log.py:233 ::1 [24/Dec/2020:12:01:09 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/vmware/nodes HTTP/1.1" 201 848 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:01:09 INFO web_log.py:233 ::1 [24/Dec/2020:12:01:09 +0000] "POST /v2/projects/7b29473a-8454-4757-9758-a6cf9033d449/templates/b41aa5b8-21ac-4069-a045-1b67fc2e23e0 HTTP/1.1" 201 1820 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:01:09 INFO web_log.py:233 127.0.0.1 [24/Dec/2020:12:01:09 +0000] "PUT /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/vmware/nodes/6ea927fc-fedd-4650-a557-441c6af284ea HTTP/1.1" 200 853 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:01:09 INFO web_log.py:233 ::1 [24/Dec/2020:12:01:09 +0000] "PUT /v2/projects/7b29473a-8454-4757-9758-a6cf9033d449/nodes/6ea927fc-fedd-4650-a557-441c6af284ea HTTP/1.1" 200 1892 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:01:10 INFO web_log.py:233 ::1 [24/Dec/2020:12:01:10 +0000] "PUT /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/vmware/nodes/6ea927fc-fedd-4650-a557-441c6af284ea HTTP/1.1" 200 853 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:01:10 INFO web_log.py:233 ::1 [24/Dec/2020:12:01:10 +0000] "PUT /v2/projects/7b29473a-8454-4757-9758-a6cf9033d449/nodes/6ea927fc-fedd-4650-a557-441c6af284ea HTTP/1.1" 200 1894 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:01:11 INFO web_log.py:233 ::1 [24/Dec/2020:12:01:11 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:01:14 INFO web_log.py:233 127.0.0.1 [24/Dec/2020:12:01:14 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/ports/udp HTTP/1.1" 201 243 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:01:14 INFO web_log.py:233 ::1 [24/Dec/2020:12:01:14 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/ports/udp HTTP/1.1" 201 243 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:01:14 INFO vmware_vm.py:747 VMware VM 'Debian-1' [6ea927fc-fedd-4650-a557-441c6af284ea]: NIO UDP added to adapter 0
+2020-12-24 17:01:14 INFO web_log.py:233 127.0.0.1 [24/Dec/2020:12:01:14 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/vmware/nodes/6ea927fc-fedd-4650-a557-441c6af284ea/adapters/0/ports/0/nio HTTP/1.1" 201 380 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:01:14 INFO qemu_vm.py:1162 Execute QEMU monitor command: set_link gns3-2 on
+2020-12-24 17:01:14 INFO qemu_vm.py:1147 Connected to QEMU monitor on 127.0.0.1:38565 after 0.0106 seconds
+2020-12-24 17:01:14 INFO qemu_vm.py:1346 QEMU VM "S1" [40f59df5-ea8e-41df-9027-78fac9866913]: NIO UDP added to adapter 2
+2020-12-24 17:01:14 INFO web_log.py:233 ::1 [24/Dec/2020:12:01:14 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/qemu/nodes/40f59df5-ea8e-41df-9027-78fac9866913/adapters/2/ports/0/nio HTTP/1.1" 201 378 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:01:14 INFO web_log.py:233 ::1 [24/Dec/2020:12:01:14 +0000] "POST /v2/projects/7b29473a-8454-4757-9758-a6cf9033d449/links HTTP/1.1" 201 1197 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:01:14 INFO web_log.py:233 ::1 [24/Dec/2020:12:01:14 +0000] "PUT /v2/projects/7b29473a-8454-4757-9758-a6cf9033d449/links/7255d7ca-7998-494e-adef-f8bd887e6a63 HTTP/1.1" 201 1288 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:01:14 INFO web_log.py:233 ::1 [24/Dec/2020:12:01:14 +0000] "PUT /v2/projects/7b29473a-8454-4757-9758-a6cf9033d449/links/7255d7ca-7998-494e-adef-f8bd887e6a63 HTTP/1.1" 201 1372 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:01:15 INFO __init__.py:390 Executing vmrun with command: /usr/bin/vmrun -T ws list
+2020-12-24 17:01:16 INFO base_node.py:655 Starting new uBridge hypervisor localhost:43865
+2020-12-24 17:01:16 INFO hypervisor.py:169 starting ubridge: ['/usr/bin/ubridge', '-H', 'localhost:43865']
+2020-12-24 17:01:16 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/untitled/project-files/vmware/6ea927fc-fedd-4650-a557-441c6af284ea/ubridge.log
+2020-12-24 17:01:16 INFO hypervisor.py:179 ubridge started PID=38889
+2020-12-24 17:01:16 INFO base_node.py:658 Hypervisor localhost:43865 has successfully started
+2020-12-24 17:01:16 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:43865 after 0.1029 seconds
+2020-12-24 17:01:16 INFO __init__.py:390 Executing vmrun with command: /usr/bin/vmrun -T ws start /home/saad/GNS3/projects/untitled/project-files/vmware/6ea927fc-fedd-4650-a557-441c6af284ea/Debian-1.vmx
+2020-12-24 17:01:19 INFO vmware_vm.py:467 VMware VM 'Debian-1' [6ea927fc-fedd-4650-a557-441c6af284ea] started
+2020-12-24 17:01:19 INFO web_log.py:233 127.0.0.1 [24/Dec/2020:12:01:15 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/vmware/nodes/6ea927fc-fedd-4650-a557-441c6af284ea/start HTTP/1.1" 204 247 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:01:19 INFO web_log.py:233 ::1 [24/Dec/2020:12:01:15 +0000] "POST /v2/projects/7b29473a-8454-4757-9758-a6cf9033d449/nodes/6ea927fc-fedd-4650-a557-441c6af284ea/start HTTP/1.1" 200 1900 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:01:20 INFO web_log.py:233 ::1 [24/Dec/2020:12:01:20 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:01:53 INFO web_log.py:233 ::1 [24/Dec/2020:12:01:53 +0000] "PUT /v2/templates/b41aa5b8-21ac-4069-a045-1b67fc2e23e0 HTTP/1.1" 200 887 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:01:55 INFO base_node.py:669 Stopping uBridge hypervisor localhost:43865
+2020-12-24 17:01:55 INFO hypervisor.py:208 Stopping uBridge process PID=38889
+2020-12-24 17:01:55 INFO __init__.py:390 Executing vmrun with command: /usr/bin/vmrun -T ws list
+2020-12-24 17:01:56 INFO __init__.py:390 Executing vmrun with command: /usr/bin/vmrun -T ws stop /home/saad/GNS3/projects/untitled/project-files/vmware/6ea927fc-fedd-4650-a557-441c6af284ea/Debian-1.vmx
+2020-12-24 17:01:58 INFO vmware_vm.py:513 VMware VM 'Debian-1' [6ea927fc-fedd-4650-a557-441c6af284ea] stopped
+2020-12-24 17:01:58 INFO web_log.py:233 ::1 [24/Dec/2020:12:01:55 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/vmware/nodes/6ea927fc-fedd-4650-a557-441c6af284ea/stop HTTP/1.1" 204 246 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:01:58 INFO web_log.py:233 ::1 [24/Dec/2020:12:01:55 +0000] "POST /v2/projects/7b29473a-8454-4757-9758-a6cf9033d449/nodes/6ea927fc-fedd-4650-a557-441c6af284ea/stop HTTP/1.1" 200 1899 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:02:00 INFO base_node.py:579 VMware: 'Debian-1' [6ea927fc-fedd-4650-a557-441c6af284ea]: console type set to telnet (console port is 5002)
+2020-12-24 17:02:00 INFO web_log.py:233 127.0.0.1 [24/Dec/2020:12:02:00 +0000] "PUT /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/vmware/nodes/6ea927fc-fedd-4650-a557-441c6af284ea HTTP/1.1" 200 855 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:02:00 INFO web_log.py:233 ::1 [24/Dec/2020:12:02:00 +0000] "PUT /v2/projects/7b29473a-8454-4757-9758-a6cf9033d449/nodes/6ea927fc-fedd-4650-a557-441c6af284ea HTTP/1.1" 200 1896 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:02:02 INFO __init__.py:390 Executing vmrun with command: /usr/bin/vmrun -T ws list
+2020-12-24 17:02:02 INFO base_node.py:655 Starting new uBridge hypervisor localhost:39675
+2020-12-24 17:02:02 INFO hypervisor.py:169 starting ubridge: ['/usr/bin/ubridge', '-H', 'localhost:39675']
+2020-12-24 17:02:02 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/untitled/project-files/vmware/6ea927fc-fedd-4650-a557-441c6af284ea/ubridge.log
+2020-12-24 17:02:02 INFO hypervisor.py:179 ubridge started PID=39156
+2020-12-24 17:02:02 INFO base_node.py:658 Hypervisor localhost:39675 has successfully started
+2020-12-24 17:02:02 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:39675 after 0.1031 seconds
+2020-12-24 17:02:02 INFO __init__.py:390 Executing vmrun with command: /usr/bin/vmrun -T ws start /home/saad/GNS3/projects/untitled/project-files/vmware/6ea927fc-fedd-4650-a557-441c6af284ea/Debian-1.vmx
+2020-12-24 17:02:05 INFO vmware_vm.py:467 VMware VM 'Debian-1' [6ea927fc-fedd-4650-a557-441c6af284ea] started
+2020-12-24 17:02:05 INFO web_log.py:233 ::1 [24/Dec/2020:12:02:02 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/vmware/nodes/6ea927fc-fedd-4650-a557-441c6af284ea/start HTTP/1.1" 204 247 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:02:05 INFO web_log.py:233 ::1 [24/Dec/2020:12:02:02 +0000] "POST /v2/projects/7b29473a-8454-4757-9758-a6cf9033d449/nodes/6ea927fc-fedd-4650-a557-441c6af284ea/start HTTP/1.1" 200 1902 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:05:41 INFO vmware_vm.py:790 VMware VM 'Debian-1' [6ea927fc-fedd-4650-a557-441c6af284ea]: NIO UDP removed from adapter 0
+2020-12-24 17:05:41 INFO web_log.py:233 ::1 [24/Dec/2020:12:05:41 +0000] "DELETE /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/vmware/nodes/6ea927fc-fedd-4650-a557-441c6af284ea/adapters/0/ports/0/nio HTTP/1.1" 204 299 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:05:41 INFO qemu_vm.py:1162 Execute QEMU monitor command: set_link gns3-2 off
+2020-12-24 17:05:41 INFO qemu_vm.py:1147 Connected to QEMU monitor on 127.0.0.1:38565 after 0.0107 seconds
+2020-12-24 17:05:41 INFO qemu_vm.py:1399 QEMU VM "S1" [40f59df5-ea8e-41df-9027-78fac9866913]: NIO UDP removed from adapter 2
+2020-12-24 17:05:41 INFO web_log.py:233 127.0.0.1 [24/Dec/2020:12:05:41 +0000] "DELETE /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/qemu/nodes/40f59df5-ea8e-41df-9027-78fac9866913/adapters/2/ports/0/nio HTTP/1.1" 204 297 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:05:41 INFO base_node.py:331 VMware: 'Debian-1' [6ea927fc-fedd-4650-a557-441c6af284ea]: is closing
+2020-12-24 17:05:41 INFO vmware_vm.py:609 VMware VM "Debian-1" [6ea927fc-fedd-4650-a557-441c6af284ea] set the close action to "power_off"
+2020-12-24 17:05:41 INFO base_node.py:669 Stopping uBridge hypervisor localhost:39675
+2020-12-24 17:05:41 INFO hypervisor.py:208 Stopping uBridge process PID=39156
+2020-12-24 17:05:41 INFO __init__.py:390 Executing vmrun with command: /usr/bin/vmrun -T ws list
+2020-12-24 17:05:41 INFO __init__.py:390 Executing vmrun with command: /usr/bin/vmrun -T ws stop /home/saad/GNS3/projects/untitled/project-files/vmware/6ea927fc-fedd-4650-a557-441c6af284ea/Debian-1.vmx
+2020-12-24 17:05:44 INFO vmware_vm.py:513 VMware VM 'Debian-1' [6ea927fc-fedd-4650-a557-441c6af284ea] stopped
+2020-12-24 17:05:44 INFO web_log.py:233 ::1 [24/Dec/2020:12:05:41 +0000] "DELETE /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/vmware/nodes/6ea927fc-fedd-4650-a557-441c6af284ea HTTP/1.1" 204 241 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:05:44 INFO web_log.py:233 ::1 [24/Dec/2020:12:05:41 +0000] "DELETE /v2/projects/7b29473a-8454-4757-9758-a6cf9033d449/nodes/6ea927fc-fedd-4650-a557-441c6af284ea HTTP/1.1" 204 226 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:05:44 INFO web_log.py:233 ::1 [24/Dec/2020:12:05:44 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:05:53 INFO docker_vm.py:1058 Docker container "debian-1" [1a84d587-7a85-4b62-879b-5a30d6ad6998]: number of Ethernet adapters changed to 2
+2020-12-24 17:05:53 INFO docker_vm.py:406 Docker container 'debian-1' [1a84d587-7a85-4b62-879b-5a30d6ad6998] created
+2020-12-24 17:05:53 INFO web_log.py:233 ::1 [24/Dec/2020:12:05:53 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/docker/nodes HTTP/1.1" 201 924 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:05:53 INFO web_log.py:233 ::1 [24/Dec/2020:12:05:53 +0000] "POST /v2/projects/7b29473a-8454-4757-9758-a6cf9033d449/templates/cf5a5072-796a-46d6-8bd7-5a088aa50f40 HTTP/1.1" 201 2165 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:05:53 INFO web_log.py:233 127.0.0.1 [24/Dec/2020:12:05:53 +0000] "PUT /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/docker/nodes/1a84d587-7a85-4b62-879b-5a30d6ad6998 HTTP/1.1" 200 929 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:05:53 INFO web_log.py:233 ::1 [24/Dec/2020:12:05:53 +0000] "PUT /v2/projects/7b29473a-8454-4757-9758-a6cf9033d449/nodes/1a84d587-7a85-4b62-879b-5a30d6ad6998 HTTP/1.1" 200 2237 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:05:54 INFO web_log.py:233 ::1 [24/Dec/2020:12:05:54 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:05:55 INFO web_log.py:233 ::1 [24/Dec/2020:12:05:55 +0000] "PUT /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/docker/nodes/1a84d587-7a85-4b62-879b-5a30d6ad6998 HTTP/1.1" 200 929 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:05:55 INFO web_log.py:233 ::1 [24/Dec/2020:12:05:55 +0000] "PUT /v2/projects/7b29473a-8454-4757-9758-a6cf9033d449/nodes/1a84d587-7a85-4b62-879b-5a30d6ad6998 HTTP/1.1" 200 2238 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:06:00 INFO web_log.py:233 127.0.0.1 [24/Dec/2020:12:06:00 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/ports/udp HTTP/1.1" 201 243 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:06:00 INFO web_log.py:233 ::1 [24/Dec/2020:12:06:00 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/ports/udp HTTP/1.1" 201 243 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:06:00 INFO docker_vm.py:960 Docker container 'debian-1' [1a84d587-7a85-4b62-879b-5a30d6ad6998]: NIO UDP added to adapter 0
+2020-12-24 17:06:00 INFO web_log.py:233 127.0.0.1 [24/Dec/2020:12:06:00 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/docker/nodes/1a84d587-7a85-4b62-879b-5a30d6ad6998/adapters/0/ports/0/nio HTTP/1.1" 201 380 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:06:00 INFO qemu_vm.py:1162 Execute QEMU monitor command: set_link gns3-2 on
+2020-12-24 17:06:00 INFO qemu_vm.py:1147 Connected to QEMU monitor on 127.0.0.1:38565 after 0.0107 seconds
+2020-12-24 17:06:00 INFO qemu_vm.py:1346 QEMU VM "S1" [40f59df5-ea8e-41df-9027-78fac9866913]: NIO UDP added to adapter 2
+2020-12-24 17:06:00 INFO web_log.py:233 ::1 [24/Dec/2020:12:06:00 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/qemu/nodes/40f59df5-ea8e-41df-9027-78fac9866913/adapters/2/ports/0/nio HTTP/1.1" 201 378 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:06:00 INFO web_log.py:233 ::1 [24/Dec/2020:12:06:00 +0000] "POST /v2/projects/7b29473a-8454-4757-9758-a6cf9033d449/links HTTP/1.1" 201 1197 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:06:00 INFO web_log.py:233 ::1 [24/Dec/2020:12:06:00 +0000] "PUT /v2/projects/7b29473a-8454-4757-9758-a6cf9033d449/links/edf0d5d1-eb4a-4431-8b12-721a7d7f5932 HTTP/1.1" 201 1290 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:06:00 INFO web_log.py:233 ::1 [24/Dec/2020:12:06:00 +0000] "PUT /v2/projects/7b29473a-8454-4757-9758-a6cf9033d449/links/edf0d5d1-eb4a-4431-8b12-721a7d7f5932 HTTP/1.1" 201 1374 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:06:03 INFO web_log.py:233 ::1 [24/Dec/2020:12:06:03 +0000] "PUT /v2/projects/7b29473a-8454-4757-9758-a6cf9033d449/links/edf0d5d1-eb4a-4431-8b12-721a7d7f5932 HTTP/1.1" 201 1374 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:06:03 INFO base_node.py:655 Starting new uBridge hypervisor localhost:43807
+2020-12-24 17:06:03 INFO hypervisor.py:169 starting ubridge: ['/usr/bin/ubridge', '-H', 'localhost:43807']
+2020-12-24 17:06:03 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/untitled/project-files/docker/1a84d587-7a85-4b62-879b-5a30d6ad6998/ubridge.log
+2020-12-24 17:06:03 INFO hypervisor.py:179 ubridge started PID=39883
+2020-12-24 17:06:03 INFO base_node.py:658 Hypervisor localhost:43807 has successfully started
+2020-12-24 17:06:03 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:43807 after 0.1031 seconds
+2020-12-24 17:06:03 INFO docker_vm.py:499 Docker container 'debian-1' [debian:latest] started listen for telnet on 5002
+2020-12-24 17:06:03 INFO web_log.py:233 ::1 [24/Dec/2020:12:06:03 +0000] "POST /v2/compute/projects/7b29473a-8454-4757-9758-a6cf9033d449/docker/nodes/1a84d587-7a85-4b62-879b-5a30d6ad6998/start HTTP/1.1" 204 247 "-" "Python/3.8 aiohttp/3.6.2"
+2020-12-24 17:06:03 INFO web_log.py:233 ::1 [24/Dec/2020:12:06:03 +0000] "POST /v2/projects/7b29473a-8454-4757-9758-a6cf9033d449/nodes/1a84d587-7a85-4b62-879b-5a30d6ad6998/start HTTP/1.1" 200 2244 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:06:04 INFO web_log.py:233 ::1 [24/Dec/2020:12:06:04 +0000] "GET /v2/computes HTTP/1.1" 200 1032 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:12:22 INFO web_log.py:233 ::1 [24/Dec/2020:12:12:22 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:21:04 INFO web_log.py:233 ::1 [24/Dec/2020:12:21:04 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:31:25 INFO web_log.py:233 ::1 [24/Dec/2020:12:31:25 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:41:46 INFO web_log.py:233 ::1 [24/Dec/2020:12:41:46 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:41:48 INFO web_log.py:233 ::1 [24/Dec/2020:12:41:48 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 17:51:27 INFO web_log.py:233 ::1 [24/Dec/2020:12:51:27 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 18:00:29 INFO web_log.py:233 ::1 [24/Dec/2020:13:00:29 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 18:10:26 INFO web_log.py:233 ::1 [24/Dec/2020:13:10:26 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 18:21:51 INFO web_log.py:233 ::1 [24/Dec/2020:13:21:51 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 18:32:57 INFO web_log.py:233 ::1 [24/Dec/2020:13:32:57 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 18:43:47 INFO web_log.py:233 ::1 [24/Dec/2020:13:43:47 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 18:54:16 INFO web_log.py:233 ::1 [24/Dec/2020:13:54:16 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 19:03:23 INFO web_log.py:233 ::1 [24/Dec/2020:14:03:23 +0000] "GET /v2/computes HTTP/1.1" 200 1032 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 19:10:57 INFO web_log.py:233 ::1 [24/Dec/2020:14:10:57 +0000] "GET /v2/computes HTTP/1.1" 200 1032 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 19:17:01 INFO web_log.py:233 ::1 [24/Dec/2020:14:17:01 +0000] "GET /v2/computes HTTP/1.1" 200 1034 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 19:17:03 INFO web_log.py:233 ::1 [24/Dec/2020:14:17:03 +0000] "GET /v2/computes HTTP/1.1" 200 1034 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 19:19:09 INFO web_log.py:233 ::1 [24/Dec/2020:14:19:09 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 19:26:43 INFO web_log.py:233 ::1 [24/Dec/2020:14:26:43 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 19:27:50 INFO web_log.py:233 ::1 [24/Dec/2020:14:27:50 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 19:28:58 INFO web_log.py:233 ::1 [24/Dec/2020:14:28:58 +0000] "GET /v2/computes HTTP/1.1" 200 1034 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 19:35:12 INFO web_log.py:233 ::1 [24/Dec/2020:14:35:12 +0000] "GET /v2/computes HTTP/1.1" 200 1032 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 19:35:14 INFO web_log.py:233 ::1 [24/Dec/2020:14:35:14 +0000] "GET /v2/computes HTTP/1.1" 200 1032 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 19:43:25 INFO web_log.py:233 ::1 [24/Dec/2020:14:43:25 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 19:51:43 INFO web_log.py:233 ::1 [24/Dec/2020:14:51:43 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 20:01:00 INFO web_log.py:233 ::1 [24/Dec/2020:15:01:00 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 20:08:58 INFO web_log.py:233 ::1 [24/Dec/2020:15:08:58 +0000] "GET /v2/computes HTTP/1.1" 200 1032 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 20:17:43 INFO web_log.py:233 ::1 [24/Dec/2020:15:17:43 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 20:27:01 INFO web_log.py:233 ::1 [24/Dec/2020:15:27:01 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 20:27:07 INFO web_log.py:233 ::1 [24/Dec/2020:15:27:07 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 20:35:22 INFO web_log.py:233 ::1 [24/Dec/2020:15:35:22 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 20:43:46 INFO web_log.py:233 ::1 [24/Dec/2020:15:43:46 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 20:53:20 INFO web_log.py:233 ::1 [24/Dec/2020:15:53:20 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 20:53:22 INFO web_log.py:233 ::1 [24/Dec/2020:15:53:22 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 21:01:52 INFO web_log.py:233 ::1 [24/Dec/2020:16:01:52 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 21:09:44 INFO web_log.py:233 ::1 [24/Dec/2020:16:09:44 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 21:33:25 INFO web_log.py:233 ::1 [24/Dec/2020:16:33:25 +0000] "GET /v2/computes HTTP/1.1" 200 1034 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 21:36:17 INFO web_log.py:233 ::1 [24/Dec/2020:16:36:17 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 21:45:14 INFO web_log.py:233 ::1 [24/Dec/2020:16:45:14 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 21:53:17 INFO web_log.py:233 ::1 [24/Dec/2020:16:53:17 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 22:01:26 INFO web_log.py:233 ::1 [24/Dec/2020:17:01:26 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 22:10:43 INFO web_log.py:233 ::1 [24/Dec/2020:17:10:43 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 22:19:11 INFO web_log.py:233 ::1 [24/Dec/2020:17:19:11 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 22:27:25 INFO web_log.py:233 ::1 [24/Dec/2020:17:27:25 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 22:37:41 INFO web_log.py:233 ::1 [24/Dec/2020:17:37:41 +0000] "GET /v2/computes HTTP/1.1" 200 1032 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 22:46:37 INFO web_log.py:233 ::1 [24/Dec/2020:17:46:37 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 22:54:36 INFO web_log.py:233 ::1 [24/Dec/2020:17:54:36 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 23:04:03 INFO web_log.py:233 ::1 [24/Dec/2020:18:04:03 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 23:13:01 INFO web_log.py:233 ::1 [24/Dec/2020:18:13:01 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 23:21:16 INFO web_log.py:233 ::1 [24/Dec/2020:18:21:16 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 23:29:35 INFO web_log.py:233 ::1 [24/Dec/2020:18:29:35 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 23:38:50 INFO web_log.py:233 ::1 [24/Dec/2020:18:38:50 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 23:47:07 INFO web_log.py:233 ::1 [24/Dec/2020:18:47:07 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-24 23:55:51 INFO web_log.py:233 ::1 [24/Dec/2020:18:55:51 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-25 00:05:14 INFO web_log.py:233 ::1 [24/Dec/2020:19:05:14 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-25 00:13:34 INFO web_log.py:233 ::1 [24/Dec/2020:19:13:34 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"
+2020-12-25 00:17:00 INFO web_log.py:233 ::1 [24/Dec/2020:19:17:00 +0000] "GET /v2/computes HTTP/1.1" 200 1033 "-" "GNS3 QT Client v2.2.17"

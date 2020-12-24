@@ -1,0 +1,33 @@
+#!/bin/bash
+connect(){
+	sudoPass=$(echo "" | dmenu -P -p "Enter $USER password ")
+	[ -z "$sudoPass" ] && exit
+	ssid=$( echo $sudoPass | sudo -S iwlist $(wiface) scan | grep -i essid | sed -e s/"                    ESSID:"//g -e s/\"//g | dmenu -i -l 10 )
+	[ -z "$ssid" ] && exit || key=$(echo "" | dmenu -P -p "Wifi Key ")
+
+
+	nmcli d wifi connect "$ssid" password $key
+}
+forget(){
+
+	sudoPass=$(echo "" | dmenu -P -p "Enter $USER password ")
+	[ -z "$sudoPass" ] && exit
+	ssid=$( echo $sudoPass | sudo  -S iwlist $(wiface) scan | grep -i essid | sed -e s/"                    ESSID:"//g -e s/\"//g | dmenu -i -l 10 )
+	nmcli connection delete $ssid
+}
+hidden(){
+	sudoPass=$(echo "" | dmenu -P -p "Enter $USER password ")
+	[ -z "$sudoPass" ] && exit
+  ssid=$(echo ""| dmenu -p " SSID ")
+  key=$(echo "" | dmenu -P -p " Wifi Key ")
+
+  nmcli c add type wifi con-name "$ssid" ifname $(wiface) ssid $ssid
+  nmcli c modify "$ssid" wifi-sec.key-mgmt wpa-psk wifi-sec.psk "$key"
+  nmcli c up "$ssid"
+}
+choose=$(echo "" | dmenu -p "CONNECT/FORGET/HIDDEN(c/f/h)")
+[ -z "$choose" ] && exit || case "$choose" in
+	c|C|connect|Connect|CONNECT) connect;;
+	f|F|forget|Forger|FORGET) forget;;
+	h|H|hidden|Hidden|HIDDEN)hidden;;
+esac

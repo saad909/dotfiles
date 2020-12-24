@@ -1,0 +1,4 @@
+tun
+printf "Task you want to start(separate by tabs or space): "
+read -a tasks
+taskbook -b ${tasks[@]}

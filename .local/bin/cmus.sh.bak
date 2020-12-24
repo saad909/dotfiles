@@ -1,0 +1,26 @@
+
+recites=$(cmus-remote -Q | grep recites  |  wc -l)
+if [ $recites == 1 ]
+then
+	repeat=$(cmus-remote -Q | grep repeat_current | grep true |  wc -l)
+	if [ $repeat == 1 ]
+	then
+		repeat=
+
+		printf "$repeat " && ( cmus-remote -Q | sed -n /"^file"/p  | sed -e s/"^file \/home\/$USER\/Music\/recites"//g   -e s/^.//g -e s/,//g -e s/_//g -e s/-//g -e s/"  "/" "/g  -e s/\(//g -e s/\)//g -e s/'\['//g -e s/'\]'//g -e s/\.mp3//g )
+	else
+		cmus-remote -Q | sed -n /"^file"/p  | sed -e s/"^file \/home\/$USER\/Music"//g -e s/^.//g -e s/,//g -e s/_//g -e s/-//g -e s/"  "/" "/g  -e s/\(//g -e s/\)//g -e s/'\['//g -e s/'\]'//g -e s/\.mp3//g
+	fi
+else
+	repeat=$(cmus-remote -Q | grep repeat_current | grep true |  wc -l)
+	if [ $repeat == 1 ]
+	then
+		repeat=
+
+		printf "$repeat " && ( cmus-remote -Q | sed -n /"^file"/p  | sed -e s/"^file \/home\/$USER\/Music"//g   -e s/^.//g -e s/,//g -e s/_//g -e s/-//g -e s/"  "/" "/g  -e s/\(//g -e s/\)//g -e s/'\['//g -e s/'\]'//g -e s/\.mp3//g )
+	else
+		cmus-remote -Q | sed -n /"^file"/p  | sed -e s/"^file \/home\/$USER\/Music"//g -e s/^.//g -e s/,//g -e s/_//g -e s/-//g -e s/"  "/" "/g  -e s/\(//g -e s/\)//g -e s/'\['//g -e s/'\]'//g -e s/\.mp3//g
+	fi
+
+
+fi

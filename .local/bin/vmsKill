@@ -1,0 +1,7 @@
+echo 123 | sudo -S  pkill vmware
+echo 123 | sudo -S  pkill vms
+
+echo 123 | sudo -S  systemctl stop vmware-networks
+echo 123 | sudo -S  systemctl stop vmware-authd
+echo 123 | sudo -S  systemctl stop vmware-hostd.service
+echo 123 | sudo -S  systemctl stop vmware-usbarbitrator

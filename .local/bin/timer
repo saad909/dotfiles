@@ -1,0 +1,2 @@
+cat ~/Documents/stime | tail -n 1
+#notify-send $(cat ~/Documents/stime)

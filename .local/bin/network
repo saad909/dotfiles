@@ -1,0 +1,37 @@
+#!/bin/bash
+
+f=~/.cache/network
+
+echo "Network   : $(ip r g 1 | awk '{ print $3 }')"
+echo "Interface : $(ip r g 1 | awk '{ print $5 }')"
+echo "IP Local  : $(ip r g 1 | awk '{ print $7 }')"
+
+echo "IP Public : $(curl -sm 1 ifconfig.me)"
+echo "IP Socks5 : $(curl -sm 1 ifconfig.me --socks5 localhost:9050)"
+
+[[ $(curl -sm 1 192.168.8.1) ]] && {
+    url=http://192.168.8.1/api
+    sid=$(curl -s   $url/webserver/SesTokInfo | grep -o 'SessionID=[^<]*')
+    xml=$(curl -sH "Cookie: $sid" $url/monitoring/status | sed 's/[<>]/ /g')
+
+    con=$(echo "$xml" | awk '/NetworkType / { print $2 }')
+    case $con in
+      0|4) con=?;;
+        3) con=2g;;
+        9) con=3g;;
+       19) con=4g;;
+    esac
+    echo "Con Type  : $con"
+
+    echo "Con Signal: $(echo "$xml" | awk '
+        /SignalIcon / { s=$2 }
+        /maxsignal /  { m=$2 }
+        END { print s / m * 100 }
+    ')%"
+}
+
+[[ $1 == -u || ! -f $f-speed ]] &&
+speedtest-cli --simple | awk 'NR > 1 { print $2, $3 }' > $f-speed
+
+echo "Speed DL  : $(sed '1q;d' $f-speed)"
+echo "Speed UP  : $(sed '2q;d' $f-speed)"

@@ -1,0 +1,9 @@
+#!/bin/bash
+echo 123 | sudo -S rm /tmp/create_ap.all.lock
+#ssid=$(echo "" | dmenu -p "SSID ")
+#[ -z $ssid ] && exit
+#passowrd=$(echo "" | dmenu -P -p "passowrd ")
+#[ -z $passowrd ] && exit
+password="password@123"
+ssid="sharedInternet"
+notify-send "Hotspot $ssid created successfully" && echo 123 | sudo -S create_ap  $(wiface) $(wiface) "$ssid" $password

@@ -1,0 +1,57 @@
+#!/bin/bash
+
+# remove eariler dot files
+mkdir $HOME/.dotfiles | mv $HOME/.dotfiles  $HOME/.dotfiles.bak && mkdir $HOME/.dotfiles
+# create folders
+mkdir -p $HOME/.dotfiles/.local/bin/
+mkdir -p $HOME/.dotfiles/.local/share
+mkdir -p $HOME/.dotfiles/.config
+
+# home directory
+
+## files
+cp ~/.fehbg		$HOME/.dotfiles
+cp ~/.gtkrc-2.0		$HOME/.dotfiles
+cp ~/.iourc		$HOME/.dotfiles
+cp ~/.profile		$HOME/.dotfiles
+cp ~/.taskbook.json	$HOME/.dotfiles
+cp ~/.viminfo		$HOME/.dotfiles
+cp ~/.Xauthority	$HOME/.dotfiles
+cp ~/.xinitrc		$HOME/.dotfiles
+cp ~/.xprofile		$HOME/.dotfiles
+cp ~/.zshrc		$HOME/.dotfiles
+# folders
+cp -R ~/.local/bin/*		$HOME/.dotfiles/.local/bin/
+cp -R ~/.local/share/larbs	$HOME/.dotfiles/.local/share
+
+
+# config
+# ## folders
+# cp ~/.config/alacritty
+# cp ~/.config/cmus
+# cp ~/.config/dunst
+# cp ~/.config/GNS3
+# cp ~/.config/gtk-2.0
+# cp ~/.config/gtk-3.0
+# cp ~/.config/i3
+# cp ~/.config/i3-resurrect
+# cp ~/.config/i3blocks
+# cp ~/.config/mpv
+# cp ~/.config/nvim
+# cp ~/.config/polybar
+# cp ~/.config/qutebrowser
+# cp ~/.config/ranger
+# cp ~/.config/rofi
+# cp ~/.config/zathura
+# cp ~/.config/zsh
+# cp ~/.config/
+
+# ## files
+cp ~/.config/aliasrc		$HOME/.dotfiles/.config
+cp ~/.config/directories	$HOME/.dotfiles/.config
+cp ~/.config/files		$HOME/.dotfiles/.config
+cp ~/.config/inputrc		$HOME/.dotfiles/.config
+cp ~/.config/shortcutrc		$HOME/.dotfiles/.config
+cp ~/.config/xinitrc		$HOME/.dotfiles/.config
+cp ~/.config/Xresources		$HOME/.dotfiles/.config
+cp ~/.config/zshnameddirrc	$HOME/.dotfiles/.config

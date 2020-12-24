@@ -1,0 +1,12 @@
+#!/bin/bash
+
+break=0
+while [  $break -lt 7 ];
+do
+	break=$(($break+1))
+	notify-send --expire-time=20000 "Start study" && mpv $HOME/Music/recites/reminder.wav --no-audio-display
+	sleep 25m
+
+	notify-send --expire-time=20000 "Take a break($break/7)" && mpv $HOME/Music/recites/reminder.wav --no-audio-display
+	sleep 5m
+done

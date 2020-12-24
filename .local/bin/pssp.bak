@@ -1,0 +1,9 @@
+#show current study time
+# ps -eo pid,comm,cmd,start,etime | grep  -i ssn  | head -n 1  | awk '{print $7}'
+# Write current checked time on a file
+#notify-send "Programming Study time:" $(ps -eo pid,comm,cmd,start,etime | grep  -i ssp  | head -n 1  | awk '{print $7}') &&  echo "Programming Study time:" $(ps -eo pid,comm,cmd,start,etime | grep  -i ssp  | head -n 1  | awk '{print $7}') > ~/Documents/stime && pkill ssp
+#echo "Networking stoped at: " $(ntime) > ~/Documents/stime && pkill ssn && timer 
+
+[ -z $ssp ] && notify-send "script ssp not running" && exit ; echo "script ssp not running" |  echo "Programming stoped at: " $(ptime) >> ~/Documents/stime && pkill ssp && timer 
+
+

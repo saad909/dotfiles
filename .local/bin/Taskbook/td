@@ -1,0 +1,4 @@
+taskbook -i
+printf "Task you want to delete(separate by tabs or space): "
+read -a tasks
+taskbook -d ${tasks[@]}

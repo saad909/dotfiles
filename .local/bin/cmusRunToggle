@@ -1,0 +1,7 @@
+running=$( cmus-remote -Q | grep status | wc -l )
+if [ $running -eq 1 ]
+then
+	killall cmus
+else
+	alacritty -e cmus && cmus-remote -p "favourite songs" && cmusToggle
+fi

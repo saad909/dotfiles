@@ -1,0 +1,13 @@
+cfz	$ZDOTDIR/.zshrc
+cfv	${XDG_CONFIG_HOME:-$HOME/.config}/nvim/init.vim
+cfi	${XDG_CONFIG_HOME:-$HOME/.config}/i3/config
+cfo	${XDG_CONFIG_HOME:-$HOME/.config}/fontconfig/fonts.conf
+cfr	~/.config/ranger/rc.conf
+cfp	~/.config/polybar/config.ini
+cfs /home/saad/.config/nvim/autoload/plugged/vim-snippets/snippets/rmd.snippets
+cfV /home/saad/.config/nvim/keys/which-key.vim
+cfk ~/.config/kitty/kitty.conf
+cft ~/.config/tmux/tmux.conf
+
+
+

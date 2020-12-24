@@ -1,0 +1,82 @@
+# You can add comments to these files with #
+cac ${XDG_CACHE_HOME:-$HOME/.cache}
+cf  ${XDG_CONFIG_HOME:-$HOME/.config}
+# D   ${XDG_DOWNLOAD_DIR:-$HOME/Downloads}
+d   ${XDG_DOCUMENTS_DIR:-$HOME/Documents}
+m   ${XDG_MUSIC_DIR:-$HOME/Music}
+mn  /mnt
+pp  ${XDG_PICTURES_DIR:-$HOME/Pictures}
+sc  ~/.local/bin
+vv  ${XDG_VIDEOS_DIR:-$HOME/Videos}
+wa /home/saad/Pictures/Wallpapers
+wA /home/ExternalHDD/Pictures/Wallpapers
+da  /home/ExternalHDD/
+co /home/ExternalHDD/Courses
+ne /home/ExternalHDD/Courses/Networking
+tr /home/ExternalHDD/SoftwaresAndTricks/Linux/Tricks
+so /home/ExternalHDD/SoftwaresAndTricks/Linux/LinuxSoftwares
+sO /home/ExternalHDD/SoftwaresAndTricks/Windows/WindowsSoftwares
+tR /home/ExternalHDD/SoftwaresAndTricks/Windows/Tricks
+cc /home/ExternalHDD/Courses/Networking/Cisco/CCNA/ccna-cbtNuggets/ICND1
+lm /home/ExternalHDD/Courses/Networking/Cisco/CCNA/ccna-cbtNuggets/LAB
+sc /home/saad/.local/bin
+Ta /home/saad/.local/bin/Taskbook
+D ~/Downloads
+do ~/Documents
+dO /home/ExternalHDD/Documents
+os /home/ExternalHDD/OSs
+mm ~/Music
+vv ~/Videos
+pp ~/Pictures
+cf ~/.config
+ra ~/.config/ranger
+no  ~/Documents/Notes
+bo ~/Documents/Books
+bO /home/ExternalHDD/Documents/Books
+ex ~/Documents/Experiments
+xl ~/Documents/Office/Excel
+wo ~/Documents/Office/Word
+pre ~/Documents/Office/Presentations
+ro ~/.config/rofi
+h /home/saad
+vm ~/.config/nvim
+re /home/saad/Music/recites
+fo ~/.local/share/fonts
+fO /usr/share/fonts
+ddo ~/Downloads/Persepolis/Documents
+dvi ~/Downloads/Persepolis/Videos
+dco ~/Downloads/Persepolis/Compressed
+lp ~/Documents/Labs
+# py  ~/Documents/Python
+pa /home/saad/Documents/Codes/Python/networkAutomation
+pws /home/ExternalHDD/SoftwaresAndTricks/Windows/Tricks/powershellScripts
+ad  /home/ExternalHDD/androidData
+as /home/saad/Documents/Assignments
+ns /home/saad/GNS3
+us /media/saad
+tm /tmp
+ci /home/ExternalHDD/Courses/Networking/Cisco
+np /home/ExternalHDD/Courses/Networking/Cisco/CCNP
+an ~/Android
+kn ~/Kindle
+na /home/ExternalHDD/Courses/Networking/Cisco/CCNA/ccna-cbtNuggets
+ca ~/.cache
+ki /run/media/saad/Kindle
+mo /home/ExternalHDD/Movies
+eD /home/ExternalHDD/Downloads
+ep /home/ExternalHDD/Pictures
+ewa /home/ExternalHDD/Pictures/Wallpapers
+edo /home/ExternalHDD/Documents
+emm /home/ExternalHDD/Music
+ev /home/ExternalHDD/Videos
+cu /home/ExternalHDD/Courses-UnderStudy
+cb ~/configsBackup
+pro ~/Documents/Codes
+ui ~/Documents/Codes/Python/UI 
+qt /home/saad/Documents/Codes/Python/pyqt
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+#!/bin/bash
+
+## Logic of this program
+
+## Min 	Break No.
+## 30  -  	1 
+## 60  -  	2 
+## 90  -  	3(Half way done) 
+## 120 - 	4 
+## 150 - 	5(Last break)
+## 180 -  
+
+
+
+#break=0
+#while [  $break -lt 5 ];
+#do
+
+#	break=$(($break+1))
+#	notify-send --expire-time=20000 "Start study" && mpv /home/ExternalHDD/Music/recites/reminder.wav --no-audio-display
+#	sleep 25m
+
+#	# Half way done message and last break messsage
+#	if [  $break -eq 3 ]
+#		then
+#			notify-send "Half way done" && mpv /home/ExternalHDD/Music/recites/reminder.wav --no-audio-display
+#	elif [ $break -eq 5 ]
+#		then
+#			notify-send --expire-time=20000 "Last break!" && mpv /home/ExternalHDD/Music/recites/reminder.wav --no-audio-display
+#	else
+#		notify-send	"Take a break($break/5)" && mpv /home/ExternalHDD/Music/recites/reminder.wav --no-audio-display
+#	fi
+
+#	sleep 5m
+#	message=$( ps -eo pid,comm,cmd,start,etime | grep  -i ssp  | head -n 1 )
+#	echo "$message" > /tmp/time
+#done
+
+## notify-send --expire-time=20000 "Take a break($break/7)" && mpv /home/ExternalHDD/Music/recites/reminder.wav --no-audio-display
+
+
+#!/bin/bash
+
+# Logic of this program
+
+# Min 	Break No.
+# 30  -  	1 
+# 60  -  	2 
+# 90  -  	3(Half way done) 
+# 120 - 	4 
+# 150 - 	5(Last break)
+# 180 -  
+
+
+
+break=0
+while [  $break -lt 5 ];
+do
+
+	break=$(($break+1))
+	notify-send  "Start study" && mpv /home/ExternalHDD/Music/recites/reminder.wav --no-audio-display
+	sleep 25m
+
+	# Half way done message and last break messsage
+	if [  $break -eq 3 ]
+		then
+			notify-send "Half way done" && mpv /home/ExternalHDD/Music/recites/reminder.wav --no-audio-display
+	elif [ $break -eq 5 ]
+		then
+			notify-send  "Last break!" && mpv /home/ExternalHDD/Music/recites/reminder.wav --no-audio-display
+	else
+		notify-send	"Take a break($break/5)" && mpv /home/ExternalHDD/Music/recites/reminder.wav --no-audio-display
+	fi
+
+	sleep 5m
+	message=$( ps -eo pid,comm,cmd,start,etime | grep  -i ssp  | head -n 1 )
+	echo "$message" > /tmp/time
+done
+notify-send "Time is up!"
+# notify-send  "Take a break($break/7)" && mpv /home/ExternalHDD/Music/recites/reminder.wav --no-audio-display

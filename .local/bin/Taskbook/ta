@@ -1,0 +1,31 @@
+begin(){
+
+	printf "Begin Task(y/n):"
+	read selection
+	if [ $selection == 'y' ]
+	then
+		tid=$( taskbook -i  | tail -n 5 | head -n 1 | awk '{print $1}' | sed -e s/.$//g )
+		taskbook -b $tid
+	fi
+
+
+}
+printf "How many tasks?"
+read to
+i=1
+
+
+while [ $i -le $to ]
+do
+
+	printf "Task: "
+	read task
+	taskbook -t $task
+
+	if [ $to == 1 ]
+	then
+		begin
+	fi
+
+	i=$[i+1]
+done

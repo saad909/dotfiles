@@ -1,0 +1,1 @@
+cmus-remote -Q | sed -n /"^file"/p  | sed -e s/"^file \/home\/ExternalHDD\/Music"//g -e s/^.//g -e s/,//g -e s/_//g -e s/-//g -e s/"  "/" "/g  -e s/\(//g -e s/\)//g -e s/'\['//g -e s/'\]'//g -e s/\.mp3//g

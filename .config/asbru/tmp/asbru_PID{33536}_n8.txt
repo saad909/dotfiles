@@ -1,0 +1,87 @@
+Telnet escape character is '^]'.
+Trying ::1...
+Connected to localhost.
+Escape character is '^]'.
+
+*Dec 24 12:05:40.221: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/2, changed state to down
+*Dec 24 12:05:41.222: %LINK-3-UPDOWN: Interface GigabitEthernet0/2, changed state to down
+*Dec 24 12:06:00.223: %LINK-3-UPDOWN: Interface GigabitEthernet0/2, changed state to up
+*Dec 24 12:06:01.223: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/2, changed state to up
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Switch>
+Switch>
+Switch>en
+Password: 
+Password: 
+Password: 
+Switch#clear
+% Type "clear ?" for a list of subcommands
+Switch#l 
+Switch#
+Switch#
+Switch#
+Switch#
+Switch#
+Switch#
+Switch#
+Switch#
+Switch#
+Switch#
+Switch#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Switch con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+

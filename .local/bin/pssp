@@ -1,0 +1,18 @@
+#!/bin/bash
+##show current study time
+## ps -eo pid,comm,cmd,start,etime | grep  -i ssp  | head -n 1  | awk '{print $7}'
+## Write current checked time on a file
+##notify-send "Programming Study time:" $(ps -eo pid,comm,cmd,start,etime | grep  -i ssp  | head -n 1  | awk '{print $7}') &&  echo "Programming Study time:" $(ps -eo pid,comm,cmd,start,etime | grep  -i ssp  | head -n 1  | awk '{print $7}') > ~/Documents/stime && pkill ssp
+#[ -z $ssp ] && (echo "ssp script is not running " && notify-send "ssp script is not running"  && exit) ;  pkill ssp && (echo "Networking stoped at: " $(ntime) && notify-send "Networking stoped at: " $(ntime) ) >> ~/Documents/stime && exit ; echo "stopped unsuccessful" && notify-send "stopped unsuccessful"
+
+
+
+#[ -z $ssp ] && (echo "ssp script is not running " && notify-send "ssp script is not running"  && exit) 
+#echo "Networking stoped at: " $(ntime) && notify-send "Networking stoped at: " $(ntime) && echo "Networking stoped at: " $(ntime)  >> ~/Documents/stime
+##echo "stopped unsuccessful" && notify-send "stopped unsuccessful"
+
+stopedAt="Programming stoped at:"
+notRunning="script ssp not running"
+result=$( ps -eo pid,comm,cmd,start,etime | grep  -i ssp  | sed s,"       ","#",g |grep .local |cut -d# -f3 ) 
+[ -z "$result" ] && exit
+(echo "$stopedAt" $result && notify-send "$stopedAt" "$result") && echo "$stopedAt" $result  >> ~/Documents/stime && pkill ssp

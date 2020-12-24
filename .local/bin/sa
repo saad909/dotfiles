@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo 123 | sudo  -S route add -net 10.10.10.10 netmask 255.255.255.255 gw 192.168.122.254
+echo 123 | sudo  -S route add -net 172.16.255.255 netmask 255.255.255.255 gw 192.168.122.254
+echo 123 | sudo  -S route add -net 20.1.1.0 netmask 255.255.255.0 gw 192.168.122.254

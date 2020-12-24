@@ -1,0 +1,14 @@
+#!/bin/bash
+#show current study time
+# ps -eo pid,comm,cmd,start,etime | grep  -i ssp  | head -n 1  | awk '{print $8}'
+#notify-send "Programming time is: " $( ps -eo pid,comm,cmd,start,etime | grep  -i ssp  | head -n 1  | awk '{print $8}')
+
+
+result=$( ps -eo pid,comm,cmd,start,etime | grep  -i ssp  | sed s,"       ","#",g |grep .local |cut -d# -f3 ) 
+# ([ -z $result ] && (echo "script ssp not running" && notify-send "script ssp not running" && exit)) ; echo $result && notify-send $result
+([ -z $result ] && (echo "script ssp not running" && notify-send "script ssp not running" ) && exit ) ; echo $result && notify-send $result
+
+# [ -z "$result" ] echo "script ssp not running" && exit | echo $( result)
+# [ -z "$result" ] notify-send "script ssp not running" && exit | notify-send "Programming time is: " $(result)
+# Write current checked time on a file
+# echo "Networking Study time:" $(ps -eo pid,comm,cmd,start,etime | grep  -i ssp  | head -n 1  | awk '{print $8}') > ~/Documents/stime && pkill ssp 

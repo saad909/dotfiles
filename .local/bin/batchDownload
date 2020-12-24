@@ -1,0 +1,7 @@
+#!/bin/bash
+# title=$(echo "" | dmenu -p "  Title ")
+printf "title: "
+read title
+[ -z $title ] && exit
+mkdir -p ~/Videos/BatchDownload/"$title"
+cd /home/$USER/Videos/BatchDownload/"$title" && rm -rf ./links.txt && touch links.txt && nvim links.txt  &&   youtube-dl -cit -a links.txt && notify-send "Batch Download completed  "

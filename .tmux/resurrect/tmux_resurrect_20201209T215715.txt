@@ -1,0 +1,11 @@
+pane	0	1	:cmus	0	:#-	0	:/home/saad/.config/tmux/ressurect	1	cmus	:cmus
+pane	0	2	:ranger	0	:	0	:/home/saad/Documents/Codes/Python/pyqt/3.More\ Widgets	1	zsh	:
+pane	0	3	:full-terminal	1	:*	0	:/home/saad/.config/tmux/ressurect/scripts	1	bash	:zsh
+pane	0	4	:spit-terminal	0	:	0	:/home/saad/.config/tmux/ressurect	1	zsh	:
+pane	0	4	:spit-terminal	0	:	1	:/home/saad/.config/tmux/ressurect	0	zsh	:
+pane	0	4	:spit-terminal	0	:	2	:/home/saad/.config/tmux/ressurect	0	zsh	:
+window	0	1	0	:#-	b3be,135x32,0,0,1
+window	0	2	0	:	b3bf,135x32,0,0,2
+window	0	3	1	:*	b3c4,135x32,0,0,7
+window	0	4	0	:	8b00,135x32,0,0{66x32,0,0,9,68x32,67,0[68x15,67,0,10,68x16,67,16,11]}
+state	0	

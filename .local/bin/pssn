@@ -1,0 +1,18 @@
+#!/bin/bash
+##show current study time
+## ps -eo pid,comm,cmd,start,etime | grep  -i ssn  | head -n 1  | awk '{print $7}'
+## Write current checked time on a file
+##notify-send "Programming Study time:" $(ps -eo pid,comm,cmd,start,etime | grep  -i ssn  | head -n 1  | awk '{print $7}') &&  echo "Programming Study time:" $(ps -eo pid,comm,cmd,start,etime | grep  -i ssn  | head -n 1  | awk '{print $7}') > ~/Documents/stime && pkill ssn
+#[ -z $ssn ] && (echo "ssn script is not running " && notify-send "ssn script is not running"  && exit) ;  pkill ssn && (echo "Networking stoped at: " $(ntime) && notify-send "Networking stoped at: " $(ntime) ) >> ~/Documents/stime && exit ; echo "stopped unsuccessful" && notify-send "stopped unsuccessful"
+
+
+
+#[ -z $ssn ] && (echo "ssn script is not running " && notify-send "ssn script is not running"  && exit) 
+#echo "Networking stoped at: " $(ntime) && notify-send "Networking stoped at: " $(ntime) && echo "Networking stoped at: " $(ntime)  >> ~/Documents/stime
+##echo "stopped unsuccessful" && notify-send "stopped unsuccessful"
+
+stopedAt="Networking stoped at:"
+notRunning="script ssn not running"
+result=$( ps -eo pid,comm,cmd,start,etime | grep  -i ssn  | sed s,"       ","#",g |grep .local |cut -d# -f3 ) 
+[ -z "$result" ] && exit
+(echo "$stopedAt" $result && notify-send "$stopedAt" "$result") && echo "$stopedAt" $result  >> ~/Documents/stime && pkill ssn

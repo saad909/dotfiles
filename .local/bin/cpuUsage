@@ -1,0 +1,2 @@
+notify-send echo $(ps auxk -c | head -5  | tail -n 4 | awk '{print $11 " " $12}' | sed -e s,/usr/bin/,,g -e s,/usr/lib/,,g  -e s,"/bin/vmware*",,g  -e s,"python3 qutebrowser",qutebrowser,g)
+

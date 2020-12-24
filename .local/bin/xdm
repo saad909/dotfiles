@@ -1,0 +1,8 @@
+#!/bin/bash
+running=$( xdman | grep already | wc -l )
+if [ $running == 1 ]
+  then
+		pkill xdman
+	else
+		xdman
+fi

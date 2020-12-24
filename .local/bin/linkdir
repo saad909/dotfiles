@@ -1,0 +1,4 @@
+echo $( pwd ) | xclip -selection c
+source=$( xclip -selection c -o)
+
+ln -sf "$source/$1" /home/ExternalHDD/Courses-UnderStudy

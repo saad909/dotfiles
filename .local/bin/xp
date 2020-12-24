@@ -1,0 +1,2 @@
+#!/bin/bash
+xprop | grep CLASS | awk '{print $4}' | tr "\n" " "| sed s/".$"//g | xclip -selection clipboard

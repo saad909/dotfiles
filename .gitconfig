@@ -1,0 +1,7 @@
+[core]
+	editor = /usr/bin/nvim
+[user]
+	name = Abuhurraira Saad
+	email = abuhurraira.saad909@gmail.com
+[credential]
+	helper = store

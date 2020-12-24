@@ -1,0 +1,3 @@
+
+
+notify-send  "$(printf "Battery is " && cat /sys/class/power_supply/BAT0/status && printf "Estimate Timing: " && acpi -V  | grep remaining | awk '{print $5}')"

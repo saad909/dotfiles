@@ -1,0 +1,17 @@
+#!/bin/bash
+#show current study time
+#ps -eo pid,comm,cmd,start,etime | grep  -i ssn  | head -n 1  | awk '{print $8}'
+#notify-send "Networking time is: " $(ps -eo pid,comm,cmd,start,etime | grep  -i ssn  | head -n 1  | awk '{print $8}')
+
+# ps -eo pid,comm,cmd,start,etime | grep  -i ssn  | sed s,"       ",#,g |grep .local| cut -d# -f3 
+# notify-send "Networking time is: " $(ps -eo pid,comm,cmd,start,etime | grep  -i ssn  | sed s,"       ",#,g |grep .local| cut -d# -f3 )
+
+
+
+# Write current checked time on a file
+# echo "Networking Study time:" $(ps -eo pid,comm,cmd,start,etime | grep  -i ssn  | head -n 1  | awk '{print $8}') > ~/Documents/stime && pkill ssn 
+
+
+result=$( ps -eo pid,comm,cmd,start,etime | grep  -i ssn  | sed s,"       ","#",g |grep .local |cut -d# -f3 ) 
+
+[ -z "$result" ] && (echo "script ssn not running" && notify-send "script ssn not running" && exit) ; echo $result && notify-send $result

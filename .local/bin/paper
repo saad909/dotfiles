@@ -1,0 +1,10 @@
+#!/bin/bash
+
+break=0
+while [  $break -lt 12 ];
+do
+	break=$(($break+1))
+	notify-send "Start study" && mpv /home/saad/Music/recites/reminder.wav --no-audio-display
+	sleep 30m
+
+done

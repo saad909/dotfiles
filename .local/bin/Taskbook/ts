@@ -1,0 +1,4 @@
+tB
+printf "Task you want to star(separate by tabs or space): "
+read -a tasks
+taskbook -s ${tasks[@]}

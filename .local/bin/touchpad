@@ -1,0 +1,4 @@
+id=$( xinput list | grep -i Touchpad | awk '{print $7}' | sed s/id=//g )
+#xinput list-props $id
+option=$(xinput list-props $id | grep -i "tapping enabled" | head -n 1 | awk '{print $4}' | sed -e s/"("//g -e s/")"//g -e s/.$//g)
+xinput set-prop $id $option 1
