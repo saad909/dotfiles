@@ -13,7 +13,7 @@ defaults:
   autostart shell upon start: 0
   back color: '#000000000000'
   bold color: '#cc62cc62cc62'
-  bold color like text: 1
+  bold color like text: ''
   bold is brigth: 1
   capture xterm title: 0
   change main title: 1
@@ -42,7 +42,7 @@ defaults:
   confirm exit: ''
   connected color: '#0c0cbaba0000'
   ctrl tab: next
-  cursor shape: block
+  cursor shape: ibeam
   debug: ''
   disable ALT key bindings: ''
   disable CTRL key bindings: ''
@@ -241,6 +241,92 @@ environments:
     use proxy: 0
     use sudo: ''
     user: ''
+    variables: []
+  59f22945-2980-423f-999e-dea6104a54d9:
+    KPX title regexp: .*R1-SB .*
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: userpass
+    autoreconnect: ''
+    autossh: ''
+    cluster: []
+    description: Connection with 'R1-SB'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: 10.10.20.182
+    jump ip: ''
+    jump key: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    mac: ''
+    macros: []
+    method: SSH
+    name: R1-SB
+    options: ' -x'
+    parent: b7ca0d6b-cdcb-4509-82b1-106025b00038
+    pass: 53616c7465645f5f313233343536373842a19245aecbdfa8
+    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase user: ''
+    port: 22
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    public key: ''
+    quote command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/saad/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: ''
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '[#%\$>]|\:\/\s*$'
+      cursor shape: block
+      disable ALT key bindings: ''
+      disable CTRL key bindings: ''
+      disable SHIFT key bindings: ''
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal font: Monospace 9
+      terminal scrollback lines: 5000
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
+    title: 'R1-SB '
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: cisco
     variables: []
   79b8ea4e-2fd1-43f5-b638-22156d69ab25:
     KPX title regexp: .*R1.*
@@ -686,6 +772,7 @@ environments:
     _protected: 0
     children:
       25786d4f-2ba9-4667-844c-8765de123006: 1
+      59f22945-2980-423f-999e-dea6104a54d9: 1
       79b8ea4e-2fd1-43f5-b638-22156d69ab25: 1
       8454967e-d931-446e-bbff-d74d8b7a8744: 1
       aa825209-bc83-4baa-89d1-fee988edfa91: 1
@@ -960,8 +1047,8 @@ environments:
     variables: []
 tmp:
   changed: 0
-  log file: '/home/saad/.config/asbru/tmp/asbru_PID{1583}_n4.txt'
-  socket: '/home/saad/.config/asbru/sockets/asbru_PID{1583}_n4.socket'
-  socket exec: '/home/saad/.config/asbru/sockets/asbru_PID{1583}_n4.exec.socket'
+  log file: '/home/saad/.config/asbru/tmp/asbru_PID{13543}_n5.txt'
+  socket: '/home/saad/.config/asbru/sockets/asbru_PID{13543}_n5.socket'
+  socket exec: '/home/saad/.config/asbru/sockets/asbru_PID{13543}_n5.exec.socket'
   tray available: warning
-  uuid: 'asbru_PID{1583}_n4'
+  uuid: 'asbru_PID{13543}_n5'

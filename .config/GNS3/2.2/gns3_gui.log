@@ -1,7 +1,4 @@
-2020-12-24 16:51:12 INFO logger.py:126 Log level: INFO
-2020-12-24 16:51:12 INFO main.py:259 GNS3 GUI version 2.2.17
-2020-12-24 16:51:12 INFO main.py:260 Copyright (c) 2007-2020 GNS3 Technologies Inc.
-2020-12-24 16:51:12 INFO main.py:261 Application started with /usr/local/bin/gns3
-2020-12-24 17:00:22 WARNING link.py:229 Error while creating link: Attachment 'nat' is already configured on network adapter 0. Please remove it or allow VMware VM 'Debian-1' to use any adapter.
-2020-12-24 17:00:42 WARNING link.py:229 Error while creating link: Attachment 'nat' is already configured on network adapter 0. Please remove it or allow VMware VM 'Debian-1' to use any adapter.
-2020-12-24 17:00:53 WARNING link.py:229 Error while creating link: Attachment 'nat' is already configured on network adapter 0. Please remove it or allow VMware VM 'Debian-1' to use any adapter.
+2020-12-26 11:46:03 INFO logger.py:126 Log level: INFO
+2020-12-26 11:46:03 INFO main.py:259 GNS3 GUI version 2.2.17
+2020-12-26 11:46:03 INFO main.py:260 Copyright (c) 2007-2020 GNS3 Technologies Inc.
+2020-12-26 11:46:03 INFO main.py:261 Application started with /usr/local/bin/gns3
