@@ -1,8 +1,15 @@
+# oh-my-zsh
+export ZSH="/home/saad/.oh-my-zsh"
+ZSH_THEME="robbyrussell"
+plugins=(git extract zsh-autosuggestions zsh-syntax-highlighting)
+
+source $ZSH/oh-my-zsh.sh
+
 # # Enable colors and change prompt:
-autoload -U colors && colors	# Load colors
-PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
-setopt autocd		# Automatically cd into typed directory.
-stty stop undef		# Disable ctrl-s to freeze terminal.
+# autoload -U colors && colors	# Load colors
+# PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+# setopt autocd		# Automatically cd into typed directory.
+# stty stop undef		# Disable ctrl-s to freeze terminal.
 
 # History in cache directory:
 HISTSIZE=10000
@@ -78,17 +85,14 @@ bindkey '^v' edit-command-line
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
 
 #oh my zsh
-##########source $ZSH/oh-my-zsh.sh#########
 alias rd="vim ~/.config/directories"
 alias rf="vim ~/.config/files"
-##########source $ZSH/oh-my-zsh.sh#########
 
 ##########Shortcut Keys for ranger and cmus#########
 bindkey -s '^p' 'cmus\n'
 bindkey -s '^r' 'ranger\n'
 bindkey -s '^z' 'zsh\n'
 bindkey -s '^t' 'tto\n'
-##########Shortcut Keys for ranger and cmus#########
 # cat /home/$USER/.cache/wal/sequences
 ##########test rmd file for configs#########
 alias test="vim /home/$USER/Documents/Experiments/test.rmd"
@@ -108,6 +112,6 @@ alias cls="clear"
 alias bbat="bluetooth_battery 41:42:F3:39:6C:5E"
 
 
-cls
+# cls
 neofetch
 

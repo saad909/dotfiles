@@ -35,9 +35,17 @@
 /home/arch/Music/Stop Asking Me To Come Back - James Arthur (Lyric Video) [LYRIC VIDEO SHOWCASE].mp3
 /home/arch/Music/The Chainsmokers & Coldplay - Something Just Like This (Lyric).mp3
 /home/arch/Music/The Chainsmokers - Don't Let Me Down ft. Daya (Official Music Video).mp3
+/home/ExternalHDD/Music/Anne-Marie & James Arthur - Rewrite The Stars [from The Greatest Showman - Reimagined].mp3
 /home/ExternalHDD/Music/Camila Cabello - Havana (Official Audio) ft. Young Thug.mp3
 /home/ExternalHDD/Music/Camila Cabello - My Oh My (Official Music Video) ft. DaBaby.mp3
+/home/ExternalHDD/Music/James Arthur - Can I Be Him.mp3
 /home/ExternalHDD/Music/James Arthur - Empty Space (Official Video).mp3
+/home/ExternalHDD/Music/James Arthur - Falling Like The Stars (Lyric Video).mp3
+/home/ExternalHDD/Music/James Arthur - Homicide Love (Lyric_Lyrics Video).mp3
+/home/ExternalHDD/Music/James Arthur - Impossible (Official Music Video).mp3
+/home/ExternalHDD/Music/James Arthur - Say You Won't Let Go.mp3
+/home/ExternalHDD/Music/Martin Jensen, James Arthur - Nobody (Official Lyric Video).mp3
 /home/ExternalHDD/Music/Playlists/DBZ/Dragon Ball Super - Saiyan's Pride (Vegeta vs Jiren Theme) Hip Hop Remix-383262245.mp3
+/home/ExternalHDD/Music/Stop Asking Me To Come Back - James Arthur (Lyric Video) [LYRIC VIDEO SHOWCASE].mp3
 /home/ExternalHDD/Music/The Chainsmokers - Don't Let Me Down ft. Daya (Official Music Video).mp3
 /home/ExternalHDD/Music/Umer songs/Flo Rida - My House [Official Video].mp3
