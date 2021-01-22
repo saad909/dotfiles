@@ -95,8 +95,8 @@ ctrl+shift+s
 
 # GNS3 with layout
 super + F1
-  gns3 &
-  # i3-resurrect restore -w $ws3
+#   gns3 &
+  i3-resurrect restore -w 3
 
 # Kill gns3
 super+shift+F1 

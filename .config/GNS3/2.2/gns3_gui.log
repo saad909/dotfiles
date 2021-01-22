@@ -1,5 +1,4 @@
-2021-01-22 21:38:10 INFO logger.py:126 Log level: INFO
-2021-01-22 21:38:10 INFO main.py:259 GNS3 GUI version 2.2.17
-2021-01-22 21:38:10 INFO main.py:260 Copyright (c) 2007-2021 GNS3 Technologies Inc.
-2021-01-22 21:38:10 INFO main.py:261 Application started with /home/saad/.local/bin/gns3
-2021-01-22 21:44:52 ERROR template_manager.py:226 Error while creating node from template: VMware VM "WindowsServer2012-1" [8640192a-cef0-4189-a18a-a7f699809b27]: could not find VMX file "/home/saad/Vmware/Windows Server 2012/Windows Server 2012.vmx"
+2021-01-23 00:12:06 INFO logger.py:126 Log level: INFO
+2021-01-23 00:12:06 INFO main.py:259 GNS3 GUI version 2.2.17
+2021-01-23 00:12:06 INFO main.py:260 Copyright (c) 2007-2021 GNS3 Technologies Inc.
+2021-01-23 00:12:06 INFO main.py:261 Application started with /home/saad/.local/bin/gns3

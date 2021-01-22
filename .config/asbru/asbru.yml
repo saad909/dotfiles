@@ -9,12 +9,12 @@ defaults:
   auto accept key: 1
   auto cluster: {}
   auto hide button bar: ''
-  auto hide connections list: 0
+  auto hide connections list: ''
   auto save: 1
   autostart shell upon PAC start: ''
   autostart shell upon start: 0
   back color: '#000000000000'
-  bold color: '#cc62cc62cc62'
+  bold color: '#555555555555'
   bold color like text: ''
   bold is brigth: 1
   capture xterm title: 0
@@ -352,18 +352,18 @@ defaults:
   sudo password: 53616c7465645f5f3132333435363738246b8c24e7c1a87e58018a4945fd0de0
   sudo prompt: '[__PAC__SUDO__PROMPT__]'
   sudo show password: ''
-  tabs in main window: 0
-  tabs position: bottom
+  tabs in main window: ''
+  tabs position: top
   terminal backspace: auto
   terminal character encoding: UTF-8
-  terminal font: CaskaydiaCove Nerd Font Mono 13
+  terminal font: Ubuntu Mono 18
   terminal scrollback lines: 5000
   terminal show status bar: 1
   terminal support transparency: ''
   terminal transparency: 0.0206185567010309
   terminal windows hsize: 800
   terminal windows vsize: 600
-  text color: '#8a8ae2e23434'
+  text color: '#ffff8c8c6969'
   theme: system
   timeout command: 60
   timeout connect: 40
@@ -384,7 +384,105 @@ defaults:
   when no more tabs: 0
   word characters: -.:_/
 environments:
-  3a5e2440-4b93-47a1-bb54-ff3881eccb45:
+  5821c281-97dd-4cfa-a098-d088c6a5758a:
+    KPX title regexp: .*R1.*
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: manual
+    autoreconnect: ''
+    autossh: ''
+    children: {}
+    cluster: []
+    description: Connection with 'R1'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: localhost
+    jump ip: ''
+    jump key: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    mac: ''
+    macros: []
+    method: Telnet
+    name: R1
+    options: ' -e "^]"'
+    parent: 9e4a7902-2dd1-4392-9d41-c88e93bd26c3
+    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase user: ''
+    port: 5005
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    public key: ''
+    quote command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/saad/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: ''
+    terminal options:
+      audible bell: ''
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '[#%\$>]|\:\/\s*$'
+      cursor shape: block
+      disable ALT key bindings: ''
+      disable CTRL key bindings: ''
+      disable SHIFT key bindings: ''
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
+    title: R1
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: ''
+    variables: []
+  9e4a7902-2dd1-4392-9d41-c88e93bd26c3:
+    _is_group: 1
+    _protected: 0
+    children:
+      5821c281-97dd-4cfa-a098-d088c6a5758a: 1
+      9ec5d63a-6c77-4c8d-bddc-49bcf7056188: 1
+      bb6438a9-5955-4daf-88d7-b634225f9a84: 1
+    description: Connection group 'network automation'
+    name: network automation
+    parent: __PAC__ROOT__
+    screenshots: []
+  9ec5d63a-6c77-4c8d-bddc-49bcf7056188:
     KPX title regexp: .*S1.*
     _is_group: 0
     _protected: 0
@@ -392,6 +490,7 @@ environments:
     auth type: manual
     autoreconnect: ''
     autossh: ''
+    children: {}
     cluster: []
     description: Connection with 'S1'
     embed: 0
@@ -410,11 +509,11 @@ environments:
     method: Telnet
     name: S1
     options: ' -e "^]"'
-    parent: __PAC__ROOT__
+    parent: 9e4a7902-2dd1-4392-9d41-c88e93bd26c3
     pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
-    port: 5000
+    port: 5002
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -553,24 +652,24 @@ environments:
     variables: []
   __PAC__ROOT__:
     children:
-      3a5e2440-4b93-47a1-bb54-ff3881eccb45: 1
-      b76508bd-3625-433a-840a-52ca708d2e58: 1
+      9e4a7902-2dd1-4392-9d41-c88e93bd26c3: 1
     cluster: []
     expect: []
     pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     screenshots: []
     variables: []
-  b76508bd-3625-433a-840a-52ca708d2e58:
-    KPX title regexp: .*R1.*
+  bb6438a9-5955-4daf-88d7-b634225f9a84:
+    KPX title regexp: .*S1.*
     _is_group: 0
     _protected: 0
-    auth fallback: 1
+    auth fallback: ''
     auth type: manual
     autoreconnect: ''
     autossh: ''
+    children: {}
     cluster: []
-    description: Connection with 'R1'
+    description: Connection with 'S1'
     embed: 0
     expect: []
     favourite: 0
@@ -585,13 +684,13 @@ environments:
     mac: ''
     macros: []
     method: Telnet
-    name: R1
+    name: Ubuntu
     options: ' -e "^]"'
-    parent: __PAC__ROOT__
+    parent: 9e4a7902-2dd1-4392-9d41-c88e93bd26c3
     pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
-    port: 5002
+    port: 5000
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -641,7 +740,7 @@ environments:
       use personal settings: ''
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
-    title: R1
+    title: Ubuntu
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -649,8 +748,8 @@ environments:
     variables: []
 tmp:
   changed: 0
-  log file: '/home/saad/.config/asbru/tmp/asbru_PID{127540}_n4.txt'
-  socket: '/home/saad/.config/asbru/sockets/asbru_PID{127540}_n4.socket'
-  socket exec: '/home/saad/.config/asbru/sockets/asbru_PID{127540}_n4.exec.socket'
+  log file: '/home/saad/.config/asbru/tmp/asbru_PID{44784}_n4.txt'
+  socket: '/home/saad/.config/asbru/sockets/asbru_PID{44784}_n4.socket'
+  socket exec: '/home/saad/.config/asbru/sockets/asbru_PID{44784}_n4.exec.socket'
   tray available: warning
-  uuid: 'asbru_PID{127540}_n4'
+  uuid: 'asbru_PID{44784}_n4'

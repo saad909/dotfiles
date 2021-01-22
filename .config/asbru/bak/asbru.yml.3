@@ -1,5 +1,7 @@
 ---
 __PAC__EXPORTED__FULL__: 1
+config version: 2
+config version change: Added keybindings settings
 defaults:
   allow more instances: ''
   append group name: 1
@@ -7,7 +9,7 @@ defaults:
   auto accept key: 1
   auto cluster: {}
   auto hide button bar: ''
-  auto hide connections list: 0
+  auto hide connections list: ''
   auto save: 1
   autostart shell upon PAC start: ''
   autostart shell upon start: 0
@@ -59,6 +61,7 @@ defaults:
   info font: Cascadia Mono PL 12
   jump ip: ''
   jump key: ''
+  jump pass: ''
   jump port: 22
   jump user: ''
   keepass:
@@ -67,10 +70,235 @@ defaults:
     password: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     pathcli: ''
     use_keepass: 0
+  keybindings:
+    pacmain:
+      Alt+n:
+        - Main Window
+        - showconnections
+        - Show/Hide connections list
+      Ctrl+T:
+        - Main Window
+        - localshell
+        - Open a local shell
+      Ctrl+f:
+        - Main Window
+        - find
+        - Find in connection tree
+      Ctrl+q:
+        - Main Window
+        - quit
+        - Exit Ásbrú
+    pactabs:
+      Ctrl+F4:
+        - Tabs
+        - close
+        - Close current Tab
+      Ctrl+Page_Down:
+        - Tabs
+        - next
+        - Next Tab
+      Ctrl+Page_Up:
+        - Tabs
+        - previous
+        - Previous Tab
+      Ctrl+Tab:
+        - Tabs
+        - last
+        - Last focused Tab
+      undef-infotab:
+        - Tabs
+        - infotab
+        - Got to Info Tab
+    terminal:
+      Alt+e:
+        - Terminal
+        - edit_node
+        - Edit Connection
+      Alt+n:
+        - Terminal
+        - showconnections
+        - Show/Hide connections list
+      AltCtrl+X:
+        - Terminal
+        - reset-clear
+        - Reset Terminal and Clear window
+      AltCtrl+s:
+        - Terminal
+        - sftp
+        - Open SFTP session
+      AltCtrl+x:
+        - Terminal
+        - reset
+        - Reset Terminal
+      Ctrl+0:
+        - Terminal
+        - zoomreset
+        - Zoom reset text
+      Ctrl+D:
+        - Terminal
+        - duplicate
+        - Duplicate connection
+      Ctrl+F3:
+        - Terminal
+        - find-terminal
+        - Find Terminal
+      Ctrl+I:
+        - Terminal
+        - infotab
+        - Show the Info tab
+      Ctrl+Insert:
+        - Terminal
+        - copy
+        - Copy selection to clipboard
+      Ctrl+N:
+        - Terminal
+        - close-disconected
+        - Close disconnected sessions
+      Ctrl+R:
+        - Terminal
+        - restart
+        - Restart connection (close and start)
+      Ctrl+Return:
+        - Terminal
+        - start
+        - Start Terminal
+      Ctrl+V:
+        - Terminal
+        - paste
+        - Paste clipboard into terminal
+      Ctrl+W:
+        - Terminal
+        - disconnect
+        - Disconnect Terminal
+      Ctrl+ampersand:
+        - Terminal
+        - cisco
+        - Send Cisco interrupt keypress
+      Ctrl+b:
+        - Terminal
+        - paste-delete
+        - Paste and regex delete
+      Ctrl+f:
+        - Terminal
+        - find
+        - Find in connection tree
+      Ctrl+g:
+        - Terminal
+        - hostname
+        - Guess hostname
+      Ctrl+minus:
+        - Terminal
+        - zoomout
+        - Zoom out text
+      Ctrl+p:
+        - Terminal
+        - paste-passwd
+        - Paste terminal password
+      Ctrl+plus:
+        - Terminal
+        - zoomin
+        - Zoom in text
+      Ctrl+q:
+        - Terminal
+        - quit
+        - Exit Ásbrú
+      Ctrl+w:
+        - Terminal
+        - close
+        - Close Terminal
+      CtrlAlt+r:
+        - Terminal
+        - remove_from_cluster
+        - Remove terminal from cluster
+      CtrlShift+F4:
+        - Terminal
+        - closealltabs
+        - Close all tabs
+      F11:
+        - Terminal
+        - fullscreen
+        - Go full screen
+      Shift+Insert:
+        - Terminal
+        - paste-primary
+        - Paste selection into terminal
+    treeClusters:
+      Alt+e:
+        - Clusters Tree
+        - edit_node
+        - Edit selected node
+    treeConnections:
+      Alt+F:
+        - Connections Tree
+        - del_favourite
+        - Remove connection from favourites
+      Alt+c:
+        - Connections Tree
+        - connect_node
+        - Connect selected node
+      Alt+e:
+        - Connections Tree
+        - edit_node
+        - Edit selected node
+      Alt+f:
+        - Connections Tree
+        - add_favourite
+        - Add connection to favourites
+      Alt+r:
+        - Connections Tree
+        - protection
+        - Toggle protection
+      Ctrl+c:
+        - Connections Tree
+        - copy
+        - Copy node
+      Ctrl+d:
+        - Connections Tree
+        - clone
+        - Clone connection
+      Ctrl+f:
+        - Connections Tree
+        - find
+        - Find in connection tree
+      Ctrl+r:
+        - Connections Tree
+        - expand_all
+        - Expand tree completly
+      Ctrl+t:
+        - Connections Tree
+        - collaps_all
+        - Collaps tree completly
+      Ctrl+v:
+        - Connections Tree
+        - paste
+        - Paste node
+      Ctrl+x:
+        - Connections Tree
+        - cut
+        - Cut node
+      F2:
+        - Connections Tree
+        - rename
+        - Rename node
+    treeFavourites:
+      Alt+F:
+        - Favourites Tree
+        - del_favourite
+        - Remove connection from favourites
+      Alt+e:
+        - Favourites Tree
+        - edit_node
+        - Edit selected node
+    treeHistory:
+      Alt+e:
+        - History Tree
+        - edit_node
+        - Edit selected node
   layout: Compact
   layout previous: Compact
   layout traditional settings: 1
   local commands: []
+  log timestamp: ''
   lt auto save: 1
   lt close to tray: ''
   lt start iconified: ''
@@ -124,10 +352,10 @@ defaults:
   sudo password: 53616c7465645f5f3132333435363738246b8c24e7c1a87e58018a4945fd0de0
   sudo prompt: '[__PAC__SUDO__PROMPT__]'
   sudo show password: ''
-  tabs in main window: 0
+  tabs in main window: ''
   tabs position: bottom
   terminal backspace: auto
-  terminal character encoding: ANSI_X3.4-1968
+  terminal character encoding: UTF-8
   terminal font: CaskaydiaCove Nerd Font Mono 13
   terminal scrollback lines: 5000
   terminal show status bar: 1
@@ -332,7 +560,7 @@ environments:
   79b8ea4e-2fd1-43f5-b638-22156d69ab25:
     KPX title regexp: .*R1.*
     _is_group: 0
-    _protected: 0
+    _protected: ''
     auth fallback: 1
     auth type: manual
     autoreconnect: ''
@@ -347,11 +575,13 @@ environments:
     ip: localhost
     jump ip: ''
     jump key: ''
+    jump pass: ''
     jump port: 22
     jump user: ''
     local after: []
     local before: []
     local connected: []
+    log timestamp: ''
     mac: ''
     macros: []
     method: Telnet
@@ -361,12 +591,13 @@ environments:
     pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
-    port: 5008
+    port: 5001
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
     proxy port: 8080
     proxy user: ''
+    pseudo jump: ''
     public key: ''
     quote command: ''
     remove control chars: ''
@@ -383,17 +614,14 @@ environments:
     session logs folder: /home/saad/.config/asbru/session_logs
     startup launch: ''
     startup script: ''
-    startup script name: sample1.pl
+    startup script name: ''
     terminal options:
-      audible bell: ''
+      audible bell: 0
       back color: '#000000000000'
       bold color: '#cc62cc62cc62'
       bold color like text: 1
       command prompt: '[#%\$>]|\:\/\s*$'
       cursor shape: block
-      disable ALT key bindings: ''
-      disable CTRL key bindings: ''
-      disable SHIFT key bindings: ''
       open in tab: 1
       password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
       tab back color: '#000000000000'
@@ -458,8 +686,7 @@ environments:
     quote command: ''
     remove control chars: ''
     save session logs: ''
-    screenshots:
-      - /home/saad/.config/asbru/screenshots/asbru_screenshot_98336417.5055695.png
+    screenshots: []
     search pass on KPX: 0
     send slow: 0
     send string active: ''
@@ -1057,8 +1284,8 @@ environments:
     variables: []
 tmp:
   changed: 0
-  log file: '/home/saad/.config/asbru/tmp/asbru_PID{203521}_n2.txt'
-  socket: '/home/saad/.config/asbru/sockets/asbru_PID{203521}_n2.socket'
-  socket exec: '/home/saad/.config/asbru/sockets/asbru_PID{203521}_n2.exec.socket'
+  log file: '/home/saad/.config/asbru/tmp/asbru_PID{205039}_n5.txt'
+  socket: '/home/saad/.config/asbru/sockets/asbru_PID{205039}_n5.socket'
+  socket exec: '/home/saad/.config/asbru/sockets/asbru_PID{205039}_n5.exec.socket'
   tray available: warning
-  uuid: 'asbru_PID{203521}_n2'
+  uuid: 'asbru_PID{205039}_n5'
