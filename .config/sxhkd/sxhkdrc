@@ -1,23 +1,18 @@
-# increase and decrease brightness
-# decrease
-alt + shift + j
-  xbacklight -dec 10
-# increase
-alt + shift + k
-  xbacklight -inc 10
-
 ctrl+F4
   ssn
+
 ctrl+shift+F4
   ssp
 
 ctrl+F5
   pssn
+
 ctrl+shift+F5
   pssp
 
 ctrl+F6
   ntime
+
 ctrl+shift+F6
   ptime
 
@@ -29,24 +24,27 @@ ctrl+F7
 # qutebrowser
 super+F2
   qutebrowser
-# ranger
-super+F3
-  "alacritty -e ranger &"
+
 # calculator
 ctrl+0
   galculator
+
 # mount drives
 ctrl+F9
   udiskie-dmenu
+
 # un-mount drives
 ctrl+shift+F9
   dmenuumount
+
 # wifi
 ctrl+F10
   networkmanager_dmenu
+
 # Bluetooth
 ctrl+shift+F10
   btmenu
+
 # Multi Monitor - External Monitor
 ctrl+F11
   displayselect
@@ -55,9 +53,11 @@ ctrl+F11
 # Download youtube videos/playlist
 ctrl+F2
   playlistDownload.sh
+
 # Download audio of a youtube video
 ctrl+F1
   audio_download.sh
+
 #shutdown menu
 super+shift+e
   sysact
@@ -66,22 +66,86 @@ super+shift+e
 ctrl+F8
   shareInternet
 
+ctrl+shift+F8
+  "notify-send 'Hotspot stopped ' && echo 123 | sudo -S pkill create_ap"
+
+# Pause all mpv instance ==== mpv = video player
+ctrl + shift + a
+  pauseallmpv
+
 #cmus
+
 ctrl+shift+l 
   cmus-remote -C "seek +5"
+
 ctrl+shift+h 
   cmus-remote -C "seek -5"
+
 ctrl+shift+r  
  cmus-remote -C "toggle repeat_current" && cmus-remote -C "toggle repeat"
-ctrl+shift+k 
+
+shift+ctrl+k 
  cmus-remote -r
-ctrl+shift+j  
+
+shift+ctrl+j  
  cmus-remote -n
+
 ctrl+shift+s 
   cmusToggle
-# ------------ rofi --------------------
-super+d
-  dmenu_run -b
-super+F1
-  gns3
 
+# GNS3 with layout
+super + F1
+  gns3 &
+  # i3-resurrect restore -w $ws3
+
+# Kill gns3
+super+shift+F1 
+  echo 123 | sudo -S pkill gns3
+
+
+# sound
+
+#Mute volume
+ctrl+shift+m
+  amixer -D pulse set Master 1+ toggle
+
+#Increase volume
+alt+shift+l
+  amixer -D pulse sset Master 5%+
+
+#Decrese volume
+alt+shift+h
+  amixer -D pulse sset Master 5%-
+
+# alacritty - Terminal
+super + Return
+  alacritty
+
+
+# file manager
+super + F3
+  pcmanfm
+
+# reload keys
+super + shift + c
+  key_changed
+# super+d
+#   dmenu_rn
+
+# brightness
+
+# Decrese
+XF86MonBrightnessDown
+  light -U 10
+
+# Increase
+XF86MonBrightnessUp
+  light -A 10
+
+# decrease alt
+alt+shift+j
+  light -U 10
+
+# increase alt
+alt+shift+k
+  light -A 10

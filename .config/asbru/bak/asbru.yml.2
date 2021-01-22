@@ -42,7 +42,7 @@ defaults:
   confirm exit: ''
   connected color: '#0c0cbaba0000'
   ctrl tab: next
-  cursor shape: ibeam
+  cursor shape: underline
   debug: ''
   disable ALT key bindings: ''
   disable CTRL key bindings: ''
@@ -56,7 +56,7 @@ defaults:
   hide on connect: ''
   hostkey changed prompt: '^.+ontinue connecting \(([^/]+)\/([^/]+)(?:[^)]+)?\)\?\s*$'
   how to switch tabs: 1
-  info font: SFMono Nerd Font 12
+  info font: Cascadia Mono PL 12
   jump ip: ''
   jump key: ''
   jump port: 22
@@ -75,6 +75,7 @@ defaults:
   lt close to tray: ''
   lt start iconified: ''
   lt tabs in main window: 1
+  max retry on disconnect: 50
   new data color: '#00008888ffff'
   open connections in tabs: 1
   password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
@@ -126,8 +127,8 @@ defaults:
   tabs in main window: 0
   tabs position: bottom
   terminal backspace: auto
-  terminal character encoding: UTF-8
-  terminal font: Monaco Nerd Font Mono 12
+  terminal character encoding: ANSI_X3.4-1968
+  terminal font: CaskaydiaCove Nerd Font Mono 13
   terminal scrollback lines: 5000
   terminal show status bar: 1
   terminal support transparency: ''
@@ -138,7 +139,7 @@ defaults:
   theme: system
   timeout command: 60
   timeout connect: 40
-  tree font: SFMono Nerd Font 10
+  tree font: Cascadia Mono 10
   tree on right side: 1
   tree overlay scrolling: 1
   unprotected color: '#ffffb0b02222'
@@ -151,7 +152,7 @@ defaults:
   use proxy: 0
   use system proxy: 1
   username prompt: '([lL]ogin|[uU]suario|([uU]ser-?)*[nN]ame.*|[uU]ser)\s*:\s*$'
-  version: 6.2.2
+  version: 6.3.0
   when no more tabs: 0
   word characters: -.:_/
 environments:
@@ -337,7 +338,8 @@ environments:
     autoreconnect: ''
     autossh: ''
     children: {}
-    cluster: []
+    cluster:
+      - lab
     description: Connection with 'R1'
     embed: 0
     expect: []
@@ -558,16 +560,13 @@ environments:
       bold color like text: 1
       command prompt: '(\]\#|\$\s)+'
       cursor shape: block
-      disable ALT key bindings: 0
-      disable CTRL key bindings: 0
-      disable SHIFT key bindings: 0
       open in tab: 1
       password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
       tab back color: '#000000000000'
       terminal backspace: auto
       terminal character encoding: UTF-8
       terminal font: Monospace 9
-      terminal scrollback lines: 5000
+      terminal scrollback lines: -2
       terminal select words: -.:_/
       terminal transparency: 0
       terminal window hsize: 800
@@ -587,6 +586,7 @@ environments:
   __PAC__ROOT__:
     children:
       b7ca0d6b-cdcb-4509-82b1-106025b00038: 1
+      ca4a6972-8b1f-43db-9104-d05a4c1cdc8e: 1
     cluster: []
     expect: []
     pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
@@ -602,7 +602,8 @@ environments:
     autoreconnect: ''
     autossh: ''
     children: {}
-    cluster: []
+    cluster:
+      - lab
     description: Connection with 'R1'
     embed: 0
     expect: []
@@ -610,11 +611,13 @@ environments:
     ip: localhost
     jump ip: ''
     jump key: ''
+    jump pass: ''
     jump port: 22
     jump user: ''
     local after: []
     local before: []
     local connected: []
+    log timestamp: ''
     mac: ''
     macros: []
     method: Telnet
@@ -624,12 +627,13 @@ environments:
     pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
-    port: 5005
+    port: 5000
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
     proxy port: 8080
     proxy user: ''
+    pseudo jump: ''
     public key: ''
     quote command: ''
     remove control chars: ''
@@ -648,15 +652,12 @@ environments:
     startup script: ''
     startup script name: sample1.pl
     terminal options:
-      audible bell: ''
+      audible bell: 0
       back color: '#000000000000'
       bold color: '#cc62cc62cc62'
       bold color like text: 1
       command prompt: '[#%\$>]|\:\/\s*$'
       cursor shape: block
-      disable ALT key bindings: ''
-      disable CTRL key bindings: ''
-      disable SHIFT key bindings: ''
       open in tab: 1
       password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
       tab back color: '#000000000000'
@@ -689,7 +690,8 @@ environments:
     autoreconnect: ''
     autossh: ''
     children: {}
-    cluster: []
+    cluster:
+      - lab
     description: Connection with 'R1'
     embed: 0
     expect: []
@@ -871,6 +873,14 @@ environments:
     use sudo: ''
     user: ''
     variables: []
+  ca4a6972-8b1f-43db-9104-d05a4c1cdc8e:
+    _is_group: 1
+    _protected: 0
+    children: {}
+    description: Connection group 'lab1'
+    name: lab1
+    parent: __PAC__ROOT__
+    screenshots: []
   e03bf049-ac1a-466b-9884-ea5ad3134773:
     KPX title regexp: .*R1.*
     _is_group: 0
@@ -1047,8 +1057,8 @@ environments:
     variables: []
 tmp:
   changed: 0
-  log file: '/home/saad/.config/asbru/tmp/asbru_PID{13543}_n5.txt'
-  socket: '/home/saad/.config/asbru/sockets/asbru_PID{13543}_n5.socket'
-  socket exec: '/home/saad/.config/asbru/sockets/asbru_PID{13543}_n5.exec.socket'
+  log file: '/home/saad/.config/asbru/tmp/asbru_PID{203521}_n2.txt'
+  socket: '/home/saad/.config/asbru/sockets/asbru_PID{203521}_n2.socket'
+  socket exec: '/home/saad/.config/asbru/sockets/asbru_PID{203521}_n2.exec.socket'
   tray available: warning
-  uuid: 'asbru_PID{13543}_n5'
+  uuid: 'asbru_PID{203521}_n2'

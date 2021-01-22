@@ -8,6 +8,9 @@ cfs /home/saad/.config/nvim/autoload/plugged/vim-snippets/snippets/rmd.snippets
 cfV /home/saad/.config/nvim/keys/which-key.vim
 cfk ~/.config/kitty/kitty.conf
 cft ~/.config/tmux/tmux.conf
+cfa ~/.config/alacritty/alacritty.yml
+cfsx ~/.config/sxhkd/sxhkdrc
+
 
 
 
