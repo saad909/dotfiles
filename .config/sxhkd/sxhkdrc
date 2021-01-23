@@ -149,3 +149,7 @@ alt+shift+j
 # increase alt
 alt+shift+k
   light -A 10
+
+# arch wiki 
+super+F12
+  arch-wiki-dmenu
