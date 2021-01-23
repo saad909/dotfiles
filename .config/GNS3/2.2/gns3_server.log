@@ -1,347 +1,356 @@
-2021-01-23 00:12:07 INFO run.py:219 GNS3 server version 2.2.17
-2021-01-23 00:12:07 INFO run.py:221 Copyright (c) 2007-2021 GNS3 Technologies Inc.
-2021-01-23 00:12:07 INFO run.py:224 Config file /home/saad/.config/GNS3/2.2/gns3_server.conf loaded
-2021-01-23 00:12:07 WARNING run.py:230 Local mode is enabled. Beware, clients will have full control on your filesystem
-2021-01-23 00:12:07 INFO run.py:243 Running with Python 3.9.1 and has PID 58578
-2021-01-23 00:12:07 INFO run.py:79 Current locale is en_US.UTF-8
-2021-01-23 00:12:07 INFO web_server.py:318 Starting server on localhost:3080
-2021-01-23 00:12:07 INFO __init__.py:62 Load controller configuration file /home/saad/.config/GNS3/2.2/gns3_controller.conf
-2021-01-23 00:12:07 INFO __init__.py:66 Controller is starting
-2021-01-23 00:12:07 INFO compute.py:64 Create compute local
-2021-01-23 00:12:07 INFO compute.py:364 Connecting to compute 'local'
-2021-01-23 00:12:07 INFO web_log.py:233 127.0.0.1 [22/Jan/2021:19:12:07 +0000] "GET /v2/compute/capabilities HTTP/1.1" 200 552 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:12:07 INFO notification_handler.py:50 New client has connected to compute WebSocket
-2021-01-23 00:12:07 INFO compute.py:434 Connected to compute 'local' WebSocket 'http://localhost:3080/v2/compute/notifications/ws'
-2021-01-23 00:12:07 INFO web_log.py:233 ::1 [22/Jan/2021:19:12:07 +0000] "GET /v2/version HTTP/1.1" 200 227 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:12:07 INFO web_log.py:233 ::1 [22/Jan/2021:19:12:07 +0000] "GET /v2/templates HTTP/1.1" 200 8595 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:12:07 INFO web_log.py:233 ::1 [22/Jan/2021:19:12:07 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:12:07 INFO notification_handler.py:73 New client has connected to controller WebSocket
-2021-01-23 00:12:07 INFO web_log.py:233 ::1 [22/Jan/2021:19:12:07 +0000] "GET /v2/appliances?symbol_theme=Affinity-square-red HTTP/1.1" 200 741681 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:12:07 INFO web_log.py:233 ::1 [22/Jan/2021:19:12:07 +0000] "GET /v2/projects HTTP/1.1" 200 1465 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:12:07 INFO web_log.py:233 ::1 [22/Jan/2021:19:12:07 +0000] "GET /v2/version HTTP/1.1" 200 227 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:12:07 INFO web_log.py:233 ::1 [22/Jan/2021:19:12:07 +0000] "GET /v2/projects HTTP/1.1" 200 1465 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:12:11 INFO project.py:78 Project eca8779b-e255-4fd3-8992-7e3ae5413625 with path '/home/saad/GNS3/projects/network automation' created
-2021-01-23 00:12:11 INFO web_log.py:233 ::1 [22/Jan/2021:19:12:11 +0000] "POST /v2/compute/projects HTTP/1.1" 201 313 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:12:11 INFO qemu_vm.py:201 QEMU VM "S1" [ecad44e0-9b47-4c5b-8635-cd83f0599382] has set the QEMU path to /bin/qemu-system-x86_64
-2021-01-23 00:12:11 INFO qemu_vm.py:603 QEMU VM "S1" [ecad44e0-9b47-4c5b-8635-cd83f0599382]: MAC address changed to 0c:36:25:93:82:00
-2021-01-23 00:12:11 INFO qemu_vm.py:551 QEMU VM "S1" [ecad44e0-9b47-4c5b-8635-cd83f0599382]: number of Ethernet adapters changed to 1
-2021-01-23 00:12:11 INFO qemu_vm.py:128 QEMU VM "S1" [ecad44e0-9b47-4c5b-8635-cd83f0599382] has been created
-2021-01-23 00:12:11 INFO base_node.py:282 Qemu: S1 [ecad44e0-9b47-4c5b-8635-cd83f0599382] created
-2021-01-23 00:12:11 INFO qemu_vm.py:551 QEMU VM "S1" [ecad44e0-9b47-4c5b-8635-cd83f0599382]: number of Ethernet adapters changed to 8
-2021-01-23 00:12:11 INFO qemu_vm.py:244 QEMU VM "S1" [ecad44e0-9b47-4c5b-8635-cd83f0599382] has set the QEMU hda_disk_image path to /home/saad/GNS3/images/QEMU/vios_l2-adventerprisek9-m.03.2017.qcow2
-2021-01-23 00:12:11 INFO qemu_vm.py:720 QEMU VM "S1" [ecad44e0-9b47-4c5b-8635-cd83f0599382] has set the process priority to normal
-2021-01-23 00:12:11 INFO qemu_vm.py:743 QEMU VM "S1" [ecad44e0-9b47-4c5b-8635-cd83f0599382] has set the RAM to 768
-2021-01-23 00:12:11 INFO web_log.py:233 127.0.0.1 [22/Jan/2021:19:12:11 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/qemu/nodes HTTP/1.1" 201 1684 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:12:11 INFO docker_vm.py:1058 Docker container "ubuntu-1" [2d9b7bcf-9475-49c9-bf85-c0160edfbe1f]: number of Ethernet adapters changed to 1
-2021-01-23 00:12:11 INFO docker_vm.py:406 Docker container 'ubuntu-1' [2d9b7bcf-9475-49c9-bf85-c0160edfbe1f] created
-2021-01-23 00:12:11 INFO web_log.py:233 ::1 [22/Jan/2021:19:12:11 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/docker/nodes HTTP/1.1" 201 934 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:12:11 INFO qemu_vm.py:201 QEMU VM "R1" [fedfb578-5b13-4bc7-a17e-aaa5a3a57689] has set the QEMU path to /usr/sbin/qemu-system-i386
-2021-01-23 00:12:11 INFO qemu_vm.py:603 QEMU VM "R1" [fedfb578-5b13-4bc7-a17e-aaa5a3a57689]: MAC address changed to 0c:36:25:76:89:00
-2021-01-23 00:12:11 INFO qemu_vm.py:551 QEMU VM "R1" [fedfb578-5b13-4bc7-a17e-aaa5a3a57689]: number of Ethernet adapters changed to 1
-2021-01-23 00:12:11 INFO qemu_vm.py:128 QEMU VM "R1" [fedfb578-5b13-4bc7-a17e-aaa5a3a57689] has been created
-2021-01-23 00:12:11 INFO base_node.py:282 Qemu: R1 [fedfb578-5b13-4bc7-a17e-aaa5a3a57689] created
-2021-01-23 00:12:11 INFO qemu_vm.py:551 QEMU VM "R1" [fedfb578-5b13-4bc7-a17e-aaa5a3a57689]: number of Ethernet adapters changed to 8
-2021-01-23 00:12:11 INFO qemu_vm.py:244 QEMU VM "R1" [fedfb578-5b13-4bc7-a17e-aaa5a3a57689] has set the QEMU hda_disk_image path to /home/saad/GNS3/images/QEMU/vios-adventerprisek9-m.vmdk.SPA.156-2.T
-2021-01-23 00:12:11 INFO qemu_vm.py:348 QEMU VM "R1" [fedfb578-5b13-4bc7-a17e-aaa5a3a57689] has set the QEMU hda disk interface to virtio
-2021-01-23 00:12:11 INFO qemu_vm.py:244 QEMU VM "R1" [fedfb578-5b13-4bc7-a17e-aaa5a3a57689] has set the QEMU hdb_disk_image path to /home/saad/GNS3/images/QEMU/IOSv_startup_config.img
-2021-01-23 00:12:11 INFO qemu_vm.py:371 QEMU VM "R1" [fedfb578-5b13-4bc7-a17e-aaa5a3a57689] has set the QEMU hdb disk interface to virtio
-2021-01-23 00:12:11 INFO qemu_vm.py:720 QEMU VM "R1" [fedfb578-5b13-4bc7-a17e-aaa5a3a57689] has set the process priority to normal
-2021-01-23 00:12:11 INFO qemu_vm.py:743 QEMU VM "R1" [fedfb578-5b13-4bc7-a17e-aaa5a3a57689] has set the RAM to 512
-2021-01-23 00:12:11 INFO web_log.py:233 127.0.0.1 [22/Jan/2021:19:12:11 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/qemu/nodes HTTP/1.1" 201 1836 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:12:11 INFO nat.py:51 NAT node 'NAT1' configured to use NAT interface 'virbr0'
-2021-01-23 00:12:11 INFO base_node.py:655 Starting new uBridge hypervisor localhost:33721
-2021-01-23 00:12:12 INFO hypervisor.py:169 starting ubridge: ['/usr/bin/ubridge', '-H', 'localhost:33721']
-2021-01-23 00:12:12 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/network automation/project-files/builtin/4d220f5a-834a-4aa9-996e-de70a9ea69d6/ubridge.log
-2021-01-23 00:12:12 INFO hypervisor.py:179 ubridge started PID=58635
-2021-01-23 00:12:12 INFO base_node.py:658 Hypervisor localhost:33721 has successfully started
-2021-01-23 00:12:12 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:33721 after 0.1017 seconds
-2021-01-23 00:12:12 INFO cloud.py:215 Cloud "NAT1" [4d220f5a-834a-4aa9-996e-de70a9ea69d6] has been created
-2021-01-23 00:12:12 INFO web_log.py:233 ::1 [22/Jan/2021:19:12:11 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nat/nodes HTTP/1.1" 201 553 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:12:12 INFO web_log.py:233 127.0.0.1 [22/Jan/2021:19:12:12 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:12:12 INFO web_log.py:233 ::1 [22/Jan/2021:19:12:12 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:12:12 INFO qemu_vm.py:1346 QEMU VM "S1" [ecad44e0-9b47-4c5b-8635-cd83f0599382]: NIO UDP added to adapter 0
-2021-01-23 00:12:12 INFO web_log.py:233 127.0.0.1 [22/Jan/2021:19:12:12 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/qemu/nodes/ecad44e0-9b47-4c5b-8635-cd83f0599382/adapters/0/ports/0/nio HTTP/1.1" 201 378 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:12:12 INFO cloud.py:396 Cloud "NAT1" [4d220f5a-834a-4aa9-996e-de70a9ea69d6]: NIO NIO UDP bound to port 0
-2021-01-23 00:12:12 INFO web_log.py:233 ::1 [22/Jan/2021:19:12:12 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nat/nodes/4d220f5a-834a-4aa9-996e-de70a9ea69d6/adapters/0/ports/0/nio HTTP/1.1" 201 377 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:12:12 INFO web_log.py:233 127.0.0.1 [22/Jan/2021:19:12:12 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:12:12 INFO web_log.py:233 ::1 [22/Jan/2021:19:12:12 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:12:12 INFO qemu_vm.py:1346 QEMU VM "S1" [ecad44e0-9b47-4c5b-8635-cd83f0599382]: NIO UDP added to adapter 1
-2021-01-23 00:12:12 INFO web_log.py:233 127.0.0.1 [22/Jan/2021:19:12:12 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/qemu/nodes/ecad44e0-9b47-4c5b-8635-cd83f0599382/adapters/1/ports/0/nio HTTP/1.1" 201 378 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:12:12 INFO qemu_vm.py:1346 QEMU VM "R1" [fedfb578-5b13-4bc7-a17e-aaa5a3a57689]: NIO UDP added to adapter 1
-2021-01-23 00:12:12 INFO web_log.py:233 ::1 [22/Jan/2021:19:12:12 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/qemu/nodes/fedfb578-5b13-4bc7-a17e-aaa5a3a57689/adapters/1/ports/0/nio HTTP/1.1" 201 378 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:12:12 INFO web_log.py:233 127.0.0.1 [22/Jan/2021:19:12:12 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:12:12 INFO web_log.py:233 ::1 [22/Jan/2021:19:12:12 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:12:12 INFO qemu_vm.py:1346 QEMU VM "S1" [ecad44e0-9b47-4c5b-8635-cd83f0599382]: NIO UDP added to adapter 2
-2021-01-23 00:12:12 INFO web_log.py:233 127.0.0.1 [22/Jan/2021:19:12:12 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/qemu/nodes/ecad44e0-9b47-4c5b-8635-cd83f0599382/adapters/2/ports/0/nio HTTP/1.1" 201 378 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:12:12 INFO docker_vm.py:960 Docker container 'ubuntu-1' [2d9b7bcf-9475-49c9-bf85-c0160edfbe1f]: NIO UDP added to adapter 0
-2021-01-23 00:12:12 INFO web_log.py:233 ::1 [22/Jan/2021:19:12:12 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/docker/nodes/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/adapters/0/ports/0/nio HTTP/1.1" 201 380 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:12:12 INFO web_log.py:233 ::1 [22/Jan/2021:19:12:11 +0000] "POST /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/open HTTP/1.1" 201 772 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:12:12 INFO web_log.py:233 ::1 [22/Jan/2021:19:12:12 +0000] "GET /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nodes HTTP/1.1" 200 15793 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:12:12 INFO project_handler.py:271 New client has connected to the notification stream for project ID 'eca8779b-e255-4fd3-8992-7e3ae5413625' (WebSocket method)
-2021-01-23 00:12:12 INFO web_log.py:233 ::1 [22/Jan/2021:19:12:12 +0000] "GET /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/links HTTP/1.1" 200 4119 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:12:12 INFO web_log.py:233 ::1 [22/Jan/2021:19:12:12 +0000] "GET /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/drawings HTTP/1.1" 200 205 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:12:12 INFO web_log.py:233 ::1 [22/Jan/2021:19:12:12 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:12:25 INFO qemu_vm.py:1621 logging to /home/saad/GNS3/projects/network automation/project-files/qemu/ecad44e0-9b47-4c5b-8635-cd83f0599382/qemu-img.log
-2021-01-23 00:12:25 INFO qemu_vm.py:1623 Executing qemu-img with: /bin/qemu-img check /home/saad/GNS3/images/QEMU/vios_l2-adventerprisek9-m.03.2017.qcow2
-2021-01-23 00:12:25 INFO qemu_vm.py:1621 logging to /home/saad/GNS3/projects/network automation/project-files/qemu/fedfb578-5b13-4bc7-a17e-aaa5a3a57689/qemu-img.log
-2021-01-23 00:12:25 INFO qemu_vm.py:1623 Executing qemu-img with: /usr/sbin/qemu-img check /home/saad/GNS3/images/QEMU/vios-adventerprisek9-m.vmdk.SPA.156-2.T
-2021-01-23 00:12:25 INFO qemu_vm.py:1627 /bin/qemu-img returned with 0
-2021-01-23 00:12:25 INFO qemu_vm.py:1627 /usr/sbin/qemu-img returned with 0
-2021-01-23 00:12:25 INFO base_node.py:822 Qemu: 'S1' [ecad44e0-9b47-4c5b-8635-cd83f0599382]:local UDP tunnel created between port 10006 and 10007
-2021-01-23 00:12:25 INFO base_node.py:822 Qemu: 'S1' [ecad44e0-9b47-4c5b-8635-cd83f0599382]:local UDP tunnel created between port 10008 and 10009
-2021-01-23 00:12:25 INFO base_node.py:822 Qemu: 'S1' [ecad44e0-9b47-4c5b-8635-cd83f0599382]:local UDP tunnel created between port 10010 and 10011
-2021-01-23 00:12:25 INFO base_node.py:822 Qemu: 'S1' [ecad44e0-9b47-4c5b-8635-cd83f0599382]:local UDP tunnel created between port 10012 and 10013
-2021-01-23 00:12:25 INFO base_node.py:822 Qemu: 'S1' [ecad44e0-9b47-4c5b-8635-cd83f0599382]:local UDP tunnel created between port 10014 and 10015
-2021-01-23 00:12:25 INFO base_node.py:822 Qemu: 'S1' [ecad44e0-9b47-4c5b-8635-cd83f0599382]:local UDP tunnel created between port 10016 and 10017
-2021-01-23 00:12:25 INFO base_node.py:822 Qemu: 'S1' [ecad44e0-9b47-4c5b-8635-cd83f0599382]:local UDP tunnel created between port 10018 and 10019
-2021-01-23 00:12:25 INFO base_node.py:822 Qemu: 'S1' [ecad44e0-9b47-4c5b-8635-cd83f0599382]:local UDP tunnel created between port 10020 and 10021
-2021-01-23 00:12:25 INFO qemu_vm.py:1621 logging to /home/saad/GNS3/projects/network automation/project-files/qemu/fedfb578-5b13-4bc7-a17e-aaa5a3a57689/qemu-img.log
-2021-01-23 00:12:25 INFO qemu_vm.py:1623 Executing qemu-img with: /usr/sbin/qemu-img check /home/saad/GNS3/images/QEMU/IOSv_startup_config.img
-2021-01-23 00:12:25 INFO qemu_vm.py:1627 /usr/sbin/qemu-img returned with 63
-2021-01-23 00:12:25 INFO qemu_vm.py:1011 Starting QEMU with: /bin/qemu-system-x86_64 -name S1 -m 768M -smp cpus=1,sockets=1 -enable-kvm -machine smm=off -boot order=c -drive 'file=/home/saad/GNS3/projects/network automation/project-files/qemu/ecad44e0-9b47-4c5b-8635-cd83f0599382/hda_disk.qcow2,if=ide,index=0,media=disk,id=drive0' -uuid ecad44e0-9b47-4c5b-8635-cd83f0599382 -serial telnet:127.0.0.1:5001,server,nowait -monitor tcp:127.0.0.1:37413,server,nowait -net none -device e1000,mac=0c:36:25:93:82:00,netdev=gns3-0 -netdev socket,id=gns3-0,udp=127.0.0.1:10007,localaddr=127.0.0.1:10006 -device e1000,mac=0c:36:25:93:82:01,netdev=gns3-1 -netdev socket,id=gns3-1,udp=127.0.0.1:10009,localaddr=127.0.0.1:10008 -device e1000,mac=0c:36:25:93:82:02,netdev=gns3-2 -netdev socket,id=gns3-2,udp=127.0.0.1:10011,localaddr=127.0.0.1:10010 -device e1000,mac=0c:36:25:93:82:03,netdev=gns3-3 -netdev socket,id=gns3-3,udp=127.0.0.1:10013,localaddr=127.0.0.1:10012 -device e1000,mac=0c:36:25:93:82:04,netdev=gns3-4 -netdev socket,id=gns3-4,udp=127.0.0.1:10015,localaddr=127.0.0.1:10014 -device e1000,mac=0c:36:25:93:82:05,netdev=gns3-5 -netdev socket,id=gns3-5,udp=127.0.0.1:10017,localaddr=127.0.0.1:10016 -device e1000,mac=0c:36:25:93:82:06,netdev=gns3-6 -netdev socket,id=gns3-6,udp=127.0.0.1:10019,localaddr=127.0.0.1:10018 -device e1000,mac=0c:36:25:93:82:07,netdev=gns3-7 -netdev socket,id=gns3-7,udp=127.0.0.1:10021,localaddr=127.0.0.1:10020 -display none
-2021-01-23 00:12:25 INFO qemu_vm.py:1013 logging to /home/saad/GNS3/projects/network automation/project-files/qemu/ecad44e0-9b47-4c5b-8635-cd83f0599382/qemu.log
-2021-01-23 00:12:25 INFO qemu_vm.py:1021 QEMU VM "S1" started PID=58858
-2021-01-23 00:12:25 INFO base_node.py:655 Starting new uBridge hypervisor localhost:36859
-2021-01-23 00:12:25 INFO base_node.py:655 Starting new uBridge hypervisor localhost:39575
-2021-01-23 00:12:25 INFO base_node.py:822 Qemu: 'R1' [fedfb578-5b13-4bc7-a17e-aaa5a3a57689]:local UDP tunnel created between port 10022 and 10023
-2021-01-23 00:12:25 INFO base_node.py:822 Qemu: 'R1' [fedfb578-5b13-4bc7-a17e-aaa5a3a57689]:local UDP tunnel created between port 10024 and 10025
-2021-01-23 00:12:25 INFO base_node.py:822 Qemu: 'R1' [fedfb578-5b13-4bc7-a17e-aaa5a3a57689]:local UDP tunnel created between port 10026 and 10027
-2021-01-23 00:12:25 INFO base_node.py:822 Qemu: 'R1' [fedfb578-5b13-4bc7-a17e-aaa5a3a57689]:local UDP tunnel created between port 10028 and 10029
-2021-01-23 00:12:25 INFO base_node.py:822 Qemu: 'R1' [fedfb578-5b13-4bc7-a17e-aaa5a3a57689]:local UDP tunnel created between port 10030 and 10031
-2021-01-23 00:12:25 INFO base_node.py:822 Qemu: 'R1' [fedfb578-5b13-4bc7-a17e-aaa5a3a57689]:local UDP tunnel created between port 10032 and 10033
-2021-01-23 00:12:25 INFO base_node.py:822 Qemu: 'R1' [fedfb578-5b13-4bc7-a17e-aaa5a3a57689]:local UDP tunnel created between port 10034 and 10035
-2021-01-23 00:12:25 INFO base_node.py:822 Qemu: 'R1' [fedfb578-5b13-4bc7-a17e-aaa5a3a57689]:local UDP tunnel created between port 10036 and 10037
-2021-01-23 00:12:25 INFO hypervisor.py:169 starting ubridge: ['/usr/bin/ubridge', '-H', 'localhost:36859']
-2021-01-23 00:12:25 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/network automation/project-files/qemu/ecad44e0-9b47-4c5b-8635-cd83f0599382/ubridge.log
-2021-01-23 00:12:25 INFO hypervisor.py:169 starting ubridge: ['/usr/bin/ubridge', '-H', 'localhost:39575']
-2021-01-23 00:12:25 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/network automation/project-files/docker/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/ubridge.log
-2021-01-23 00:12:25 INFO hypervisor.py:179 ubridge started PID=58877
-2021-01-23 00:12:25 INFO base_node.py:658 Hypervisor localhost:36859 has successfully started
-2021-01-23 00:12:25 INFO hypervisor.py:179 ubridge started PID=58883
-2021-01-23 00:12:25 INFO base_node.py:658 Hypervisor localhost:39575 has successfully started
-2021-01-23 00:12:25 INFO qemu_vm.py:1011 Starting QEMU with: /usr/sbin/qemu-system-i386 -name R1 -m 512M -smp cpus=1,sockets=1 -enable-kvm -boot order=c -drive 'file=/home/saad/GNS3/projects/network automation/project-files/qemu/fedfb578-5b13-4bc7-a17e-aaa5a3a57689/hda_disk.qcow2,if=virtio,index=0,media=disk,id=drive0' -drive 'file=/home/saad/GNS3/projects/network automation/project-files/qemu/fedfb578-5b13-4bc7-a17e-aaa5a3a57689/hdb_disk.qcow2,if=virtio,index=1,media=disk,id=drive1' -uuid fedfb578-5b13-4bc7-a17e-aaa5a3a57689 -serial telnet:127.0.0.1:5005,server,nowait -monitor tcp:127.0.0.1:40053,server,nowait -net none -device e1000,mac=0c:36:25:76:89:00,netdev=gns3-0 -netdev socket,id=gns3-0,udp=127.0.0.1:10023,localaddr=127.0.0.1:10022 -device e1000,mac=0c:36:25:76:89:01,netdev=gns3-1 -netdev socket,id=gns3-1,udp=127.0.0.1:10025,localaddr=127.0.0.1:10024 -device e1000,mac=0c:36:25:76:89:02,netdev=gns3-2 -netdev socket,id=gns3-2,udp=127.0.0.1:10027,localaddr=127.0.0.1:10026 -device e1000,mac=0c:36:25:76:89:03,netdev=gns3-3 -netdev socket,id=gns3-3,udp=127.0.0.1:10029,localaddr=127.0.0.1:10028 -device e1000,mac=0c:36:25:76:89:04,netdev=gns3-4 -netdev socket,id=gns3-4,udp=127.0.0.1:10031,localaddr=127.0.0.1:10030 -device e1000,mac=0c:36:25:76:89:05,netdev=gns3-5 -netdev socket,id=gns3-5,udp=127.0.0.1:10033,localaddr=127.0.0.1:10032 -device e1000,mac=0c:36:25:76:89:06,netdev=gns3-6 -netdev socket,id=gns3-6,udp=127.0.0.1:10035,localaddr=127.0.0.1:10034 -device e1000,mac=0c:36:25:76:89:07,netdev=gns3-7 -netdev socket,id=gns3-7,udp=127.0.0.1:10037,localaddr=127.0.0.1:10036 -display none
-2021-01-23 00:12:25 INFO qemu_vm.py:1013 logging to /home/saad/GNS3/projects/network automation/project-files/qemu/fedfb578-5b13-4bc7-a17e-aaa5a3a57689/qemu.log
-2021-01-23 00:12:25 INFO qemu_vm.py:1021 QEMU VM "R1" started PID=58898
-2021-01-23 00:12:25 INFO base_node.py:655 Starting new uBridge hypervisor localhost:42809
-2021-01-23 00:12:25 INFO hypervisor.py:169 starting ubridge: ['/usr/bin/ubridge', '-H', 'localhost:42809']
-2021-01-23 00:12:25 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/network automation/project-files/qemu/fedfb578-5b13-4bc7-a17e-aaa5a3a57689/ubridge.log
-2021-01-23 00:12:25 INFO hypervisor.py:179 ubridge started PID=58904
-2021-01-23 00:12:25 INFO base_node.py:658 Hypervisor localhost:42809 has successfully started
-2021-01-23 00:12:26 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:36859 after 0.1024 seconds
-2021-01-23 00:12:26 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:39575 after 0.1029 seconds
-2021-01-23 00:12:26 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:42809 after 0.1019 seconds
-2021-01-23 00:12:26 INFO qemu_vm.py:1147 Connected to QEMU monitor on 127.0.0.1:37413 after 0.0108 seconds
-2021-01-23 00:12:26 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-3 off
-2021-01-23 00:12:26 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-4 off
-2021-01-23 00:12:26 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-5 off
-2021-01-23 00:12:26 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-6 off
-2021-01-23 00:12:26 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-7 off
-2021-01-23 00:12:26 INFO docker_vm.py:499 Docker container 'ubuntu-1' [ubuntu:latest] started listen for telnet on 5002
-2021-01-23 00:12:26 INFO web_log.py:233 ::1 [22/Jan/2021:19:12:25 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/docker/nodes/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/start HTTP/1.1" 204 247 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:12:26 INFO qemu_vm.py:1147 Connected to QEMU monitor on 127.0.0.1:40053 after 0.0225 seconds
-2021-01-23 00:12:26 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-0 off
-2021-01-23 00:12:26 INFO web_log.py:233 127.0.0.1 [22/Jan/2021:19:12:26 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nat/nodes/4d220f5a-834a-4aa9-996e-de70a9ea69d6/start HTTP/1.1" 204 244 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:12:26 INFO web_log.py:233 ::1 [22/Jan/2021:19:12:25 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/qemu/nodes/ecad44e0-9b47-4c5b-8635-cd83f0599382/start HTTP/1.1" 200 3085 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:12:26 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-2 off
-2021-01-23 00:12:26 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-3 off
-2021-01-23 00:12:26 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-4 off
-2021-01-23 00:12:26 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-5 off
-2021-01-23 00:12:26 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-6 off
-2021-01-23 00:12:26 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-7 off
-2021-01-23 00:12:26 INFO web_log.py:233 127.0.0.1 [22/Jan/2021:19:12:25 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/qemu/nodes/fedfb578-5b13-4bc7-a17e-aaa5a3a57689/start HTTP/1.1" 200 3392 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:12:26 INFO web_log.py:233 ::1 [22/Jan/2021:19:12:25 +0000] "POST /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nodes/start HTTP/1.1" 204 222 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:12:26 INFO web_log.py:233 ::1 [22/Jan/2021:19:12:26 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:13:50 INFO web_log.py:233 ::1 [22/Jan/2021:19:13:50 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:17:54 INFO web_log.py:233 ::1 [22/Jan/2021:19:17:54 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:17:59 INFO web_log.py:233 ::1 [22/Jan/2021:19:17:59 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:19:53 INFO base_node.py:669 Stopping uBridge hypervisor localhost:39575
-2021-01-23 00:19:53 INFO hypervisor.py:208 Stopping uBridge process PID=58883
-2021-01-23 00:19:53 INFO docker_vm.py:533 Docker container 'ubuntu-1' fix ownership, state = running
-2021-01-23 00:19:54 INFO docker_vm.py:793 Docker container 'ubuntu-1' [ubuntu:latest] stopped
-2021-01-23 00:19:54 INFO web_log.py:233 ::1 [22/Jan/2021:19:19:53 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/docker/nodes/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/stop HTTP/1.1" 204 246 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:19:54 INFO web_log.py:233 ::1 [22/Jan/2021:19:19:53 +0000] "POST /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nodes/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/stop HTTP/1.1" 200 1984 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:19:55 INFO web_log.py:233 ::1 [22/Jan/2021:19:19:55 +0000] "GET /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nodes/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/files/etc/network/interfaces HTTP/1.1" 200 571 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:20:39 INFO web_log.py:233 ::1 [22/Jan/2021:19:20:39 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/files/project-files/docker/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/etc/network/interfaces HTTP/1.1" 200 226 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:20:39 INFO web_log.py:233 ::1 [22/Jan/2021:19:20:39 +0000] "POST /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nodes/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/files/etc/network/interfaces HTTP/1.1" 201 239 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:20:41 INFO base_node.py:655 Starting new uBridge hypervisor localhost:40237
-2021-01-23 00:20:41 INFO hypervisor.py:169 starting ubridge: ['/usr/bin/ubridge', '-H', 'localhost:40237']
-2021-01-23 00:20:41 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/network automation/project-files/docker/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/ubridge.log
-2021-01-23 00:20:41 INFO hypervisor.py:179 ubridge started PID=61362
-2021-01-23 00:20:41 INFO base_node.py:658 Hypervisor localhost:40237 has successfully started
-2021-01-23 00:20:41 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:40237 after 0.1029 seconds
-2021-01-23 00:20:41 INFO docker_vm.py:499 Docker container 'ubuntu-1' [ubuntu:latest] started listen for telnet on 5002
-2021-01-23 00:20:41 INFO web_log.py:233 127.0.0.1 [22/Jan/2021:19:20:41 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/docker/nodes/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/start HTTP/1.1" 204 247 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:20:41 INFO web_log.py:233 ::1 [22/Jan/2021:19:20:41 +0000] "POST /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nodes/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/start HTTP/1.1" 200 1985 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:20:42 INFO web_log.py:233 ::1 [22/Jan/2021:19:20:42 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:21:29 INFO base_node.py:669 Stopping uBridge hypervisor localhost:40237
-2021-01-23 00:21:29 INFO hypervisor.py:208 Stopping uBridge process PID=61362
-2021-01-23 00:21:29 INFO docker_vm.py:533 Docker container 'ubuntu-1' fix ownership, state = running
-2021-01-23 00:21:29 INFO docker_vm.py:793 Docker container 'ubuntu-1' [ubuntu:latest] stopped
-2021-01-23 00:21:29 INFO web_log.py:233 ::1 [22/Jan/2021:19:21:29 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/docker/nodes/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/stop HTTP/1.1" 204 246 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:21:29 INFO web_log.py:233 ::1 [22/Jan/2021:19:21:29 +0000] "POST /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nodes/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/stop HTTP/1.1" 200 1984 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:21:32 INFO web_log.py:233 ::1 [22/Jan/2021:19:21:32 +0000] "GET /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nodes/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/files/etc/network/interfaces HTTP/1.1" 200 568 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:21:37 INFO web_log.py:233 ::1 [22/Jan/2021:19:21:37 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/files/project-files/docker/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/etc/network/interfaces HTTP/1.1" 200 226 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:21:37 INFO web_log.py:233 ::1 [22/Jan/2021:19:21:37 +0000] "POST /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nodes/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/files/etc/network/interfaces HTTP/1.1" 201 239 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:21:40 INFO base_node.py:655 Starting new uBridge hypervisor localhost:33975
-2021-01-23 00:21:40 INFO hypervisor.py:169 starting ubridge: ['/usr/bin/ubridge', '-H', 'localhost:33975']
-2021-01-23 00:21:40 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/network automation/project-files/docker/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/ubridge.log
-2021-01-23 00:21:40 INFO hypervisor.py:179 ubridge started PID=61626
-2021-01-23 00:21:40 INFO base_node.py:658 Hypervisor localhost:33975 has successfully started
-2021-01-23 00:21:40 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:33975 after 0.1030 seconds
-2021-01-23 00:21:40 INFO docker_vm.py:499 Docker container 'ubuntu-1' [ubuntu:latest] started listen for telnet on 5002
-2021-01-23 00:21:40 INFO web_log.py:233 ::1 [22/Jan/2021:19:21:40 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/docker/nodes/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/start HTTP/1.1" 204 247 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:21:40 INFO web_log.py:233 ::1 [22/Jan/2021:19:21:40 +0000] "POST /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nodes/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/start HTTP/1.1" 200 1985 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:21:41 INFO web_log.py:233 ::1 [22/Jan/2021:19:21:41 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:23:49 INFO base_node.py:669 Stopping uBridge hypervisor localhost:36859
-2021-01-23 00:23:49 INFO hypervisor.py:208 Stopping uBridge process PID=58877
-2021-01-23 00:23:49 INFO qemu_vm.py:1084 Stopping QEMU VM "S1" PID=58858
-2021-01-23 00:23:49 INFO qemu_vm.py:1068 QEMU process has stopped, return code: 0
-2021-01-23 00:23:49 INFO web_log.py:233 ::1 [22/Jan/2021:19:23:49 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/qemu/nodes/ecad44e0-9b47-4c5b-8635-cd83f0599382/stop HTTP/1.1" 204 244 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:23:49 INFO web_log.py:233 ::1 [22/Jan/2021:19:23:49 +0000] "POST /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nodes/ecad44e0-9b47-4c5b-8635-cd83f0599382/stop HTTP/1.1" 200 6819 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:23:50 INFO web_log.py:233 ::1 [22/Jan/2021:19:23:50 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:23:51 INFO qemu_vm.py:1621 logging to /home/saad/GNS3/projects/network automation/project-files/qemu/ecad44e0-9b47-4c5b-8635-cd83f0599382/qemu-img.log
-2021-01-23 00:23:51 INFO qemu_vm.py:1623 Executing qemu-img with: /bin/qemu-img check /home/saad/GNS3/images/QEMU/vios_l2-adventerprisek9-m.03.2017.qcow2
-2021-01-23 00:23:51 INFO qemu_vm.py:1627 /bin/qemu-img returned with 0
-2021-01-23 00:23:51 INFO qemu_vm.py:1011 Starting QEMU with: /bin/qemu-system-x86_64 -name S1 -m 768M -smp cpus=1,sockets=1 -enable-kvm -machine smm=off -boot order=c -drive 'file=/home/saad/GNS3/projects/network automation/project-files/qemu/ecad44e0-9b47-4c5b-8635-cd83f0599382/hda_disk.qcow2,if=ide,index=0,media=disk,id=drive0' -uuid ecad44e0-9b47-4c5b-8635-cd83f0599382 -serial telnet:127.0.0.1:5001,server,nowait -monitor tcp:127.0.0.1:35171,server,nowait -net none -device e1000,mac=0c:36:25:93:82:00,netdev=gns3-0 -netdev socket,id=gns3-0,udp=127.0.0.1:10007,localaddr=127.0.0.1:10006 -device e1000,mac=0c:36:25:93:82:01,netdev=gns3-1 -netdev socket,id=gns3-1,udp=127.0.0.1:10009,localaddr=127.0.0.1:10008 -device e1000,mac=0c:36:25:93:82:02,netdev=gns3-2 -netdev socket,id=gns3-2,udp=127.0.0.1:10011,localaddr=127.0.0.1:10010 -device e1000,mac=0c:36:25:93:82:03,netdev=gns3-3 -netdev socket,id=gns3-3,udp=127.0.0.1:10013,localaddr=127.0.0.1:10012 -device e1000,mac=0c:36:25:93:82:04,netdev=gns3-4 -netdev socket,id=gns3-4,udp=127.0.0.1:10015,localaddr=127.0.0.1:10014 -device e1000,mac=0c:36:25:93:82:05,netdev=gns3-5 -netdev socket,id=gns3-5,udp=127.0.0.1:10017,localaddr=127.0.0.1:10016 -device e1000,mac=0c:36:25:93:82:06,netdev=gns3-6 -netdev socket,id=gns3-6,udp=127.0.0.1:10019,localaddr=127.0.0.1:10018 -device e1000,mac=0c:36:25:93:82:07,netdev=gns3-7 -netdev socket,id=gns3-7,udp=127.0.0.1:10021,localaddr=127.0.0.1:10020 -display none
-2021-01-23 00:23:51 INFO qemu_vm.py:1013 logging to /home/saad/GNS3/projects/network automation/project-files/qemu/ecad44e0-9b47-4c5b-8635-cd83f0599382/qemu.log
-2021-01-23 00:23:51 INFO qemu_vm.py:1021 QEMU VM "S1" started PID=61882
-2021-01-23 00:23:51 INFO base_node.py:655 Starting new uBridge hypervisor localhost:40311
-2021-01-23 00:23:51 INFO hypervisor.py:169 starting ubridge: ['/usr/bin/ubridge', '-H', 'localhost:40311']
-2021-01-23 00:23:51 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/network automation/project-files/qemu/ecad44e0-9b47-4c5b-8635-cd83f0599382/ubridge.log
-2021-01-23 00:23:51 INFO hypervisor.py:179 ubridge started PID=61886
-2021-01-23 00:23:51 INFO base_node.py:658 Hypervisor localhost:40311 has successfully started
-2021-01-23 00:23:51 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:40311 after 0.1018 seconds
-2021-01-23 00:23:52 INFO qemu_vm.py:1147 Connected to QEMU monitor on 127.0.0.1:35171 after 0.0106 seconds
-2021-01-23 00:23:52 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-3 off
-2021-01-23 00:23:52 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-4 off
-2021-01-23 00:23:52 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-5 off
-2021-01-23 00:23:52 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-6 off
-2021-01-23 00:23:52 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-7 off
-2021-01-23 00:23:52 INFO web_log.py:233 127.0.0.1 [22/Jan/2021:19:23:51 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/qemu/nodes/ecad44e0-9b47-4c5b-8635-cd83f0599382/start HTTP/1.1" 200 3085 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:23:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:23:51 +0000] "POST /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nodes/ecad44e0-9b47-4c5b-8635-cd83f0599382/start HTTP/1.1" 200 6820 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:23:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:23:52 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:27:44 INFO base_node.py:669 Stopping uBridge hypervisor localhost:33975
-2021-01-23 00:27:44 INFO hypervisor.py:208 Stopping uBridge process PID=61626
-2021-01-23 00:27:44 INFO docker_vm.py:533 Docker container 'ubuntu-1' fix ownership, state = running
-2021-01-23 00:27:44 INFO docker_vm.py:793 Docker container 'ubuntu-1' [ubuntu:latest] stopped
-2021-01-23 00:27:44 INFO web_log.py:233 ::1 [22/Jan/2021:19:27:44 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/docker/nodes/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/stop HTTP/1.1" 204 246 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:27:44 INFO web_log.py:233 ::1 [22/Jan/2021:19:27:44 +0000] "POST /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nodes/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/stop HTTP/1.1" 200 1984 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:27:45 INFO web_log.py:233 ::1 [22/Jan/2021:19:27:45 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:27:47 INFO web_log.py:233 ::1 [22/Jan/2021:19:27:47 +0000] "GET /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nodes/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/files/etc/network/interfaces HTTP/1.1" 200 523 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:27:51 INFO base_node.py:655 Starting new uBridge hypervisor localhost:38075
-2021-01-23 00:27:51 INFO hypervisor.py:169 starting ubridge: ['/usr/bin/ubridge', '-H', 'localhost:38075']
-2021-01-23 00:27:51 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/network automation/project-files/docker/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/ubridge.log
-2021-01-23 00:27:52 INFO hypervisor.py:179 ubridge started PID=62823
-2021-01-23 00:27:52 INFO base_node.py:658 Hypervisor localhost:38075 has successfully started
-2021-01-23 00:27:52 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:38075 after 0.1034 seconds
-2021-01-23 00:27:52 INFO docker_vm.py:499 Docker container 'ubuntu-1' [ubuntu:latest] started listen for telnet on 5002
-2021-01-23 00:27:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:27:51 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/docker/nodes/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/start HTTP/1.1" 204 247 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:27:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:27:51 +0000] "POST /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nodes/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/start HTTP/1.1" 200 1985 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:28:27 INFO web_log.py:233 ::1 [22/Jan/2021:19:28:27 +0000] "GET /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nodes/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/files/etc/network/interfaces HTTP/1.1" 200 523 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:28:46 INFO web_log.py:233 ::1 [22/Jan/2021:19:28:46 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/files/project-files/docker/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/etc/network/interfaces HTTP/1.1" 200 226 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:28:46 INFO web_log.py:233 ::1 [22/Jan/2021:19:28:46 +0000] "POST /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nodes/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/files/etc/network/interfaces HTTP/1.1" 201 239 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:28:48 INFO base_node.py:669 Stopping uBridge hypervisor localhost:38075
-2021-01-23 00:28:48 INFO hypervisor.py:208 Stopping uBridge process PID=62823
-2021-01-23 00:28:48 INFO docker_vm.py:533 Docker container 'ubuntu-1' fix ownership, state = running
-2021-01-23 00:28:54 INFO docker_vm.py:793 Docker container 'ubuntu-1' [ubuntu:latest] stopped
-2021-01-23 00:28:54 INFO web_log.py:233 127.0.0.1 [22/Jan/2021:19:28:48 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/docker/nodes/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/stop HTTP/1.1" 204 246 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:28:54 INFO web_log.py:233 ::1 [22/Jan/2021:19:28:48 +0000] "POST /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nodes/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/stop HTTP/1.1" 200 1984 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:28:54 INFO web_log.py:233 ::1 [22/Jan/2021:19:28:54 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:28:58 INFO base_node.py:655 Starting new uBridge hypervisor localhost:45767
-2021-01-23 00:28:58 INFO hypervisor.py:169 starting ubridge: ['/usr/bin/ubridge', '-H', 'localhost:45767']
-2021-01-23 00:28:58 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/network automation/project-files/docker/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/ubridge.log
-2021-01-23 00:28:58 INFO hypervisor.py:179 ubridge started PID=63085
-2021-01-23 00:28:58 INFO base_node.py:658 Hypervisor localhost:45767 has successfully started
-2021-01-23 00:28:58 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:45767 after 0.1032 seconds
-2021-01-23 00:28:59 INFO docker_vm.py:499 Docker container 'ubuntu-1' [ubuntu:latest] started listen for telnet on 5002
-2021-01-23 00:28:59 INFO web_log.py:233 ::1 [22/Jan/2021:19:28:58 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/docker/nodes/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/start HTTP/1.1" 204 247 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:28:59 INFO web_log.py:233 ::1 [22/Jan/2021:19:28:58 +0000] "POST /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nodes/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/start HTTP/1.1" 200 1985 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:28:59 INFO web_log.py:233 ::1 [22/Jan/2021:19:28:59 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:30:08 INFO base_node.py:669 Stopping uBridge hypervisor localhost:45767
-2021-01-23 00:30:08 INFO hypervisor.py:208 Stopping uBridge process PID=63085
-2021-01-23 00:30:08 INFO docker_vm.py:533 Docker container 'ubuntu-1' fix ownership, state = running
-2021-01-23 00:30:08 INFO docker_vm.py:793 Docker container 'ubuntu-1' [ubuntu:latest] stopped
-2021-01-23 00:30:08 INFO web_log.py:233 ::1 [22/Jan/2021:19:30:08 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/docker/nodes/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/stop HTTP/1.1" 204 246 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:30:08 INFO web_log.py:233 ::1 [22/Jan/2021:19:30:08 +0000] "POST /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nodes/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/stop HTTP/1.1" 200 1984 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:30:09 INFO web_log.py:233 ::1 [22/Jan/2021:19:30:09 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:30:11 INFO web_log.py:233 ::1 [22/Jan/2021:19:30:11 +0000] "GET /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nodes/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/files/etc/network/interfaces HTTP/1.1" 200 522 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:30:16 INFO web_log.py:233 ::1 [22/Jan/2021:19:30:16 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/files/project-files/docker/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/etc/network/interfaces HTTP/1.1" 200 226 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:30:16 INFO web_log.py:233 ::1 [22/Jan/2021:19:30:16 +0000] "POST /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nodes/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/files/etc/network/interfaces HTTP/1.1" 201 239 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:30:18 INFO base_node.py:655 Starting new uBridge hypervisor localhost:46405
-2021-01-23 00:30:18 INFO hypervisor.py:169 starting ubridge: ['/usr/bin/ubridge', '-H', 'localhost:46405']
-2021-01-23 00:30:18 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/network automation/project-files/docker/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/ubridge.log
-2021-01-23 00:30:18 INFO hypervisor.py:179 ubridge started PID=63449
-2021-01-23 00:30:18 INFO base_node.py:658 Hypervisor localhost:46405 has successfully started
-2021-01-23 00:30:18 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:46405 after 0.1034 seconds
-2021-01-23 00:30:18 INFO docker_vm.py:499 Docker container 'ubuntu-1' [ubuntu:latest] started listen for telnet on 5002
-2021-01-23 00:30:18 INFO web_log.py:233 ::1 [22/Jan/2021:19:30:18 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/docker/nodes/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/start HTTP/1.1" 204 247 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:30:18 INFO web_log.py:233 ::1 [22/Jan/2021:19:30:18 +0000] "POST /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nodes/2d9b7bcf-9475-49c9-bf85-c0160edfbe1f/start HTTP/1.1" 200 1985 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:30:19 INFO web_log.py:233 ::1 [22/Jan/2021:19:30:19 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:37:02 INFO web_log.py:233 ::1 [22/Jan/2021:19:37:02 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:42:09 INFO web_log.py:233 ::1 [22/Jan/2021:19:42:09 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:45:53 INFO web_log.py:233 ::1 [22/Jan/2021:19:45:53 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 321 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:51 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:46:52 INFO web_log.py:233 127.0.0.1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 321 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 321 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:46:52 INFO web_log.py:233 127.0.0.1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 321 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 321 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:46:52 INFO web_log.py:233 127.0.0.1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 321 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 321 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:46:52 INFO web_log.py:233 127.0.0.1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 321 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 321 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:46:52 INFO web_log.py:233 127.0.0.1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 321 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 321 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:46:52 INFO web_log.py:233 127.0.0.1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 321 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 321 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:46:52 INFO web_log.py:233 127.0.0.1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 321 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 321 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:46:52 INFO web_log.py:233 127.0.0.1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 321 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 321 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:46:52 INFO web_log.py:233 127.0.0.1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 321 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 321 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:46:52 INFO web_log.py:233 127.0.0.1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 321 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 321 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:46:52 INFO web_log.py:233 127.0.0.1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 321 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:46:52 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:46:53 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:52 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:46:53 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:53 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 321 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:46:53 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:53 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:46:53 INFO web_log.py:233 127.0.0.1 [22/Jan/2021:19:46:53 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 321 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:46:53 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:53 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:46:53 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:53 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 321 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:46:53 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:53 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:46:53 INFO web_log.py:233 127.0.0.1 [22/Jan/2021:19:46:53 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 321 "-" "Python/3.9 aiohttp/3.6.2"
-2021-01-23 00:46:53 INFO web_log.py:233 ::1 [22/Jan/2021:19:46:53 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:51:19 INFO web_log.py:233 ::1 [22/Jan/2021:19:51:19 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:55:49 INFO web_log.py:233 ::1 [22/Jan/2021:19:55:49 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 00:59:25 INFO web_log.py:233 ::1 [22/Jan/2021:19:59:25 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 01:03:02 INFO web_log.py:233 ::1 [22/Jan/2021:20:03:02 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 01:07:58 INFO web_log.py:233 ::1 [22/Jan/2021:20:07:58 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.17"
-2021-01-23 01:11:36 INFO web_log.py:233 ::1 [22/Jan/2021:20:11:36 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:19:04 INFO run.py:219 GNS3 server version 2.2.17
+2021-01-23 15:19:04 INFO run.py:221 Copyright (c) 2007-2021 GNS3 Technologies Inc.
+2021-01-23 15:19:04 INFO run.py:224 Config file /home/saad/.config/GNS3/2.2/gns3_server.conf loaded
+2021-01-23 15:19:04 WARNING run.py:230 Local mode is enabled. Beware, clients will have full control on your filesystem
+2021-01-23 15:19:04 INFO run.py:243 Running with Python 3.9.1 and has PID 12270
+2021-01-23 15:19:04 INFO run.py:79 Current locale is en_US.UTF-8
+2021-01-23 15:19:04 INFO web_server.py:318 Starting server on localhost:3080
+2021-01-23 15:19:04 INFO __init__.py:62 Load controller configuration file /home/saad/.config/GNS3/2.2/gns3_controller.conf
+2021-01-23 15:19:04 INFO __init__.py:66 Controller is starting
+2021-01-23 15:19:04 INFO compute.py:64 Create compute local
+2021-01-23 15:19:04 INFO compute.py:364 Connecting to compute 'local'
+2021-01-23 15:19:04 INFO web_log.py:233 ::1 [23/Jan/2021:10:19:04 +0000] "GET /v2/compute/capabilities HTTP/1.1" 200 552 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:19:04 INFO web_log.py:233 ::1 [23/Jan/2021:10:19:04 +0000] "GET /v2/version HTTP/1.1" 200 227 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:19:04 INFO notification_handler.py:50 New client has connected to compute WebSocket
+2021-01-23 15:19:04 INFO compute.py:434 Connected to compute 'local' WebSocket 'http://localhost:3080/v2/compute/notifications/ws'
+2021-01-23 15:19:04 INFO web_log.py:233 ::1 [23/Jan/2021:10:19:04 +0000] "GET /v2/templates HTTP/1.1" 200 8595 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:19:04 INFO web_log.py:233 ::1 [23/Jan/2021:10:19:04 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:19:04 INFO notification_handler.py:73 New client has connected to controller WebSocket
+2021-01-23 15:19:04 INFO web_log.py:233 ::1 [23/Jan/2021:10:19:04 +0000] "GET /v2/appliances?symbol_theme=Affinity-square-red HTTP/1.1" 200 741681 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:19:04 INFO web_log.py:233 ::1 [23/Jan/2021:10:19:04 +0000] "GET /v2/projects HTTP/1.1" 200 1464 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:19:04 INFO web_log.py:233 ::1 [23/Jan/2021:10:19:04 +0000] "GET /v2/version HTTP/1.1" 200 227 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:19:04 INFO web_log.py:233 ::1 [23/Jan/2021:10:19:04 +0000] "GET /v2/projects HTTP/1.1" 200 1464 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:19:08 INFO project.py:78 Project eca8779b-e255-4fd3-8992-7e3ae5413625 with path '/home/saad/GNS3/projects/network automation' created
+2021-01-23 15:19:08 INFO web_log.py:233 ::1 [23/Jan/2021:10:19:08 +0000] "POST /v2/compute/projects HTTP/1.1" 201 313 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:19:08 INFO qemu_vm.py:201 QEMU VM "S1" [ecad44e0-9b47-4c5b-8635-cd83f0599382] has set the QEMU path to /bin/qemu-system-x86_64
+2021-01-23 15:19:08 INFO qemu_vm.py:603 QEMU VM "S1" [ecad44e0-9b47-4c5b-8635-cd83f0599382]: MAC address changed to 0c:36:25:93:82:00
+2021-01-23 15:19:08 INFO qemu_vm.py:551 QEMU VM "S1" [ecad44e0-9b47-4c5b-8635-cd83f0599382]: number of Ethernet adapters changed to 1
+2021-01-23 15:19:08 INFO qemu_vm.py:128 QEMU VM "S1" [ecad44e0-9b47-4c5b-8635-cd83f0599382] has been created
+2021-01-23 15:19:08 INFO base_node.py:282 Qemu: S1 [ecad44e0-9b47-4c5b-8635-cd83f0599382] created
+2021-01-23 15:19:08 INFO qemu_vm.py:551 QEMU VM "S1" [ecad44e0-9b47-4c5b-8635-cd83f0599382]: number of Ethernet adapters changed to 8
+2021-01-23 15:19:08 INFO qemu_vm.py:244 QEMU VM "S1" [ecad44e0-9b47-4c5b-8635-cd83f0599382] has set the QEMU hda_disk_image path to /home/saad/GNS3/images/QEMU/vios_l2-adventerprisek9-m.03.2017.qcow2
+2021-01-23 15:19:08 INFO qemu_vm.py:720 QEMU VM "S1" [ecad44e0-9b47-4c5b-8635-cd83f0599382] has set the process priority to normal
+2021-01-23 15:19:08 INFO qemu_vm.py:743 QEMU VM "S1" [ecad44e0-9b47-4c5b-8635-cd83f0599382] has set the RAM to 768
+2021-01-23 15:19:08 INFO web_log.py:233 127.0.0.1 [23/Jan/2021:10:19:08 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/qemu/nodes HTTP/1.1" 201 1684 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:19:08 INFO qemu_vm.py:201 QEMU VM "R1" [fedfb578-5b13-4bc7-a17e-aaa5a3a57689] has set the QEMU path to /usr/sbin/qemu-system-i386
+2021-01-23 15:19:08 INFO qemu_vm.py:603 QEMU VM "R1" [fedfb578-5b13-4bc7-a17e-aaa5a3a57689]: MAC address changed to 0c:36:25:76:89:00
+2021-01-23 15:19:08 INFO qemu_vm.py:551 QEMU VM "R1" [fedfb578-5b13-4bc7-a17e-aaa5a3a57689]: number of Ethernet adapters changed to 1
+2021-01-23 15:19:08 INFO qemu_vm.py:128 QEMU VM "R1" [fedfb578-5b13-4bc7-a17e-aaa5a3a57689] has been created
+2021-01-23 15:19:08 INFO base_node.py:282 Qemu: R1 [fedfb578-5b13-4bc7-a17e-aaa5a3a57689] created
+2021-01-23 15:19:08 INFO qemu_vm.py:551 QEMU VM "R1" [fedfb578-5b13-4bc7-a17e-aaa5a3a57689]: number of Ethernet adapters changed to 8
+2021-01-23 15:19:08 INFO qemu_vm.py:244 QEMU VM "R1" [fedfb578-5b13-4bc7-a17e-aaa5a3a57689] has set the QEMU hda_disk_image path to /home/saad/GNS3/images/QEMU/vios-adventerprisek9-m.vmdk.SPA.156-2.T
+2021-01-23 15:19:08 INFO qemu_vm.py:348 QEMU VM "R1" [fedfb578-5b13-4bc7-a17e-aaa5a3a57689] has set the QEMU hda disk interface to virtio
+2021-01-23 15:19:08 INFO qemu_vm.py:244 QEMU VM "R1" [fedfb578-5b13-4bc7-a17e-aaa5a3a57689] has set the QEMU hdb_disk_image path to /home/saad/GNS3/images/QEMU/IOSv_startup_config.img
+2021-01-23 15:19:08 INFO qemu_vm.py:371 QEMU VM "R1" [fedfb578-5b13-4bc7-a17e-aaa5a3a57689] has set the QEMU hdb disk interface to virtio
+2021-01-23 15:19:08 INFO qemu_vm.py:720 QEMU VM "R1" [fedfb578-5b13-4bc7-a17e-aaa5a3a57689] has set the process priority to normal
+2021-01-23 15:19:08 INFO qemu_vm.py:743 QEMU VM "R1" [fedfb578-5b13-4bc7-a17e-aaa5a3a57689] has set the RAM to 512
+2021-01-23 15:19:08 INFO web_log.py:233 ::1 [23/Jan/2021:10:19:08 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/qemu/nodes HTTP/1.1" 201 1836 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:19:08 INFO nat.py:51 NAT node 'NAT1' configured to use NAT interface 'virbr0'
+2021-01-23 15:19:08 INFO base_node.py:655 Starting new uBridge hypervisor localhost:34851
+2021-01-23 15:19:08 INFO hypervisor.py:169 starting ubridge: ['/usr/bin/ubridge', '-H', 'localhost:34851']
+2021-01-23 15:19:08 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/network automation/project-files/builtin/4d220f5a-834a-4aa9-996e-de70a9ea69d6/ubridge.log
+2021-01-23 15:19:08 INFO hypervisor.py:179 ubridge started PID=12284
+2021-01-23 15:19:08 INFO base_node.py:658 Hypervisor localhost:34851 has successfully started
+2021-01-23 15:19:08 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:34851 after 0.1023 seconds
+2021-01-23 15:19:08 INFO cloud.py:215 Cloud "NAT1" [4d220f5a-834a-4aa9-996e-de70a9ea69d6] has been created
+2021-01-23 15:19:08 INFO web_log.py:233 127.0.0.1 [23/Jan/2021:10:19:08 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nat/nodes HTTP/1.1" 201 553 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:19:08 INFO docker_vm.py:1058 Docker container "ubuntu-1" [245a0703-c4e5-4bd9-85ae-c952a5acc081]: number of Ethernet adapters changed to 1
+2021-01-23 15:19:08 INFO docker_vm.py:406 Docker container 'ubuntu-1' [245a0703-c4e5-4bd9-85ae-c952a5acc081] created
+2021-01-23 15:19:08 INFO base_node.py:498 Docker: 'ubuntu-1' [245a0703-c4e5-4bd9-85ae-c952a5acc081]: aux port set to 5003
+2021-01-23 15:19:08 INFO base_node.py:542 Docker: 'ubuntu-1' [245a0703-c4e5-4bd9-85ae-c952a5acc081]: console port set to 5002
+2021-01-23 15:19:08 INFO web_log.py:233 ::1 [23/Jan/2021:10:19:08 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/docker/nodes HTTP/1.1" 201 949 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:19:08 INFO web_log.py:233 127.0.0.1 [23/Jan/2021:10:19:08 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:19:08 INFO web_log.py:233 ::1 [23/Jan/2021:10:19:08 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:19:08 INFO qemu_vm.py:1346 QEMU VM "S1" [ecad44e0-9b47-4c5b-8635-cd83f0599382]: NIO UDP added to adapter 0
+2021-01-23 15:19:08 INFO web_log.py:233 127.0.0.1 [23/Jan/2021:10:19:08 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/qemu/nodes/ecad44e0-9b47-4c5b-8635-cd83f0599382/adapters/0/ports/0/nio HTTP/1.1" 201 378 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:19:08 INFO cloud.py:396 Cloud "NAT1" [4d220f5a-834a-4aa9-996e-de70a9ea69d6]: NIO NIO UDP bound to port 0
+2021-01-23 15:19:08 INFO web_log.py:233 ::1 [23/Jan/2021:10:19:08 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nat/nodes/4d220f5a-834a-4aa9-996e-de70a9ea69d6/adapters/0/ports/0/nio HTTP/1.1" 201 377 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:19:08 INFO web_log.py:233 127.0.0.1 [23/Jan/2021:10:19:08 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:19:08 INFO web_log.py:233 ::1 [23/Jan/2021:10:19:08 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:19:08 INFO qemu_vm.py:1346 QEMU VM "S1" [ecad44e0-9b47-4c5b-8635-cd83f0599382]: NIO UDP added to adapter 1
+2021-01-23 15:19:08 INFO web_log.py:233 127.0.0.1 [23/Jan/2021:10:19:08 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/qemu/nodes/ecad44e0-9b47-4c5b-8635-cd83f0599382/adapters/1/ports/0/nio HTTP/1.1" 201 378 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:19:08 INFO qemu_vm.py:1346 QEMU VM "R1" [fedfb578-5b13-4bc7-a17e-aaa5a3a57689]: NIO UDP added to adapter 1
+2021-01-23 15:19:08 INFO web_log.py:233 ::1 [23/Jan/2021:10:19:08 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/qemu/nodes/fedfb578-5b13-4bc7-a17e-aaa5a3a57689/adapters/1/ports/0/nio HTTP/1.1" 201 378 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:19:08 INFO web_log.py:233 127.0.0.1 [23/Jan/2021:10:19:08 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:19:08 INFO web_log.py:233 ::1 [23/Jan/2021:10:19:08 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:19:08 INFO docker_vm.py:960 Docker container 'ubuntu-1' [245a0703-c4e5-4bd9-85ae-c952a5acc081]: NIO UDP added to adapter 0
+2021-01-23 15:19:08 INFO web_log.py:233 127.0.0.1 [23/Jan/2021:10:19:08 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/docker/nodes/245a0703-c4e5-4bd9-85ae-c952a5acc081/adapters/0/ports/0/nio HTTP/1.1" 201 380 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:19:08 INFO qemu_vm.py:1346 QEMU VM "S1" [ecad44e0-9b47-4c5b-8635-cd83f0599382]: NIO UDP added to adapter 2
+2021-01-23 15:19:08 INFO web_log.py:233 ::1 [23/Jan/2021:10:19:08 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/qemu/nodes/ecad44e0-9b47-4c5b-8635-cd83f0599382/adapters/2/ports/0/nio HTTP/1.1" 201 378 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:19:08 INFO web_log.py:233 ::1 [23/Jan/2021:10:19:08 +0000] "POST /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/open HTTP/1.1" 201 771 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:19:08 INFO project_handler.py:271 New client has connected to the notification stream for project ID 'eca8779b-e255-4fd3-8992-7e3ae5413625' (WebSocket method)
+2021-01-23 15:19:08 INFO web_log.py:233 ::1 [23/Jan/2021:10:19:08 +0000] "GET /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nodes HTTP/1.1" 200 15808 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:19:08 INFO web_log.py:233 ::1 [23/Jan/2021:10:19:08 +0000] "GET /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/links HTTP/1.1" 200 4120 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:19:08 INFO web_log.py:233 ::1 [23/Jan/2021:10:19:08 +0000] "GET /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/drawings HTTP/1.1" 200 205 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:19:11 INFO web_log.py:233 ::1 [23/Jan/2021:10:19:11 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nat/nodes/4d220f5a-834a-4aa9-996e-de70a9ea69d6/start HTTP/1.1" 204 244 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:19:11 INFO base_node.py:655 Starting new uBridge hypervisor localhost:40013
+2021-01-23 15:19:11 INFO hypervisor.py:169 starting ubridge: ['/usr/bin/ubridge', '-H', 'localhost:40013']
+2021-01-23 15:19:11 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/network automation/project-files/docker/245a0703-c4e5-4bd9-85ae-c952a5acc081/ubridge.log
+2021-01-23 15:19:11 INFO hypervisor.py:179 ubridge started PID=12363
+2021-01-23 15:19:11 INFO base_node.py:658 Hypervisor localhost:40013 has successfully started
+2021-01-23 15:19:11 INFO qemu_vm.py:1621 logging to /home/saad/GNS3/projects/network automation/project-files/qemu/ecad44e0-9b47-4c5b-8635-cd83f0599382/qemu-img.log
+2021-01-23 15:19:11 INFO qemu_vm.py:1623 Executing qemu-img with: /bin/qemu-img check /home/saad/GNS3/images/QEMU/vios_l2-adventerprisek9-m.03.2017.qcow2
+2021-01-23 15:19:11 INFO qemu_vm.py:1621 logging to /home/saad/GNS3/projects/network automation/project-files/qemu/fedfb578-5b13-4bc7-a17e-aaa5a3a57689/qemu-img.log
+2021-01-23 15:19:11 INFO qemu_vm.py:1623 Executing qemu-img with: /usr/sbin/qemu-img check /home/saad/GNS3/images/QEMU/vios-adventerprisek9-m.vmdk.SPA.156-2.T
+2021-01-23 15:19:11 INFO qemu_vm.py:1627 /bin/qemu-img returned with 0
+2021-01-23 15:19:11 INFO qemu_vm.py:1627 /usr/sbin/qemu-img returned with 0
+2021-01-23 15:19:12 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:40013 after 0.1112 seconds
+2021-01-23 15:19:12 INFO base_node.py:822 Qemu: 'S1' [ecad44e0-9b47-4c5b-8635-cd83f0599382]:local UDP tunnel created between port 10006 and 10007
+2021-01-23 15:19:12 INFO base_node.py:822 Qemu: 'S1' [ecad44e0-9b47-4c5b-8635-cd83f0599382]:local UDP tunnel created between port 10008 and 10009
+2021-01-23 15:19:12 INFO base_node.py:822 Qemu: 'S1' [ecad44e0-9b47-4c5b-8635-cd83f0599382]:local UDP tunnel created between port 10010 and 10011
+2021-01-23 15:19:12 INFO base_node.py:822 Qemu: 'S1' [ecad44e0-9b47-4c5b-8635-cd83f0599382]:local UDP tunnel created between port 10012 and 10013
+2021-01-23 15:19:12 INFO base_node.py:822 Qemu: 'S1' [ecad44e0-9b47-4c5b-8635-cd83f0599382]:local UDP tunnel created between port 10014 and 10015
+2021-01-23 15:19:12 INFO base_node.py:822 Qemu: 'S1' [ecad44e0-9b47-4c5b-8635-cd83f0599382]:local UDP tunnel created between port 10016 and 10017
+2021-01-23 15:19:12 INFO base_node.py:822 Qemu: 'S1' [ecad44e0-9b47-4c5b-8635-cd83f0599382]:local UDP tunnel created between port 10018 and 10019
+2021-01-23 15:19:12 INFO base_node.py:822 Qemu: 'S1' [ecad44e0-9b47-4c5b-8635-cd83f0599382]:local UDP tunnel created between port 10020 and 10021
+2021-01-23 15:19:12 INFO qemu_vm.py:1621 logging to /home/saad/GNS3/projects/network automation/project-files/qemu/fedfb578-5b13-4bc7-a17e-aaa5a3a57689/qemu-img.log
+2021-01-23 15:19:12 INFO qemu_vm.py:1623 Executing qemu-img with: /usr/sbin/qemu-img check /home/saad/GNS3/images/QEMU/IOSv_startup_config.img
+2021-01-23 15:19:12 INFO qemu_vm.py:1627 /usr/sbin/qemu-img returned with 63
+2021-01-23 15:19:12 INFO qemu_vm.py:1011 Starting QEMU with: /bin/qemu-system-x86_64 -name S1 -m 768M -smp cpus=1,sockets=1 -enable-kvm -machine smm=off -boot order=c -drive 'file=/home/saad/GNS3/projects/network automation/project-files/qemu/ecad44e0-9b47-4c5b-8635-cd83f0599382/hda_disk.qcow2,if=ide,index=0,media=disk,id=drive0' -uuid ecad44e0-9b47-4c5b-8635-cd83f0599382 -serial telnet:127.0.0.1:5001,server,nowait -monitor tcp:127.0.0.1:46539,server,nowait -net none -device e1000,mac=0c:36:25:93:82:00,netdev=gns3-0 -netdev socket,id=gns3-0,udp=127.0.0.1:10007,localaddr=127.0.0.1:10006 -device e1000,mac=0c:36:25:93:82:01,netdev=gns3-1 -netdev socket,id=gns3-1,udp=127.0.0.1:10009,localaddr=127.0.0.1:10008 -device e1000,mac=0c:36:25:93:82:02,netdev=gns3-2 -netdev socket,id=gns3-2,udp=127.0.0.1:10011,localaddr=127.0.0.1:10010 -device e1000,mac=0c:36:25:93:82:03,netdev=gns3-3 -netdev socket,id=gns3-3,udp=127.0.0.1:10013,localaddr=127.0.0.1:10012 -device e1000,mac=0c:36:25:93:82:04,netdev=gns3-4 -netdev socket,id=gns3-4,udp=127.0.0.1:10015,localaddr=127.0.0.1:10014 -device e1000,mac=0c:36:25:93:82:05,netdev=gns3-5 -netdev socket,id=gns3-5,udp=127.0.0.1:10017,localaddr=127.0.0.1:10016 -device e1000,mac=0c:36:25:93:82:06,netdev=gns3-6 -netdev socket,id=gns3-6,udp=127.0.0.1:10019,localaddr=127.0.0.1:10018 -device e1000,mac=0c:36:25:93:82:07,netdev=gns3-7 -netdev socket,id=gns3-7,udp=127.0.0.1:10021,localaddr=127.0.0.1:10020 -display none
+2021-01-23 15:19:12 INFO qemu_vm.py:1013 logging to /home/saad/GNS3/projects/network automation/project-files/qemu/ecad44e0-9b47-4c5b-8635-cd83f0599382/qemu.log
+2021-01-23 15:19:12 INFO qemu_vm.py:1021 QEMU VM "S1" started PID=12458
+2021-01-23 15:19:12 INFO base_node.py:655 Starting new uBridge hypervisor localhost:34529
+2021-01-23 15:19:12 INFO base_node.py:822 Qemu: 'R1' [fedfb578-5b13-4bc7-a17e-aaa5a3a57689]:local UDP tunnel created between port 10022 and 10023
+2021-01-23 15:19:12 INFO base_node.py:822 Qemu: 'R1' [fedfb578-5b13-4bc7-a17e-aaa5a3a57689]:local UDP tunnel created between port 10024 and 10025
+2021-01-23 15:19:12 INFO base_node.py:822 Qemu: 'R1' [fedfb578-5b13-4bc7-a17e-aaa5a3a57689]:local UDP tunnel created between port 10026 and 10027
+2021-01-23 15:19:12 INFO base_node.py:822 Qemu: 'R1' [fedfb578-5b13-4bc7-a17e-aaa5a3a57689]:local UDP tunnel created between port 10028 and 10029
+2021-01-23 15:19:12 INFO base_node.py:822 Qemu: 'R1' [fedfb578-5b13-4bc7-a17e-aaa5a3a57689]:local UDP tunnel created between port 10030 and 10031
+2021-01-23 15:19:12 INFO base_node.py:822 Qemu: 'R1' [fedfb578-5b13-4bc7-a17e-aaa5a3a57689]:local UDP tunnel created between port 10032 and 10033
+2021-01-23 15:19:12 INFO base_node.py:822 Qemu: 'R1' [fedfb578-5b13-4bc7-a17e-aaa5a3a57689]:local UDP tunnel created between port 10034 and 10035
+2021-01-23 15:19:12 INFO base_node.py:822 Qemu: 'R1' [fedfb578-5b13-4bc7-a17e-aaa5a3a57689]:local UDP tunnel created between port 10036 and 10037
+2021-01-23 15:19:12 INFO hypervisor.py:169 starting ubridge: ['/usr/bin/ubridge', '-H', 'localhost:34529']
+2021-01-23 15:19:12 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/network automation/project-files/qemu/ecad44e0-9b47-4c5b-8635-cd83f0599382/ubridge.log
+2021-01-23 15:19:12 INFO hypervisor.py:179 ubridge started PID=12473
+2021-01-23 15:19:12 INFO base_node.py:658 Hypervisor localhost:34529 has successfully started
+2021-01-23 15:19:12 INFO qemu_vm.py:1011 Starting QEMU with: /usr/sbin/qemu-system-i386 -name R1 -m 512M -smp cpus=1,sockets=1 -enable-kvm -boot order=c -drive 'file=/home/saad/GNS3/projects/network automation/project-files/qemu/fedfb578-5b13-4bc7-a17e-aaa5a3a57689/hda_disk.qcow2,if=virtio,index=0,media=disk,id=drive0' -drive 'file=/home/saad/GNS3/projects/network automation/project-files/qemu/fedfb578-5b13-4bc7-a17e-aaa5a3a57689/hdb_disk.qcow2,if=virtio,index=1,media=disk,id=drive1' -uuid fedfb578-5b13-4bc7-a17e-aaa5a3a57689 -serial telnet:127.0.0.1:5002,server,nowait -monitor tcp:127.0.0.1:41321,server,nowait -net none -device e1000,mac=0c:36:25:76:89:00,netdev=gns3-0 -netdev socket,id=gns3-0,udp=127.0.0.1:10023,localaddr=127.0.0.1:10022 -device e1000,mac=0c:36:25:76:89:01,netdev=gns3-1 -netdev socket,id=gns3-1,udp=127.0.0.1:10025,localaddr=127.0.0.1:10024 -device e1000,mac=0c:36:25:76:89:02,netdev=gns3-2 -netdev socket,id=gns3-2,udp=127.0.0.1:10027,localaddr=127.0.0.1:10026 -device e1000,mac=0c:36:25:76:89:03,netdev=gns3-3 -netdev socket,id=gns3-3,udp=127.0.0.1:10029,localaddr=127.0.0.1:10028 -device e1000,mac=0c:36:25:76:89:04,netdev=gns3-4 -netdev socket,id=gns3-4,udp=127.0.0.1:10031,localaddr=127.0.0.1:10030 -device e1000,mac=0c:36:25:76:89:05,netdev=gns3-5 -netdev socket,id=gns3-5,udp=127.0.0.1:10033,localaddr=127.0.0.1:10032 -device e1000,mac=0c:36:25:76:89:06,netdev=gns3-6 -netdev socket,id=gns3-6,udp=127.0.0.1:10035,localaddr=127.0.0.1:10034 -device e1000,mac=0c:36:25:76:89:07,netdev=gns3-7 -netdev socket,id=gns3-7,udp=127.0.0.1:10037,localaddr=127.0.0.1:10036 -display none
+2021-01-23 15:19:12 INFO qemu_vm.py:1013 logging to /home/saad/GNS3/projects/network automation/project-files/qemu/fedfb578-5b13-4bc7-a17e-aaa5a3a57689/qemu.log
+2021-01-23 15:19:12 INFO qemu_vm.py:1021 QEMU VM "R1" started PID=12493
+2021-01-23 15:19:12 INFO base_node.py:655 Starting new uBridge hypervisor localhost:38489
+2021-01-23 15:19:12 INFO hypervisor.py:169 starting ubridge: ['/usr/bin/ubridge', '-H', 'localhost:38489']
+2021-01-23 15:19:12 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/network automation/project-files/qemu/fedfb578-5b13-4bc7-a17e-aaa5a3a57689/ubridge.log
+2021-01-23 15:19:12 INFO hypervisor.py:179 ubridge started PID=12498
+2021-01-23 15:19:12 INFO base_node.py:658 Hypervisor localhost:38489 has successfully started
+2021-01-23 15:19:12 INFO docker_vm.py:499 Docker container 'ubuntu-1' [ubuntu:latest] started listen for telnet on 5005
+2021-01-23 15:19:12 INFO web_log.py:233 ::1 [23/Jan/2021:10:19:11 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/docker/nodes/245a0703-c4e5-4bd9-85ae-c952a5acc081/start HTTP/1.1" 204 247 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:19:12 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:34529 after 0.1021 seconds
+2021-01-23 15:19:12 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:38489 after 0.1016 seconds
+2021-01-23 15:19:12 INFO qemu_vm.py:1147 Connected to QEMU monitor on 127.0.0.1:46539 after 0.0107 seconds
+2021-01-23 15:19:12 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-3 off
+2021-01-23 15:19:12 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-4 off
+2021-01-23 15:19:12 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-5 off
+2021-01-23 15:19:12 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-6 off
+2021-01-23 15:19:12 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-7 off
+2021-01-23 15:19:12 INFO web_log.py:233 127.0.0.1 [23/Jan/2021:10:19:11 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/qemu/nodes/ecad44e0-9b47-4c5b-8635-cd83f0599382/start HTTP/1.1" 200 3085 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:19:12 INFO qemu_vm.py:1147 Connected to QEMU monitor on 127.0.0.1:41321 after 0.0109 seconds
+2021-01-23 15:19:12 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-0 off
+2021-01-23 15:19:12 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-2 off
+2021-01-23 15:19:12 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-3 off
+2021-01-23 15:19:12 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-4 off
+2021-01-23 15:19:12 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-5 off
+2021-01-23 15:19:12 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-6 off
+2021-01-23 15:19:12 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-7 off
+2021-01-23 15:19:12 INFO web_log.py:233 127.0.0.1 [23/Jan/2021:10:19:11 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/qemu/nodes/fedfb578-5b13-4bc7-a17e-aaa5a3a57689/start HTTP/1.1" 200 3392 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:19:12 INFO web_log.py:233 ::1 [23/Jan/2021:10:19:11 +0000] "POST /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nodes/start HTTP/1.1" 204 222 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:19:12 INFO web_log.py:233 ::1 [23/Jan/2021:10:19:12 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:19:56 INFO web_log.py:233 ::1 [23/Jan/2021:10:19:56 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/links/db980f28-d268-40e3-a88b-bf24e0b68383 HTTP/1.1" 201 1373 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:20:25 INFO web_log.py:233 ::1 [23/Jan/2021:10:20:25 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/docker/nodes/245a0703-c4e5-4bd9-85ae-c952a5acc081 HTTP/1.1" 200 954 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:20:25 INFO qemu_vm.py:244 QEMU VM "R1" [fedfb578-5b13-4bc7-a17e-aaa5a3a57689] has set the QEMU hda_disk_image path to /home/saad/GNS3/images/QEMU/vios-adventerprisek9-m.vmdk.SPA.156-2.T
+2021-01-23 15:20:25 INFO qemu_vm.py:244 QEMU VM "R1" [fedfb578-5b13-4bc7-a17e-aaa5a3a57689] has set the QEMU hdb_disk_image path to /home/saad/GNS3/images/QEMU/IOSv_startup_config.img
+2021-01-23 15:20:25 INFO qemu_vm.py:244 QEMU VM "S1" [ecad44e0-9b47-4c5b-8635-cd83f0599382] has set the QEMU hda_disk_image path to /home/saad/GNS3/images/QEMU/vios_l2-adventerprisek9-m.03.2017.qcow2
+2021-01-23 15:20:25 INFO web_log.py:233 127.0.0.1 [23/Jan/2021:10:20:25 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nat/nodes/4d220f5a-834a-4aa9-996e-de70a9ea69d6 HTTP/1.1" 200 558 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:20:25 INFO web_log.py:233 ::1 [23/Jan/2021:10:20:25 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/qemu/nodes/fedfb578-5b13-4bc7-a17e-aaa5a3a57689 HTTP/1.1" 200 3386 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:20:25 INFO web_log.py:233 127.0.0.1 [23/Jan/2021:10:20:25 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/qemu/nodes/ecad44e0-9b47-4c5b-8635-cd83f0599382 HTTP/1.1" 200 3079 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:20:25 INFO web_log.py:233 ::1 [23/Jan/2021:10:20:25 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nodes/245a0703-c4e5-4bd9-85ae-c952a5acc081 HTTP/1.1" 200 1994 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:20:25 INFO web_log.py:233 ::1 [23/Jan/2021:10:20:25 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nodes/4d220f5a-834a-4aa9-996e-de70a9ea69d6 HTTP/1.1" 200 1648 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:20:25 INFO web_log.py:233 ::1 [23/Jan/2021:10:20:25 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nodes/fedfb578-5b13-4bc7-a17e-aaa5a3a57689 HTTP/1.1" 200 7109 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:20:25 INFO web_log.py:233 ::1 [23/Jan/2021:10:20:25 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nodes/ecad44e0-9b47-4c5b-8635-cd83f0599382 HTTP/1.1" 200 6813 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:20:26 INFO web_log.py:233 ::1 [23/Jan/2021:10:20:26 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/links/87b89037-1711-4ab3-ab5a-e85574eab6c6 HTTP/1.1" 201 1372 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:20:26 INFO web_log.py:233 ::1 [23/Jan/2021:10:20:26 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/links/87b89037-1711-4ab3-ab5a-e85574eab6c6 HTTP/1.1" 201 1372 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:20:26 INFO web_log.py:233 ::1 [23/Jan/2021:10:20:26 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/links/db980f28-d268-40e3-a88b-bf24e0b68383 HTTP/1.1" 201 1373 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:20:26 INFO web_log.py:233 ::1 [23/Jan/2021:10:20:26 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/links/f65bd3a8-9639-4eaa-8303-44202244a998 HTTP/1.1" 201 1374 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:20:26 INFO web_log.py:233 ::1 [23/Jan/2021:10:20:26 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/links/f65bd3a8-9639-4eaa-8303-44202244a998 HTTP/1.1" 201 1374 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:20:26 INFO web_log.py:233 ::1 [23/Jan/2021:10:20:26 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/links/db980f28-d268-40e3-a88b-bf24e0b68383 HTTP/1.1" 201 1373 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:20:26 INFO web_log.py:233 ::1 [23/Jan/2021:10:20:26 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:21:07 INFO base_node.py:669 Stopping uBridge hypervisor localhost:38489
+2021-01-23 15:21:07 INFO hypervisor.py:208 Stopping uBridge process PID=12498
+2021-01-23 15:21:07 INFO base_node.py:669 Stopping uBridge hypervisor localhost:34529
+2021-01-23 15:21:07 INFO hypervisor.py:208 Stopping uBridge process PID=12473
+2021-01-23 15:21:07 INFO web_log.py:233 ::1 [23/Jan/2021:10:21:07 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nat/nodes/4d220f5a-834a-4aa9-996e-de70a9ea69d6/stop HTTP/1.1" 204 243 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:07 INFO base_node.py:669 Stopping uBridge hypervisor localhost:40013
+2021-01-23 15:21:07 INFO hypervisor.py:208 Stopping uBridge process PID=12363
+2021-01-23 15:21:07 INFO docker_vm.py:533 Docker container 'ubuntu-1' fix ownership, state = running
+2021-01-23 15:21:07 INFO qemu_vm.py:1084 Stopping QEMU VM "S1" PID=12458
+2021-01-23 15:21:07 INFO docker_vm.py:793 Docker container 'ubuntu-1' [ubuntu:latest] stopped
+2021-01-23 15:21:07 INFO web_log.py:233 127.0.0.1 [23/Jan/2021:10:21:07 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/docker/nodes/245a0703-c4e5-4bd9-85ae-c952a5acc081/stop HTTP/1.1" 204 246 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:07 INFO qemu_vm.py:1068 QEMU process has stopped, return code: 0
+2021-01-23 15:21:07 INFO web_log.py:233 127.0.0.1 [23/Jan/2021:10:21:07 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/qemu/nodes/ecad44e0-9b47-4c5b-8635-cd83f0599382/stop HTTP/1.1" 204 244 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:07 INFO qemu_vm.py:1084 Stopping QEMU VM "R1" PID=12493
+2021-01-23 15:21:07 INFO qemu_vm.py:1068 QEMU process has stopped, return code: 0
+2021-01-23 15:21:07 INFO web_log.py:233 ::1 [23/Jan/2021:10:21:07 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/qemu/nodes/fedfb578-5b13-4bc7-a17e-aaa5a3a57689/stop HTTP/1.1" 204 244 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:07 INFO web_log.py:233 ::1 [23/Jan/2021:10:21:07 +0000] "POST /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nodes/stop HTTP/1.1" 204 221 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:21:08 INFO web_log.py:233 ::1 [23/Jan/2021:10:21:08 +0000] "GET /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/snapshots HTTP/1.1" 200 424 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:21:08 INFO web_log.py:233 ::1 [23/Jan/2021:10:21:08 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:21:11 INFO web_log.py:233 ::1 [23/Jan/2021:10:21:11 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nat/nodes/4d220f5a-834a-4aa9-996e-de70a9ea69d6/stop HTTP/1.1" 204 243 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:12 INFO web_log.py:233 ::1 [23/Jan/2021:10:21:11 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/qemu/nodes/ecad44e0-9b47-4c5b-8635-cd83f0599382/stop HTTP/1.1" 204 244 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:12 INFO web_log.py:233 127.0.0.1 [23/Jan/2021:10:21:11 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/qemu/nodes/fedfb578-5b13-4bc7-a17e-aaa5a3a57689/stop HTTP/1.1" 204 244 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:12 INFO web_log.py:233 127.0.0.1 [23/Jan/2021:10:21:12 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/docker/nodes/245a0703-c4e5-4bd9-85ae-c952a5acc081/stop HTTP/1.1" 204 246 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:12 INFO base_node.py:331 Builtin: 'NAT1' [4d220f5a-834a-4aa9-996e-de70a9ea69d6]: is closing
+2021-01-23 15:21:12 INFO base_node.py:669 Stopping uBridge hypervisor localhost:34851
+2021-01-23 15:21:12 INFO hypervisor.py:208 Stopping uBridge process PID=12284
+2021-01-23 15:21:12 INFO base_node.py:331 Docker: 'ubuntu-1' [245a0703-c4e5-4bd9-85ae-c952a5acc081]: is closing
+2021-01-23 15:21:12 INFO base_node.py:331 Qemu: 'S1' [ecad44e0-9b47-4c5b-8635-cd83f0599382]: is closing
+2021-01-23 15:21:12 INFO base_node.py:331 Qemu: 'R1' [fedfb578-5b13-4bc7-a17e-aaa5a3a57689]: is closing
+2021-01-23 15:21:12 INFO docker_vm.py:872 Docker container 'ubuntu-1' [ubuntu:latest] removed
+2021-01-23 15:21:12 INFO cloud.py:248 Cloud "NAT1" [4d220f5a-834a-4aa9-996e-de70a9ea69d6] has been closed
+2021-01-23 15:21:12 INFO project.py:361 Project eca8779b-e255-4fd3-8992-7e3ae5413625 with path '/home/saad/GNS3/projects/network automation' closed
+2021-01-23 15:21:12 INFO web_log.py:233 ::1 [23/Jan/2021:10:21:12 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/close HTTP/1.1" 204 224 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:12 INFO project.py:78 Project eca8779b-e255-4fd3-8992-7e3ae5413625 with path '/home/saad/GNS3/projects/network automation' created
+2021-01-23 15:21:12 INFO web_log.py:233 127.0.0.1 [23/Jan/2021:10:21:12 +0000] "POST /v2/compute/projects HTTP/1.1" 201 313 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:12 INFO qemu_vm.py:201 QEMU VM "S1" [9e868b82-c2e7-4ac7-a8ff-95ecf0a71548] has set the QEMU path to /bin/qemu-system-x86_64
+2021-01-23 15:21:12 INFO qemu_vm.py:603 QEMU VM "S1" [9e868b82-c2e7-4ac7-a8ff-95ecf0a71548]: MAC address changed to 0c:36:25:15:48:00
+2021-01-23 15:21:12 INFO qemu_vm.py:551 QEMU VM "S1" [9e868b82-c2e7-4ac7-a8ff-95ecf0a71548]: number of Ethernet adapters changed to 1
+2021-01-23 15:21:12 INFO qemu_vm.py:128 QEMU VM "S1" [9e868b82-c2e7-4ac7-a8ff-95ecf0a71548] has been created
+2021-01-23 15:21:12 INFO base_node.py:282 Qemu: S1 [9e868b82-c2e7-4ac7-a8ff-95ecf0a71548] created
+2021-01-23 15:21:12 INFO qemu_vm.py:551 QEMU VM "S1" [9e868b82-c2e7-4ac7-a8ff-95ecf0a71548]: number of Ethernet adapters changed to 8
+2021-01-23 15:21:12 INFO qemu_vm.py:244 QEMU VM "S1" [9e868b82-c2e7-4ac7-a8ff-95ecf0a71548] has set the QEMU hda_disk_image path to /home/saad/GNS3/images/QEMU/vios_l2-adventerprisek9-m.03.2017.qcow2
+2021-01-23 15:21:12 INFO qemu_vm.py:603 QEMU VM "S1" [9e868b82-c2e7-4ac7-a8ff-95ecf0a71548]: MAC address changed to 0c:36:25:93:82:00
+2021-01-23 15:21:12 INFO qemu_vm.py:720 QEMU VM "S1" [9e868b82-c2e7-4ac7-a8ff-95ecf0a71548] has set the process priority to normal
+2021-01-23 15:21:12 INFO qemu_vm.py:743 QEMU VM "S1" [9e868b82-c2e7-4ac7-a8ff-95ecf0a71548] has set the RAM to 768
+2021-01-23 15:21:12 INFO web_log.py:233 ::1 [23/Jan/2021:10:21:12 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/qemu/nodes HTTP/1.1" 201 1684 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:12 INFO qemu_vm.py:201 QEMU VM "R1" [1b0875e1-3164-4107-b7fc-8d38acb55ee7] has set the QEMU path to /usr/sbin/qemu-system-i386
+2021-01-23 15:21:12 INFO qemu_vm.py:603 QEMU VM "R1" [1b0875e1-3164-4107-b7fc-8d38acb55ee7]: MAC address changed to 0c:36:25:5e:e7:00
+2021-01-23 15:21:12 INFO qemu_vm.py:551 QEMU VM "R1" [1b0875e1-3164-4107-b7fc-8d38acb55ee7]: number of Ethernet adapters changed to 1
+2021-01-23 15:21:12 INFO qemu_vm.py:128 QEMU VM "R1" [1b0875e1-3164-4107-b7fc-8d38acb55ee7] has been created
+2021-01-23 15:21:12 INFO base_node.py:282 Qemu: R1 [1b0875e1-3164-4107-b7fc-8d38acb55ee7] created
+2021-01-23 15:21:12 INFO qemu_vm.py:551 QEMU VM "R1" [1b0875e1-3164-4107-b7fc-8d38acb55ee7]: number of Ethernet adapters changed to 8
+2021-01-23 15:21:12 INFO qemu_vm.py:244 QEMU VM "R1" [1b0875e1-3164-4107-b7fc-8d38acb55ee7] has set the QEMU hda_disk_image path to /home/saad/GNS3/images/QEMU/vios-adventerprisek9-m.vmdk.SPA.156-2.T
+2021-01-23 15:21:12 INFO qemu_vm.py:348 QEMU VM "R1" [1b0875e1-3164-4107-b7fc-8d38acb55ee7] has set the QEMU hda disk interface to virtio
+2021-01-23 15:21:12 INFO qemu_vm.py:244 QEMU VM "R1" [1b0875e1-3164-4107-b7fc-8d38acb55ee7] has set the QEMU hdb_disk_image path to /home/saad/GNS3/images/QEMU/IOSv_startup_config.img
+2021-01-23 15:21:12 INFO qemu_vm.py:371 QEMU VM "R1" [1b0875e1-3164-4107-b7fc-8d38acb55ee7] has set the QEMU hdb disk interface to virtio
+2021-01-23 15:21:12 INFO qemu_vm.py:603 QEMU VM "R1" [1b0875e1-3164-4107-b7fc-8d38acb55ee7]: MAC address changed to 0c:36:25:76:89:00
+2021-01-23 15:21:12 INFO qemu_vm.py:720 QEMU VM "R1" [1b0875e1-3164-4107-b7fc-8d38acb55ee7] has set the process priority to normal
+2021-01-23 15:21:12 INFO qemu_vm.py:743 QEMU VM "R1" [1b0875e1-3164-4107-b7fc-8d38acb55ee7] has set the RAM to 512
+2021-01-23 15:21:12 INFO web_log.py:233 127.0.0.1 [23/Jan/2021:10:21:12 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/qemu/nodes HTTP/1.1" 201 1836 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:12 INFO nat.py:51 NAT node 'NAT1' configured to use NAT interface 'virbr0'
+2021-01-23 15:21:12 INFO base_node.py:655 Starting new uBridge hypervisor localhost:44283
+2021-01-23 15:21:12 INFO hypervisor.py:169 starting ubridge: ['/usr/bin/ubridge', '-H', 'localhost:44283']
+2021-01-23 15:21:12 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/network automation/project-files/builtin/fc8b1192-f9df-4d09-ace8-297b139f04b6/ubridge.log
+2021-01-23 15:21:12 INFO hypervisor.py:179 ubridge started PID=14114
+2021-01-23 15:21:12 INFO base_node.py:658 Hypervisor localhost:44283 has successfully started
+2021-01-23 15:21:12 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:44283 after 0.1027 seconds
+2021-01-23 15:21:12 INFO cloud.py:215 Cloud "NAT1" [fc8b1192-f9df-4d09-ace8-297b139f04b6] has been created
+2021-01-23 15:21:12 INFO web_log.py:233 ::1 [23/Jan/2021:10:21:12 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nat/nodes HTTP/1.1" 201 553 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:12 INFO docker_vm.py:1058 Docker container "ubuntu-1" [910bf8f4-0655-495c-91de-87034fb5bc33]: number of Ethernet adapters changed to 1
+2021-01-23 15:21:12 INFO docker_vm.py:406 Docker container 'ubuntu-1' [910bf8f4-0655-495c-91de-87034fb5bc33] created
+2021-01-23 15:21:12 INFO base_node.py:498 Docker: 'ubuntu-1' [910bf8f4-0655-495c-91de-87034fb5bc33]: aux port set to 5003
+2021-01-23 15:21:12 INFO base_node.py:542 Docker: 'ubuntu-1' [910bf8f4-0655-495c-91de-87034fb5bc33]: console port set to 5002
+2021-01-23 15:21:12 INFO web_log.py:233 127.0.0.1 [23/Jan/2021:10:21:12 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/docker/nodes HTTP/1.1" 201 949 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:12 INFO web_log.py:233 ::1 [23/Jan/2021:10:21:12 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:12 INFO web_log.py:233 127.0.0.1 [23/Jan/2021:10:21:12 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:12 INFO qemu_vm.py:1346 QEMU VM "S1" [9e868b82-c2e7-4ac7-a8ff-95ecf0a71548]: NIO UDP added to adapter 0
+2021-01-23 15:21:12 INFO web_log.py:233 ::1 [23/Jan/2021:10:21:12 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/qemu/nodes/9e868b82-c2e7-4ac7-a8ff-95ecf0a71548/adapters/0/ports/0/nio HTTP/1.1" 201 378 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:12 INFO cloud.py:396 Cloud "NAT1" [fc8b1192-f9df-4d09-ace8-297b139f04b6]: NIO NIO UDP bound to port 0
+2021-01-23 15:21:12 INFO web_log.py:233 127.0.0.1 [23/Jan/2021:10:21:12 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nat/nodes/fc8b1192-f9df-4d09-ace8-297b139f04b6/adapters/0/ports/0/nio HTTP/1.1" 201 377 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:12 INFO web_log.py:233 ::1 [23/Jan/2021:10:21:12 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:12 INFO web_log.py:233 127.0.0.1 [23/Jan/2021:10:21:12 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:12 INFO qemu_vm.py:1346 QEMU VM "S1" [9e868b82-c2e7-4ac7-a8ff-95ecf0a71548]: NIO UDP added to adapter 1
+2021-01-23 15:21:12 INFO web_log.py:233 ::1 [23/Jan/2021:10:21:12 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/qemu/nodes/9e868b82-c2e7-4ac7-a8ff-95ecf0a71548/adapters/1/ports/0/nio HTTP/1.1" 201 378 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:12 INFO qemu_vm.py:1346 QEMU VM "R1" [1b0875e1-3164-4107-b7fc-8d38acb55ee7]: NIO UDP added to adapter 1
+2021-01-23 15:21:12 INFO web_log.py:233 127.0.0.1 [23/Jan/2021:10:21:12 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/qemu/nodes/1b0875e1-3164-4107-b7fc-8d38acb55ee7/adapters/1/ports/0/nio HTTP/1.1" 201 378 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:13 INFO web_log.py:233 ::1 [23/Jan/2021:10:21:13 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:13 INFO web_log.py:233 127.0.0.1 [23/Jan/2021:10:21:13 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:13 INFO docker_vm.py:960 Docker container 'ubuntu-1' [910bf8f4-0655-495c-91de-87034fb5bc33]: NIO UDP added to adapter 0
+2021-01-23 15:21:13 INFO web_log.py:233 ::1 [23/Jan/2021:10:21:13 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/docker/nodes/910bf8f4-0655-495c-91de-87034fb5bc33/adapters/0/ports/0/nio HTTP/1.1" 201 380 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:13 INFO qemu_vm.py:1346 QEMU VM "S1" [9e868b82-c2e7-4ac7-a8ff-95ecf0a71548]: NIO UDP added to adapter 2
+2021-01-23 15:21:13 INFO web_log.py:233 127.0.0.1 [23/Jan/2021:10:21:13 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/qemu/nodes/9e868b82-c2e7-4ac7-a8ff-95ecf0a71548/adapters/2/ports/0/nio HTTP/1.1" 201 378 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:13 INFO web_log.py:233 ::1 [23/Jan/2021:10:21:11 +0000] "POST /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/snapshots/72c03e2d-501c-40fc-b45e-179486f4cd70/restore HTTP/1.1" 201 798 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:21:13 INFO web_log.py:233 ::1 [23/Jan/2021:10:21:13 +0000] "POST /v2/projects/load HTTP/1.1" 201 758 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:21:13 INFO web_log.py:233 ::1 [23/Jan/2021:10:21:13 +0000] "GET /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nodes HTTP/1.1" 200 15808 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:21:13 INFO web_log.py:233 ::1 [23/Jan/2021:10:21:13 +0000] "GET /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/links HTTP/1.1" 200 4120 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:21:13 INFO web_log.py:233 ::1 [23/Jan/2021:10:21:13 +0000] "GET /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/drawings HTTP/1.1" 200 205 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:21:13 INFO web_log.py:233 ::1 [23/Jan/2021:10:21:13 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:21:14 INFO web_log.py:233 ::1 [23/Jan/2021:10:21:14 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 321 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:14 INFO web_log.py:233 ::1 [23/Jan/2021:10:21:14 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:21:14 INFO web_log.py:233 ::1 [23/Jan/2021:10:21:14 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:21:14 INFO web_log.py:233 127.0.0.1 [23/Jan/2021:10:21:14 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 321 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:14 INFO web_log.py:233 ::1 [23/Jan/2021:10:21:14 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:21:14 INFO web_log.py:233 ::1 [23/Jan/2021:10:21:14 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 321 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:14 INFO web_log.py:233 ::1 [23/Jan/2021:10:21:14 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:21:14 INFO web_log.py:233 ::1 [23/Jan/2021:10:21:14 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:21:14 INFO web_log.py:233 127.0.0.1 [23/Jan/2021:10:21:14 +0000] "PUT /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 321 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:14 INFO web_log.py:233 ::1 [23/Jan/2021:10:21:14 +0000] "PUT /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625 HTTP/1.1" 200 761 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:21:17 INFO web_log.py:233 ::1 [23/Jan/2021:10:21:17 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nat/nodes/fc8b1192-f9df-4d09-ace8-297b139f04b6/start HTTP/1.1" 204 244 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:17 INFO qemu_vm.py:1621 logging to /home/saad/GNS3/projects/network automation/project-files/qemu/9e868b82-c2e7-4ac7-a8ff-95ecf0a71548/qemu-img.log
+2021-01-23 15:21:17 INFO qemu_vm.py:1623 Executing qemu-img with: /bin/qemu-img check /home/saad/GNS3/images/QEMU/vios_l2-adventerprisek9-m.03.2017.qcow2
+2021-01-23 15:21:17 INFO qemu_vm.py:1621 logging to /home/saad/GNS3/projects/network automation/project-files/qemu/1b0875e1-3164-4107-b7fc-8d38acb55ee7/qemu-img.log
+2021-01-23 15:21:17 INFO qemu_vm.py:1623 Executing qemu-img with: /usr/sbin/qemu-img check /home/saad/GNS3/images/QEMU/vios-adventerprisek9-m.vmdk.SPA.156-2.T
+2021-01-23 15:21:17 INFO qemu_vm.py:1627 /bin/qemu-img returned with 0
+2021-01-23 15:21:17 INFO qemu_vm.py:1627 /usr/sbin/qemu-img returned with 0
+2021-01-23 15:21:17 INFO base_node.py:822 Qemu: 'S1' [9e868b82-c2e7-4ac7-a8ff-95ecf0a71548]:local UDP tunnel created between port 10006 and 10007
+2021-01-23 15:21:17 INFO base_node.py:822 Qemu: 'S1' [9e868b82-c2e7-4ac7-a8ff-95ecf0a71548]:local UDP tunnel created between port 10008 and 10009
+2021-01-23 15:21:17 INFO base_node.py:822 Qemu: 'S1' [9e868b82-c2e7-4ac7-a8ff-95ecf0a71548]:local UDP tunnel created between port 10010 and 10011
+2021-01-23 15:21:17 INFO base_node.py:822 Qemu: 'S1' [9e868b82-c2e7-4ac7-a8ff-95ecf0a71548]:local UDP tunnel created between port 10012 and 10013
+2021-01-23 15:21:17 INFO base_node.py:822 Qemu: 'S1' [9e868b82-c2e7-4ac7-a8ff-95ecf0a71548]:local UDP tunnel created between port 10014 and 10015
+2021-01-23 15:21:17 INFO base_node.py:822 Qemu: 'S1' [9e868b82-c2e7-4ac7-a8ff-95ecf0a71548]:local UDP tunnel created between port 10016 and 10017
+2021-01-23 15:21:17 INFO base_node.py:822 Qemu: 'S1' [9e868b82-c2e7-4ac7-a8ff-95ecf0a71548]:local UDP tunnel created between port 10018 and 10019
+2021-01-23 15:21:17 INFO base_node.py:822 Qemu: 'S1' [9e868b82-c2e7-4ac7-a8ff-95ecf0a71548]:local UDP tunnel created between port 10020 and 10021
+2021-01-23 15:21:17 INFO qemu_vm.py:1621 logging to /home/saad/GNS3/projects/network automation/project-files/qemu/1b0875e1-3164-4107-b7fc-8d38acb55ee7/qemu-img.log
+2021-01-23 15:21:17 INFO qemu_vm.py:1623 Executing qemu-img with: /usr/sbin/qemu-img check /home/saad/GNS3/images/QEMU/IOSv_startup_config.img
+2021-01-23 15:21:17 INFO qemu_vm.py:1627 /usr/sbin/qemu-img returned with 63
+2021-01-23 15:21:17 INFO base_node.py:822 Qemu: 'R1' [1b0875e1-3164-4107-b7fc-8d38acb55ee7]:local UDP tunnel created between port 10022 and 10023
+2021-01-23 15:21:17 INFO base_node.py:822 Qemu: 'R1' [1b0875e1-3164-4107-b7fc-8d38acb55ee7]:local UDP tunnel created between port 10024 and 10025
+2021-01-23 15:21:17 INFO base_node.py:822 Qemu: 'R1' [1b0875e1-3164-4107-b7fc-8d38acb55ee7]:local UDP tunnel created between port 10026 and 10027
+2021-01-23 15:21:17 INFO base_node.py:822 Qemu: 'R1' [1b0875e1-3164-4107-b7fc-8d38acb55ee7]:local UDP tunnel created between port 10028 and 10029
+2021-01-23 15:21:17 INFO base_node.py:822 Qemu: 'R1' [1b0875e1-3164-4107-b7fc-8d38acb55ee7]:local UDP tunnel created between port 10030 and 10031
+2021-01-23 15:21:17 INFO base_node.py:822 Qemu: 'R1' [1b0875e1-3164-4107-b7fc-8d38acb55ee7]:local UDP tunnel created between port 10032 and 10033
+2021-01-23 15:21:17 INFO base_node.py:822 Qemu: 'R1' [1b0875e1-3164-4107-b7fc-8d38acb55ee7]:local UDP tunnel created between port 10034 and 10035
+2021-01-23 15:21:17 INFO base_node.py:822 Qemu: 'R1' [1b0875e1-3164-4107-b7fc-8d38acb55ee7]:local UDP tunnel created between port 10036 and 10037
+2021-01-23 15:21:17 INFO qemu_vm.py:1011 Starting QEMU with: /bin/qemu-system-x86_64 -name S1 -m 768M -smp cpus=1,sockets=1 -enable-kvm -machine smm=off -boot order=c -drive 'file=/home/saad/GNS3/projects/network automation/project-files/qemu/9e868b82-c2e7-4ac7-a8ff-95ecf0a71548/hda_disk.qcow2,if=ide,index=0,media=disk,id=drive0' -uuid 9e868b82-c2e7-4ac7-a8ff-95ecf0a71548 -serial telnet:127.0.0.1:5001,server,nowait -monitor tcp:127.0.0.1:46389,server,nowait -net none -device e1000,mac=0c:36:25:93:82:00,netdev=gns3-0 -netdev socket,id=gns3-0,udp=127.0.0.1:10007,localaddr=127.0.0.1:10006 -device e1000,mac=0c:36:25:93:82:01,netdev=gns3-1 -netdev socket,id=gns3-1,udp=127.0.0.1:10009,localaddr=127.0.0.1:10008 -device e1000,mac=0c:36:25:93:82:02,netdev=gns3-2 -netdev socket,id=gns3-2,udp=127.0.0.1:10011,localaddr=127.0.0.1:10010 -device e1000,mac=0c:36:25:93:82:03,netdev=gns3-3 -netdev socket,id=gns3-3,udp=127.0.0.1:10013,localaddr=127.0.0.1:10012 -device e1000,mac=0c:36:25:93:82:04,netdev=gns3-4 -netdev socket,id=gns3-4,udp=127.0.0.1:10015,localaddr=127.0.0.1:10014 -device e1000,mac=0c:36:25:93:82:05,netdev=gns3-5 -netdev socket,id=gns3-5,udp=127.0.0.1:10017,localaddr=127.0.0.1:10016 -device e1000,mac=0c:36:25:93:82:06,netdev=gns3-6 -netdev socket,id=gns3-6,udp=127.0.0.1:10019,localaddr=127.0.0.1:10018 -device e1000,mac=0c:36:25:93:82:07,netdev=gns3-7 -netdev socket,id=gns3-7,udp=127.0.0.1:10021,localaddr=127.0.0.1:10020 -display none
+2021-01-23 15:21:17 INFO qemu_vm.py:1013 logging to /home/saad/GNS3/projects/network automation/project-files/qemu/9e868b82-c2e7-4ac7-a8ff-95ecf0a71548/qemu.log
+2021-01-23 15:21:17 INFO qemu_vm.py:1021 QEMU VM "S1" started PID=14234
+2021-01-23 15:21:17 INFO base_node.py:655 Starting new uBridge hypervisor localhost:44533
+2021-01-23 15:21:17 INFO hypervisor.py:169 starting ubridge: ['/usr/bin/ubridge', '-H', 'localhost:44533']
+2021-01-23 15:21:17 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/network automation/project-files/qemu/9e868b82-c2e7-4ac7-a8ff-95ecf0a71548/ubridge.log
+2021-01-23 15:21:17 INFO hypervisor.py:179 ubridge started PID=14280
+2021-01-23 15:21:17 INFO base_node.py:658 Hypervisor localhost:44533 has successfully started
+2021-01-23 15:21:17 INFO base_node.py:655 Starting new uBridge hypervisor localhost:43479
+2021-01-23 15:21:17 INFO hypervisor.py:169 starting ubridge: ['/usr/bin/ubridge', '-H', 'localhost:43479']
+2021-01-23 15:21:17 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/network automation/project-files/docker/910bf8f4-0655-495c-91de-87034fb5bc33/ubridge.log
+2021-01-23 15:21:17 INFO hypervisor.py:179 ubridge started PID=14298
+2021-01-23 15:21:17 INFO base_node.py:658 Hypervisor localhost:43479 has successfully started
+2021-01-23 15:21:17 INFO qemu_vm.py:1011 Starting QEMU with: /usr/sbin/qemu-system-i386 -name R1 -m 512M -smp cpus=1,sockets=1 -enable-kvm -boot order=c -drive 'file=/home/saad/GNS3/projects/network automation/project-files/qemu/1b0875e1-3164-4107-b7fc-8d38acb55ee7/hda_disk.qcow2,if=virtio,index=0,media=disk,id=drive0' -drive 'file=/home/saad/GNS3/projects/network automation/project-files/qemu/1b0875e1-3164-4107-b7fc-8d38acb55ee7/hdb_disk.qcow2,if=virtio,index=1,media=disk,id=drive1' -uuid 1b0875e1-3164-4107-b7fc-8d38acb55ee7 -serial telnet:127.0.0.1:5002,server,nowait -monitor tcp:127.0.0.1:44331,server,nowait -net none -device e1000,mac=0c:36:25:76:89:00,netdev=gns3-0 -netdev socket,id=gns3-0,udp=127.0.0.1:10023,localaddr=127.0.0.1:10022 -device e1000,mac=0c:36:25:76:89:01,netdev=gns3-1 -netdev socket,id=gns3-1,udp=127.0.0.1:10025,localaddr=127.0.0.1:10024 -device e1000,mac=0c:36:25:76:89:02,netdev=gns3-2 -netdev socket,id=gns3-2,udp=127.0.0.1:10027,localaddr=127.0.0.1:10026 -device e1000,mac=0c:36:25:76:89:03,netdev=gns3-3 -netdev socket,id=gns3-3,udp=127.0.0.1:10029,localaddr=127.0.0.1:10028 -device e1000,mac=0c:36:25:76:89:04,netdev=gns3-4 -netdev socket,id=gns3-4,udp=127.0.0.1:10031,localaddr=127.0.0.1:10030 -device e1000,mac=0c:36:25:76:89:05,netdev=gns3-5 -netdev socket,id=gns3-5,udp=127.0.0.1:10033,localaddr=127.0.0.1:10032 -device e1000,mac=0c:36:25:76:89:06,netdev=gns3-6 -netdev socket,id=gns3-6,udp=127.0.0.1:10035,localaddr=127.0.0.1:10034 -device e1000,mac=0c:36:25:76:89:07,netdev=gns3-7 -netdev socket,id=gns3-7,udp=127.0.0.1:10037,localaddr=127.0.0.1:10036 -display none
+2021-01-23 15:21:17 INFO qemu_vm.py:1013 logging to /home/saad/GNS3/projects/network automation/project-files/qemu/1b0875e1-3164-4107-b7fc-8d38acb55ee7/qemu.log
+2021-01-23 15:21:18 INFO qemu_vm.py:1021 QEMU VM "R1" started PID=14303
+2021-01-23 15:21:18 INFO base_node.py:655 Starting new uBridge hypervisor localhost:38093
+2021-01-23 15:21:18 INFO hypervisor.py:169 starting ubridge: ['/usr/bin/ubridge', '-H', 'localhost:38093']
+2021-01-23 15:21:18 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/network automation/project-files/qemu/1b0875e1-3164-4107-b7fc-8d38acb55ee7/ubridge.log
+2021-01-23 15:21:18 INFO hypervisor.py:179 ubridge started PID=14310
+2021-01-23 15:21:18 INFO base_node.py:658 Hypervisor localhost:38093 has successfully started
+2021-01-23 15:21:18 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:44533 after 0.1019 seconds
+2021-01-23 15:21:18 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:43479 after 0.1021 seconds
+2021-01-23 15:21:18 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:38093 after 0.1017 seconds
+2021-01-23 15:21:18 INFO qemu_vm.py:1147 Connected to QEMU monitor on 127.0.0.1:46389 after 0.0114 seconds
+2021-01-23 15:21:18 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-3 off
+2021-01-23 15:21:18 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-4 off
+2021-01-23 15:21:18 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-5 off
+2021-01-23 15:21:18 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-6 off
+2021-01-23 15:21:18 INFO docker_vm.py:499 Docker container 'ubuntu-1' [ubuntu:latest] started listen for telnet on 5005
+2021-01-23 15:21:18 INFO web_log.py:233 127.0.0.1 [23/Jan/2021:10:21:17 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/docker/nodes/910bf8f4-0655-495c-91de-87034fb5bc33/start HTTP/1.1" 204 247 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:18 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-7 off
+2021-01-23 15:21:18 INFO qemu_vm.py:1147 Connected to QEMU monitor on 127.0.0.1:44331 after 0.0115 seconds
+2021-01-23 15:21:18 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-0 off
+2021-01-23 15:21:18 INFO web_log.py:233 127.0.0.1 [23/Jan/2021:10:21:17 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/qemu/nodes/9e868b82-c2e7-4ac7-a8ff-95ecf0a71548/start HTTP/1.1" 200 3085 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:18 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-2 off
+2021-01-23 15:21:18 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-3 off
+2021-01-23 15:21:18 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-4 off
+2021-01-23 15:21:18 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-5 off
+2021-01-23 15:21:18 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-6 off
+2021-01-23 15:21:18 INFO qemu_vm.py:1212 Execute QEMU monitor command: set_link gns3-7 off
+2021-01-23 15:21:18 INFO web_log.py:233 ::1 [23/Jan/2021:10:21:17 +0000] "POST /v2/compute/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/qemu/nodes/1b0875e1-3164-4107-b7fc-8d38acb55ee7/start HTTP/1.1" 200 3392 "-" "Python/3.9 aiohttp/3.6.2"
+2021-01-23 15:21:18 INFO web_log.py:233 ::1 [23/Jan/2021:10:21:17 +0000] "POST /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nodes/start HTTP/1.1" 204 222 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:22:40 INFO web_log.py:233 ::1 [23/Jan/2021:10:22:40 +0000] "GET /v2/projects/eca8779b-e255-4fd3-8992-7e3ae5413625/nodes/910bf8f4-0655-495c-91de-87034fb5bc33/files/etc/network/interfaces HTTP/1.1" 200 521 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:24:59 INFO web_log.py:233 ::1 [23/Jan/2021:10:24:59 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:29:21 INFO web_log.py:233 ::1 [23/Jan/2021:10:29:21 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:32:49 INFO web_log.py:233 ::1 [23/Jan/2021:10:32:49 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:36:23 INFO web_log.py:233 ::1 [23/Jan/2021:10:36:23 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.17"
+2021-01-23 15:39:56 INFO web_log.py:233 ::1 [23/Jan/2021:10:39:56 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.17"
