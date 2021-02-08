@@ -176,3 +176,24 @@
 2021-02-08 19:46:26 INFO web_log.py:233 ::1 [08/Feb/2021:14:46:26 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.17"
 2021-02-08 19:50:17 INFO web_log.py:233 ::1 [08/Feb/2021:14:50:17 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.17"
 2021-02-08 19:54:31 INFO web_log.py:233 ::1 [08/Feb/2021:14:54:31 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.17"
+2021-02-08 19:58:36 INFO web_log.py:233 ::1 [08/Feb/2021:14:58:36 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.17"
+2021-02-08 19:59:51 INFO router.py:328 Router "R1" [7b5ed125-df90-4fc3-bbef-03f623b4d7e2] has been stopped
+2021-02-08 19:59:51 INFO router.py:1599 saving startup-config to /home/saad/GNS3/projects/untitled1/project-files/dynamips/7b5ed125-df90-4fc3-bbef-03f623b4d7e2/configs/i1_startup-config.cfg
+2021-02-08 19:59:51 INFO web_log.py:233 ::1 [08/Feb/2021:14:59:51 +0000] "POST /v2/compute/projects/9e1c270d-9ad0-4573-a687-9a386b03031d/dynamips/nodes/7b5ed125-df90-4fc3-bbef-03f623b4d7e2/stop HTTP/1.1" 204 248 "-" "Python/3.9 aiohttp/3.6.2"
+2021-02-08 19:59:52 INFO web_log.py:233 ::1 [08/Feb/2021:14:59:51 +0000] "POST /v2/projects/9e1c270d-9ad0-4573-a687-9a386b03031d/nodes/stop HTTP/1.1" 204 221 "-" "GNS3 QT Client v2.2.17"
+2021-02-08 19:59:53 INFO notification_handler.py:82 Client has disconnected from controller WebSocket
+2021-02-08 19:59:53 INFO server_handler.py:53 Start shutting down the server
+2021-02-08 19:59:53 INFO router.py:1599 saving startup-config to /home/saad/GNS3/projects/untitled1/project-files/dynamips/7b5ed125-df90-4fc3-bbef-03f623b4d7e2/configs/i1_startup-config.cfg
+2021-02-08 19:59:53 INFO web_log.py:233 127.0.0.1 [08/Feb/2021:14:59:53 +0000] "POST /v2/compute/projects/9e1c270d-9ad0-4573-a687-9a386b03031d/dynamips/nodes/7b5ed125-df90-4fc3-bbef-03f623b4d7e2/stop HTTP/1.1" 204 248 "-" "Python/3.9 aiohttp/3.6.2"
+2021-02-08 19:59:53 INFO base_node.py:331 Dynamips: 'R1' [7b5ed125-df90-4fc3-bbef-03f623b4d7e2]: is closing
+2021-02-08 19:59:53 INFO router.py:1599 saving startup-config to /home/saad/GNS3/projects/untitled1/project-files/dynamips/7b5ed125-df90-4fc3-bbef-03f623b4d7e2/configs/i1_startup-config.cfg
+2021-02-08 19:59:53 INFO hypervisor.py:148 Stopping Dynamips process PID=29388
+2021-02-08 19:59:53 INFO project.py:361 Project 9e1c270d-9ad0-4573-a687-9a386b03031d with path '/home/saad/GNS3/projects/untitled1' closed
+2021-02-08 19:59:53 INFO web_log.py:233 ::1 [08/Feb/2021:14:59:53 +0000] "POST /v2/compute/projects/9e1c270d-9ad0-4573-a687-9a386b03031d/close HTTP/1.1" 204 224 "-" "Python/3.9 aiohttp/3.6.2"
+2021-02-08 19:59:53 INFO web_server.py:113 Closing 2 websocket connections...
+2021-02-08 19:59:53 INFO web_log.py:233 ::1 [08/Feb/2021:14:59:53 +0000] "POST /v2/shutdown HTTP/1.1" 201 194 "-" "GNS3 QT Client v2.2.17"
+2021-02-08 19:59:53 INFO project_handler.py:280 Client has disconnected from notification stream for project ID '9e1c270d-9ad0-4573-a687-9a386b03031d' (WebSocket method)
+2021-02-08 19:59:53 INFO compute.py:460 Connection closed to compute 'local' WebSocket 'http://localhost:3080/v2/compute/notifications/ws'
+2021-02-08 19:59:53 INFO notification_handler.py:59 Client has disconnected from compute WebSocket
+2021-02-08 19:59:53 INFO __init__.py:130 Controller is stopping
+2021-02-08 19:59:53 INFO run.py:272 Remove PID file /home/saad/.config/GNS3/2.2/gns3_server.pid
