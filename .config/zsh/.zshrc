@@ -1,6 +1,7 @@
 # oh-my-zsh
 export ZSH="/home/saad/.oh-my-zsh"
-ZSH_THEME="robbyrussell"
+ZSH_THEME="gozilla"
+# ZSH_THEME="robbyrussell"
 plugins=(git extract zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
@@ -71,7 +72,7 @@ lfcd () {
 }
 bindkey -s '^o' 'lfcd\n'
 
-bindkey -s '^a' 'bc -l\n'
+# bindkey -s '^a' 'bc -l\n'
 
 bindkey -s '^f' 'cd "$(dirname "$(fzf)")"\n'
 
@@ -93,25 +94,29 @@ bindkey -s '^p' 'cmus\n'
 bindkey -s '^r' 'ranger\n'
 bindkey -s '^z' 'zsh\n'
 bindkey -s '^t' 'tto\n'
-# cat /home/$USER/.cache/wal/sequences
+cat /home/$USER/.cache/wal/sequences
 ##########test rmd file for configs#########
-alias test="vim /home/$USER/Documents/Experiments/test.rmd"
+alias test="vim /home/$USER/Documents/Experiments/test.cfg"
 
 
 
 
-
+# bindkey -s '^m' 'mux\n'
 alias mux='pgrep -vx tmux > /dev/null && \
 		tmux new -d -s delete-me && \
 		tmux run-shell ~/.config/tmux/ressurect/scripts/restore.sh && \
 		tmux kill-session -t delete-me && \
 		tmux attach || tmux attach'
+
+
 # . /home/saad/.local/share/lscolors.sh
 #source $(dirname $(gem which colorls))/tab_complete.sh
 alias cls="clear"
 alias bbat="bluetooth_battery 41:42:F3:39:6C:5E"
+alias tp="nvim /tmp/python_test.py"
+# alias script="mkdir ~/cisco-configs;cd cisco-config/"
 
 
 # cls
-neofetch
+# neofetch
 

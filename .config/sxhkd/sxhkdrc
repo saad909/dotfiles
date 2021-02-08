@@ -48,6 +48,7 @@ ctrl+shift+F10
 # Multi Monitor - External Monitor
 ctrl+F11
   displayselect
+  # resolution
 
 
 # Download youtube videos/playlist
@@ -129,27 +130,41 @@ super + F3
 # reload keys
 super + shift + c
   key_changed
-# super+d
-#   dmenu_rn
 
 # brightness
 
 # Decrese
 XF86MonBrightnessDown
   light -U 10
-
 # Increase
 XF86MonBrightnessUp
   light -A 10
-
+# increase alt
+alt+shift+k
+  light -A 10
 # decrease alt
 alt+shift+j
   light -U 10
 
-# increase alt
-alt+shift+k
-  light -A 10
-
 # arch wiki 
-super+F12
+super F12
   arch-wiki-dmenu
+
+super+shift+F12
+  qutebrowser  "/home/ExternalHDD/SoftwaresAndTricks/Linux/Tricks/i3/index.html"
+super+shift+r
+  $HOME/.config/bspwm/bspwmrc
+
+super+d
+  rofi -show run
+ctrl+alt+delete
+  bspc quit
+
+# layout
+
+# super+h
+#   bspc node prev
+# super+l
+#   bspc node next
+# super+shift+q
+#   "bspc node --kill"

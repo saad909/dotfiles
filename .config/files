@@ -3,13 +3,15 @@ cfv	${XDG_CONFIG_HOME:-$HOME/.config}/nvim/init.vim
 cfi	${XDG_CONFIG_HOME:-$HOME/.config}/i3/config
 cfo	${XDG_CONFIG_HOME:-$HOME/.config}/fontconfig/fonts.conf
 cfr	~/.config/ranger/rc.conf
-cfp	~/.config/polybar/config.ini
+cfp	~/.config/polybar/default/config
 cfs /home/saad/.config/nvim/autoload/plugged/vim-snippets/snippets/rmd.snippets
 cfV /home/saad/.config/nvim/keys/which-key.vim
 cfk ~/.config/kitty/kitty.conf
 cft ~/.config/tmux/tmux.conf
 cfa ~/.config/alacritty/alacritty.yml
 cfsx ~/.config/sxhkd/sxhkdrc
+cfb ~/.config/bspwm/bspwmrc
+
 
 
 

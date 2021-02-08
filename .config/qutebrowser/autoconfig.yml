@@ -6,10 +6,16 @@
 
 config_version: 2
 settings:
+  auto_save.session:
+    global: true
   content.geolocation:
     https://justgetflux.com: true
     https://www.olx.com.pk: true
-  content.media_capture:
+  content.media.audio_capture:
+    https://app.gotomeeting.com: true
+  content.media.audio_video_capture:
+    https://app.gotomeeting.com: true
+  content.media.video_capture:
     https://app.gotomeeting.com: true
   content.notifications:
     https://drive.google.com: true
@@ -18,3 +24,9 @@ settings:
     https://mega.nz: true
   content.register_protocol_handler:
     https://mail.google.com?extsrc=mailto&url=%25s: true
+  # spellcheck.languages:
+  #   global:
+  #   - en-US
+  url.searchengines:
+    global:
+      DEFAULT: https://google.com/?q={}

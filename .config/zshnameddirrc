@@ -50,3 +50,7 @@ hash -d cu=/home/ExternalHDD/Courses-UnderStudy
 hash -d cb=~/configsBackup 
 hash -d pro=/home/saad/Documents/Codes/Python/pyqt/FYP 
 hash -d qt=/home/saad/Documents/Codes/Python/pyqt 
+hash -d la=$HOME/Documents/Latex/learning 
+hash -d ci=$HOME/cisco-configs 
+hash -d ns=$HOME/GNS3/ 
+hash -d po=$HOME/.config/polybar/ 

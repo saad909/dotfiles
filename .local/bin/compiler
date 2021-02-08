@@ -48,7 +48,7 @@ case "$ext" in
    sass) sassc -a "$file" "$base.css" ;;
 	scad) openscad -o "$base".stl "$file" ;;
 	sent) setsid -f sent "$file" 2>/dev/null ;;
-	tex) textype "$file" ;;
-	# cpp) rm "$dir"/a.out;g++ "$file" ;"$dir"/a.out;;
+	# tex) textype "$file" ;;
+	tex) pdflatex "$file" ;;
 	*) sed 1q "$file" | grep "^#!/" | sed "s/^#!//" | xargs -r -I % "$file" ;;
 esac
