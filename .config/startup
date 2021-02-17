@@ -1,9 +1,9 @@
 remaps &
 sxhkd &
-exec touchpad &
-exec remaps &
+touchpad &
+remaps &
 autotiling &
-exec compton &
-exec setbg &
+compton &
+setbg &
 echo 123 | sudo -S virsh net-autostart default
 $HOME/.config/polybar/launch.sh 

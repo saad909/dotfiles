@@ -29,6 +29,7 @@
 /home/arch/Music/OneRepublic - Counting Stars (Official Music Video).mp3
 /home/arch/Music/Post Malone - rockstar ft. 21 Savage.mp3
 /home/arch/Music/Post Malone, Swae Lee - Sunflower (Spider-Man - Into the Spider-Verse).mp3
+/home/arch/Music/recites/Mishary Rashid Alafasy - Surah Mulk (The Dominion).mp3
 /home/arch/Music/Sia - Chandelier (Official Music Video)-2vjPBrBU-TM.mp3
 /home/arch/Music/Sia - Cheap Thrills (Lyric Video) ft. Sean Paul-nYh-n7EOtMA.mp3
 /home/arch/Music/Sia - Unstoppable (Audio)-cxjvTXo9WWM.mp3
@@ -45,7 +46,14 @@
 /home/ExternalHDD/Music/James Arthur - Impossible (Official Music Video).mp3
 /home/ExternalHDD/Music/James Arthur - Say You Won't Let Go.mp3
 /home/ExternalHDD/Music/Martin Jensen, James Arthur - Nobody (Official Lyric Video).mp3
+/home/ExternalHDD/Music/Playlists/DBZ/Dragon Ball Super BROLY Battle Theme (Trap Remix)-664334249.mp3
+/home/ExternalHDD/Music/Playlists/DBZ/Dragon Ball Super OST - 30. The Birth Of A God-275616053.mp3
 /home/ExternalHDD/Music/Playlists/DBZ/Dragon Ball Super - Saiyan's Pride (Vegeta vs Jiren Theme) Hip Hop Remix-383262245.mp3
+/home/ExternalHDD/Music/Playlists/DBZ/Dragon Ball Super - Ultimate Battle _ Ultra Instinct Theme _ Epic Rock Cover-359304779.mp3
+/home/ExternalHDD/Music/Playlists/DBZ/Jiren's Power (Dragon Ball Super OST)-380252021.mp3
+/home/ExternalHDD/Music/Playlists/DBZ/Saiyan's Pride - Vegeta Vs Jiren Theme-380867858.mp3
+/home/ExternalHDD/Music/Playlists/DBZ/Ultra Instinct Reborn-354524018.mp3
 /home/ExternalHDD/Music/Stop Asking Me To Come Back - James Arthur (Lyric Video) [LYRIC VIDEO SHOWCASE].mp3
 /home/ExternalHDD/Music/The Chainsmokers - Don't Let Me Down ft. Daya (Official Music Video).mp3
 /home/ExternalHDD/Music/Umer songs/Flo Rida - My House [Official Video].mp3
+/home/arch/Music/recites/55.Surah Rehman.mp3

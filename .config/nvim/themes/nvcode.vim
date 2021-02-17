@@ -2,10 +2,10 @@ hi Comment cterm=italic
 let g:nvcode_termcolors=256
 
 syntax on
-colorscheme nord
+" colorscheme nord
 " colorscheme nvcode
 " colorscheme dracula
-" colorscheme gruvbox-material
+colorscheme gruvbox-material
 " colorscheme onedark
 " colorscheme TSnazzy
 " colorscheme aurora

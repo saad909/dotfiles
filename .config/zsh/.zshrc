@@ -114,6 +114,7 @@ alias mux='pgrep -vx tmux > /dev/null && \
 alias cls="clear"
 alias bbat="bluetooth_battery 41:42:F3:39:6C:5E"
 alias tp="nvim /tmp/python_test.py"
+alias open="xdg-open"
 # alias script="mkdir ~/cisco-configs;cd cisco-config/"
 
 

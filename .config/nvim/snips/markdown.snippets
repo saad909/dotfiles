@@ -8,3 +8,136 @@ tags: [$4]
 ---
 endsnippet
 
+snippet center "Centrize" br
+\begin{center}
+	$1
+\end{center}
+endsnippet
+
+snippet bal "Bold and large" br
+  {\Large \textbf{${0:"Write here"}}}
+endsnippet
+
+snippet title_small "title" br
+\begin{center}
+  \textbf{${0:"Write here"}
+\end{center}
+endsnippet
+
+snippet title_large "title" br
+\begin{center}
+  {\Large \textbf{${0:"Write here"}}}
+\end{center}
+endsnippet
+
+snippet br "line break" br
+\linebreak
+endsnippet
+
+snippet ul "Unordered list" br
+* $1
+* $2
+* $3
+endsnippet
+
+snippet ol "Unordered list" br
+(1) $1
+(1) $2
+(1) $3
+endsnippet
+
+snippet term "Differentiate a term" br
+`$1`$1
+endsnippet
+
+snippet code_bash "Python code" br
+\`\`\`{.bash .numberLines}
+$1
+\`\`\`
+endsnippet
+
+snippet code_py "Python code" br
+\`\`\`{.python .numberLines}
+$1
+\`\`\`
+endsnippet
+
+snippet code_c "C++ code" br
+\`\`\`{.c .numberLines}
+$1
+\`\`\`
+endsnippet
+
+snippet cmd "commands" br
+\`\`\`
+$1
+\`\`\`
+endsnippet
+
+snippet def "Defination" br
+${1:Term}
+: ${2:"Write defination"}
+endsnippet
+
+
+snippet picw75 "Picture of width 75%" br
+\includegraphics[width=0.75\textwidth]{"$1"}
+endsnippet
+
+snippet piccw75 "Centered Picture of width 75%" br
+\begin{center}
+\includegraphics[width=0.75\textwidth]{"$1"}
+\end{center}
+endsnippet
+
+snippet picwv "Picture of variable width " br
+\includegraphics[width=${1:"Enter width from 0.0-1%"}\textwidth]{"$1"}
+endsnippet
+
+snippet piccv "Centered Picture of variable width " br
+\begin{center}
+\includegraphics[width=0.75\textwidth]{"$1"}
+\end{center}
+endsnippet
+
+snippet h1 "H1" br
+
+# $1
+
+endsnippet
+
+
+snippet h2 "H2" br
+
+## $1
+
+endsnippet
+
+
+
+snippet h3 "H3" br
+
+### $1
+
+endsnippet
+
+
+
+snippet h4 "H4" br
+
+#### $1
+
+endsnippet
+
+
+
+snippet h5 "H5" br
+
+##### $1
+
+endsnippet
+
+
+
+
+

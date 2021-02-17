@@ -5,3 +5,5 @@
 	email = abuhurraira.saad909@gmail.com
 [credential]
 	helper = store
+[color]
+	ui = true

@@ -1,0 +1,1 @@
+pgrep -x redshift > /dev/null || redshift -ol 30.19679:71.47824 &

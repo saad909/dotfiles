@@ -227,8 +227,7 @@ bindsym $Mod+Right focus right
 # 1}}}
 # container layout {{{1
 # horizontal split {{{2
-bindsym $Mod+v split v
-default_orientation horizontal
+bindsym $Mod+v split v default_orientation horizontal
 # 2}}}
 # toggle fullscreen Mode for the focused container {{{2
 bindsym $Mod+f fullscreen toggle
@@ -377,7 +376,7 @@ floating_modifier $Mod
 # }}}
 # exec commands {{{1
 #exec_always --no-startup-id /home/$USER/.config/i3blocks/scripts/i3-battery-popup
-exec --no-startup-id $HOME/.config/polybar/default/launch.sh
+exec_always --no-startup-id $HOME/.config/polybar/default/launch.sh
 exec setbg
 # exec echo 123 | sudo -S virsh net-autostart default
 #exec echo " " > /tmp/recordingicon
@@ -421,4 +420,5 @@ workspace 8 output LVDS-1
 # workspace 5 outpuLVDSGA1 LVDS1
 
 for_window [class="mpv"] focus
+exec nm-applet
 

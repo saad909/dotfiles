@@ -16,7 +16,6 @@ lm /home/ExternalHDD/Courses/Networking/Cisco/lab_material
 sc /home/saad/.local/bin
 D ~/Downloads
 do ~/Documents
-dO /home/ExternalHDD/Documents
 os /home/ExternalHDD/OSs
 mm ~/Music
 vv ~/Videos
@@ -56,6 +55,7 @@ la $HOME/Documents/Latex/learning
 ci $HOME/cisco-configs
 ns $HOME/GNS3/
 po $HOME/.config/polybar/
+dO $HOME/Documents/documentation
 
 
 
