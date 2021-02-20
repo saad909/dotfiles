@@ -14,6 +14,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Plug 'https://github.com/ycm-core/YouCompleteMe'
 let g:vim_pbcopy_escape_backslashes = 0
+    Plug 'lervag/vimtex'
     Plug 'https://github.com/dbeniamine/cheat.sh-vim'
     Plug 'https://github.com/ahw/vim-pbcopy'
     Plug 'gruvbox-community/gruvbox'

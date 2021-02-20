@@ -1,4 +1,10 @@
-2021-02-15 18:53:39 INFO logger.py:126 Log level: INFO
-2021-02-15 18:53:39 INFO main.py:259 GNS3 GUI version 2.2.17
-2021-02-15 18:53:39 INFO main.py:260 Copyright (c) 2007-2021 GNS3 Technologies Inc.
-2021-02-15 18:53:39 INFO main.py:261 Application started with /home/saad/.local/bin/gns3
+2021-02-20 14:16:34 INFO logger.py:126 Log level: INFO
+2021-02-20 14:16:34 INFO main.py:259 GNS3 GUI version 2.2.17
+2021-02-20 14:16:34 INFO main.py:260 Copyright (c) 2007-2021 GNS3 Technologies Inc.
+2021-02-20 14:16:34 INFO main.py:261 Application started with /home/saad/.local/bin/gns3
+2021-02-20 14:44:07 INFO appliance_wizard.py:647 Image '/home/saad/Downloads/drive-download-20210220T094001Z-001/Cisco IOU L2/i86bi-linux-l2-adventerprisek9-15.2d.bin' has been successfully uploaded
+2021-02-20 14:44:35 INFO appliance_wizard.py:647 Image '/home/saad/Downloads/drive-download-20210220T094001Z-001/Cisco IOU L3/i86bi_linux-adventerprisek9-ms.155-2.T.bin' has been successfully uploaded
+2021-02-20 14:45:35 ERROR node.py:237 error while starting IOU1: Invalid IOU license key 7cf4297c9ed898e4 detected in iourc file /tmp/tmpai31pdf9/iourc for host latitude
+2021-02-20 14:45:35 CRITICAL __init__.py:1626 Invalid IOU license key 7cf4297c9ed898e4 detected in iourc file /tmp/tmpai31pdf9/iourc for host latitude
+2021-02-20 15:17:47 INFO appliance_wizard.py:238 Image '/home/saad/Downloads/i86bi-linux-l2-adventerprisek9-15.2a.bin' has been successfully uploaded
+2021-02-20 15:19:07 WARNING __init__.py:327 /home/saad/GNS3/images/IOU/i86bi-linux-l2-adventerprisek9-15.2a.bin is not executable

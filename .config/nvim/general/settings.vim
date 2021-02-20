@@ -57,4 +57,4 @@ set guifont=UbuntuMono\ Nerd\ Font\ Mono
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " You can't stop me
-cmap w!! w !sudo tee %
+" cmap w!! w !sudo tee %

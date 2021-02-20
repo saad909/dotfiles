@@ -1,10 +1,10 @@
 cmds="\
 🔒  lock	i3lock
 🚪  logout	${out:-i3-msg exit}
-🐻  hibernate	${hib:-sudo systemctl hibernate}
-🔃  reboot	${reb:-sudo reboot}
-😴  suspend	${reb:-sudo systemctl suspend}
-🖥️  shutdown	${shut:sudo -shutdown  now}"
+🐻  hibernate	${hib:-systemctl hibernate}
+🔃  reboot	${reb:-reboot}
+😴  suspend	${sus:-systemctl suspend}
+🖥️  shutdown	${shu:-shutdown  now}"
 
 choice="$(echo "$cmds" | cut -d'	' -f 1 | rofi -dmenu)" || exit 1
 

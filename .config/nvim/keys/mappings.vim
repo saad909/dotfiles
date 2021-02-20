@@ -56,8 +56,8 @@ else
   inoremap <silent> <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
   " Better window navigation
-  nnoremap <C-h> <C-w>h
   nnoremap <C-j> <C-w>j
+  nnoremap <C-h> <C-w>h
   nnoremap <C-k> <C-w>k
   nnoremap <C-l> <C-w>l
 

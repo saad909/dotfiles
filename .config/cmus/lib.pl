@@ -37,6 +37,7 @@
 /home/arch/Music/The Chainsmokers & Coldplay - Something Just Like This (Lyric).mp3
 /home/arch/Music/The Chainsmokers - Don't Let Me Down ft. Daya (Official Music Video).mp3
 /home/ExternalHDD/Music/Anne-Marie & James Arthur - Rewrite The Stars [from The Greatest Showman - Reimagined].mp3
+/home/ExternalHDD/Music/Awakening - Great Seljuk Theme Music.mp3
 /home/ExternalHDD/Music/Camila Cabello - Havana (Official Audio) ft. Young Thug.mp3
 /home/ExternalHDD/Music/Camila Cabello - My Oh My (Official Music Video) ft. DaBaby.mp3
 /home/ExternalHDD/Music/James Arthur - Can I Be Him.mp3

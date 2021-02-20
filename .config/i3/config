@@ -51,7 +51,8 @@ bindsym $Mod+Control+Shift+plus  gaps outer all     plus  5
 bindsym $Mod+Control+Shift+minus gaps outer all     minus 5
 # 1}}}
 # font {{{1
-font pango:UbuntuMono Nerd Font Mono Medium 14
+# font pango:UbuntuMono Nerd Font Mono Medium 14
+font pango:Comic Mono 14
 # font pango:FantasqueSansMono Nerd Font Mono 9
 # font pango:FantasqueSansMono Nerd Font Mono 9
 # 1}}}
@@ -294,14 +295,12 @@ set $i3_resurrect i3-resurrect
  bindsym MOD1+r mode "restore"
 #Open Programs in the respective workspaces
 assign [class="Transmission-gtk"] $ws7 
-assign [class="persepolis"] $ws7 
-assign [class="Free Download Manager"] $ws7 
-assign [class="VSCodium"] $ws6 
-assign [class="Simplenote"] $ws9
-assign [class="Transmission-gtk"] $ws7
-assign [class="Filezilla"] $ws10
+assign [class="Wireshark"] $ws6
+assign [class="persepolis"] $ws8 
+assign [class="Free Download Manager"] $ws8 
+assign [class="Transmission-gtk"] $ws8
+assign [class="Filezilla"] $ws9
 assign [class="firefox"] $ws2
-assign [class="Pcmanfm"] $ws1
 #Ranger File Manager
 #assign [class="URxvt"] $ws1
 #xdm
@@ -377,7 +376,9 @@ floating_modifier $Mod
 # exec commands {{{1
 #exec_always --no-startup-id /home/$USER/.config/i3blocks/scripts/i3-battery-popup
 exec_always --no-startup-id $HOME/.config/polybar/default/launch.sh
-exec setbg
+
+# exec setbg
+exec_always setbg "/home/ExternalHDD/Pictures/pop"
 # exec echo 123 | sudo -S virsh net-autostart default
 #exec echo " " > /tmp/recordingicon
 exec touchpad
@@ -387,14 +388,14 @@ exec_always autotiling
 # }}}
 ##### i3-gaps ##############
 for_window [class=".*"] border pixel 3 #*
-gaps inner 15
-gaps outer 15
+gaps inner 10
+gaps outer 10
 #gaps horizontal 2
 ################# i3-radius #######################
 smart_borders on
 smart_borders no_gaps
 border_radius 3
-exec '/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)'
+# exec '/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)'
 # exec flameshot
 bindsym $mod+return exec alacritty
 exec_always key_changed

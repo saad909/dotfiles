@@ -1,12 +1,6 @@
-#!/bin/bash
-export SUDO_ASKPASS=dmenupass
-zenity --password --title=Authentication
+#!/bin/sh
 
-# # shellcheck disable=2046
-# caller="$(ps -o comm= -p $(ps -o ppid= -p $$))"
-# prompt="${1:-[$caller]}"
-# promptfg=black promptbg=red hidden=white
-# font="Liberation Sans-20:Bold"
+# This script is the SUDO_ASKPASS variable, meaning that it will be used as a
+# password prompt if needed.
 
-# dmenu -p "$prompt" -fn "$font" \
-#   -nf "$hidden" -nb "$hidden" -sf "$promptfg" -sb "$promptbg" <&-
+dmenu -fn Monospace-18  -p "$1" <&- && echo

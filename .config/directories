@@ -51,11 +51,12 @@ cu /home/ExternalHDD/Courses-UnderStudy
 cb ~/configsBackup
 pro /home/saad/Documents/Codes/Python/pyqt/FYP
 qt /home/saad/Documents/Codes/Python/pyqt
-la $HOME/Documents/Latex/learning
-ci $HOME/cisco-configs
+la /home/saad/Documents/Latex/learning
+ci /home/saad/cisco-configs
 ns $HOME/GNS3/
 po $HOME/.config/polybar/
 dO $HOME/Documents/documentation
+an /run/media/saad
 
 
 

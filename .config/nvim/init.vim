@@ -74,7 +74,9 @@ inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
 
 " compiler
-map <leader>c  :w! \| !compiler "<c-r>%"<CR>
+map <leader>c  :w! \| !compiler "%"; texclear "%"<CR>
+" Runs a script that cleans out tex build files whenever I close out of a .tex file.
+autocmd VimLeave *.tex !texclear "<c-r>%"<CR>
 autocmd FileType python map <buffer> <F9> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 autocmd FileType python imap <buffer> <F10> <esc>:w<CR>:exec '!python3 main.py'<CR>
 
@@ -84,9 +86,11 @@ set colorcolumn=80
 execute "set t_8f=\e[38;2;%lu;%lu;%lum"
 execute "set t_8b=\e[48;2;%lu;%lu;%lum"
 
-map <leader>p :!opout <c-r>%<CR><CR>
+map <leader>p :!opout "%"<CR>
 
 "let g:vim_pbcopy_escape_backslashes = 0
 
 let g:vim_pbcopy_local_cmd = "pbcopy"
 let g:vim_pbcopy_escape_backslashes = 0
+cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
+let g:tex_flavour='latex'
