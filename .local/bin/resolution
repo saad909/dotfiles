@@ -4,7 +4,8 @@ xrandr --output LVDS-1 --mode 1366x768
 xrandr --output LVDS-1 --mode 1366x768
 xrandr --output VGA-1 --mode 1024x768
 
-
+$HOME/.screenlayout/multimonitor_setup.sh 
+setbg
 # xrandr --newmode "setup"   83.50  1280 1352 1480 1680  800 803 809 831 -hsync +vsync
 # xrandr --addmode VGA-1 "setup"
 # xrandr --addmode LVDS-1 "setup"

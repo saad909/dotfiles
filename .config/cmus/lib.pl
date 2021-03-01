@@ -47,6 +47,7 @@
 /home/ExternalHDD/Music/James Arthur - Impossible (Official Music Video).mp3
 /home/ExternalHDD/Music/James Arthur - Say You Won't Let Go.mp3
 /home/ExternalHDD/Music/Martin Jensen, James Arthur - Nobody (Official Lyric Video).mp3
+/home/ExternalHDD/Music/nazams/The Great Seljuk_{Büyük Selçuklu}_The Complaint (Shikwa_شکوہ) Allama iqbal-J7xXm0UiisI.mp3
 /home/ExternalHDD/Music/Playlists/DBZ/Dragon Ball Super BROLY Battle Theme (Trap Remix)-664334249.mp3
 /home/ExternalHDD/Music/Playlists/DBZ/Dragon Ball Super OST - 30. The Birth Of A God-275616053.mp3
 /home/ExternalHDD/Music/Playlists/DBZ/Dragon Ball Super - Saiyan's Pride (Vegeta vs Jiren Theme) Hip Hop Remix-383262245.mp3

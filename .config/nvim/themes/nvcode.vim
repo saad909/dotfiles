@@ -5,11 +5,12 @@ syntax on
 " colorscheme nord
 " colorscheme nvcode
 " colorscheme dracula
-colorscheme gruvbox-material
 " colorscheme onedark
 " colorscheme TSnazzy
 " colorscheme aurora
 
+colorscheme gruvbox-material
+" colorscheme wal
 
 " checks if your terminal has 24-bit color support
 if (has("termguicolors"))

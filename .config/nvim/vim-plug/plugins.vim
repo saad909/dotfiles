@@ -12,8 +12,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
 
 
-    " Plug 'https://github.com/ycm-core/YouCompleteMe'
 let g:vim_pbcopy_escape_backslashes = 0
+    " Using plug
+    Plug 'dylanaraps/wal.vim'    
     Plug 'lervag/vimtex'
     Plug 'https://github.com/dbeniamine/cheat.sh-vim'
     Plug 'https://github.com/ahw/vim-pbcopy'
@@ -24,17 +25,17 @@ let g:vim_pbcopy_escape_backslashes = 0
     " Better Comments
     Plug 'tpope/vim-commentary'
     " Change dates fast
-    " Plug 'tpope/vim-speeddating'
+    Plug 'tpope/vim-speeddating'
     " Convert binary, hex, etc..
-    " Plug 'glts/vim-radical'
+    Plug 'glts/vim-radical'
     " Repeat stuff
-    " Plug 'tpope/vim-repeat'
+    Plug 'tpope/vim-repeat'
     " Text Navigation
-    " Plug 'unblevable/quick-scope'
+    Plug 'unblevable/quick-scope'
     " Useful for React Commenting 
-    " Plug 'suy/vim-context-commentstring'
+    Plug 'suy/vim-context-commentstring'
     " highlight all matches under cursor
-    " Plug 'RRethy/vim-illuminate'
+    Plug 'RRethy/vim-illuminate'
 
   if exists('g:vscode')
     " Easy motion for VSCode
@@ -72,9 +73,9 @@ let g:vim_pbcopy_escape_backslashes = 0
     Plug 'glepnir/galaxyline.nvim'
     Plug 'kevinhwang91/rnvimr'
     " FZF
-    " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    " Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release', 'do': ':UpdateRemotePlugins' }
-    " Plug 'junegunn/fzf.vim'
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release', 'do': ':UpdateRemotePlugins' }
+    Plug 'junegunn/fzf.vim'
     " Git
     Plug 'airblade/vim-gitgutter'
     Plug 'tpope/vim-fugitive'
@@ -97,36 +98,36 @@ let g:vim_pbcopy_escape_backslashes = 0
     " Interactive code
     Plug 'metakirby5/codi.vim'
     " Better tabline
-    " Plug 'romgrk/barbar.nvim'
+    Plug 'romgrk/barbar.nvim'
     " undo time travel
     Plug 'mbbill/undotree'
     " Find and replace
-    " Plug 'ChristianChiarulli/far.vim'
+    Plug 'ChristianChiarulli/far.vim'
     " Auto change html tags
     Plug 'AndrewRadev/tagalong.vim'
     " live server
-    " Plug 'turbio/bracey.vim'
+    Plug 'turbio/bracey.vim'
     " Smooth scroll
     Plug 'psliwka/vim-smoothie'
     " " async tasks
     Plug 'skywind3000/asynctasks.vim'
     Plug 'skywind3000/asyncrun.vim'
     " Swap windows
-    " Plug 'wesQ3/vim-windowswap'
+    Plug 'wesQ3/vim-windowswap'
     " Markdown Preview
-    " Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
+    Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
     " Easily Create Gists
-    " Plug 'mattn/vim-gist'
-    " Plug 'mattn/webapi-vim'
+    Plug 'mattn/vim-gist'
+    Plug 'mattn/webapi-vim'
     " Colorizer
     Plug 'norcalli/nvim-colorizer.lua'
     " Intuitive buffer closing
     Plug 'moll/vim-bbye'
     " Debugging
-    " Plug 'puremourning/vimspector'
+    Plug 'puremourning/vimspector'
     Plug 'szw/vim-maximizer'
     " Neovim in Browser
-    " Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
+    Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
   endif
 
 call plug#end()

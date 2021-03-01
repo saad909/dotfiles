@@ -294,6 +294,7 @@ set $i3_resurrect i3-resurrect
  }
  bindsym MOD1+r mode "restore"
 #Open Programs in the respective workspaces
+assign [class="PacketTracer7"] $ws4
 assign [class="Transmission-gtk"] $ws7 
 assign [class="Wireshark"] $ws6
 assign [class="persepolis"] $ws8 
@@ -315,7 +316,7 @@ assign [class="Vmware"] $ws5
 assign [class="java-lang-Thread"] $ws7
 assign [class="kolourpaint"] $ws9
 assign [class="Lutris"] $ws10
-assign [class="Zathura"] $ws9
+# assign [class="Zathura"] $ws9
 assign [class="Remote-viewer"] $ws10
 assign [class="Surf"] $ws9
 assign [class="Putty"] $ws4
@@ -407,19 +408,30 @@ focus_follows_mouse yes
 
 # multi monitor workspaces
 # screen 2
+workspace 4 output VGA-1
 workspace 5 output VGA-1
 workspace 6 output VGA-1
-workspace 4 output VGA-1
-workspace 10 output VGA-1
+workspace 7 output VGA-1
 workspace 9 output VGA-1
+workspace 10 output VGA-1
 # screen 1
-workspace 2 output LVDS-1
 workspace 1 output LVDS-1
+workspace 2 output LVDS-1
 workspace 3 output LVDS-1
-workspace 7 output LVDS-1
 workspace 8 output LVDS-1
 # workspace 5 outpuLVDSGA1 LVDS1
 
 for_window [class="mpv"] focus
-exec nm-applet
+exec  nm-applet
+exec blueman-applet
 
+# bindsym $MOD1+1 exec $HOME/.config/i3/i3_focus_or_run.sh 1
+# bindsym $MOD1+2 exec $HOME/.config/i3/i3_focus_or_run.sh 2
+# bindsym $MOD1+3 exec $HOME/.config/i3/i3_focus_or_run.sh 3
+# bindsym $MOD1+4 exec $HOME/.config/i3/i3_focus_or_run.sh 4
+# bindsym $MOD1+5 exec $HOME/.config/i3/i3_focus_or_run.sh 5
+# bindsym $MOD1+6 exec $HOME/.config/i3/i3_focus_or_run.sh 6
+
+
+# set sensitivity
+exec xinput --set-prop 15 'libinput Accel Speed' 1

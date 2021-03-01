@@ -1,25 +1,13 @@
 ctrl+F4
-  ssn
+  alacritty -e pomodoro
 
 ctrl+shift+F4
-  ssp
+  pkill pomodoro
 
-ctrl+F5
-  pssn
-
-ctrl+shift+F5
-  pssp
-
-ctrl+F6
-  ntime
-
-ctrl+shift+F6
-  ptime
 
 # ScreenRecording and webCam
 ctrl+F7
   dmenurecord
-
 
 # qutebrowser
 super+F2
@@ -152,11 +140,14 @@ super F12
 
 super+shift+F12
   qutebrowser  "/home/ExternalHDD/SoftwaresAndTricks/Linux/Tricks/i3/index.html"
+ctrl+F12
+  resolution
 super+shift+r
   $HOME/.config/bspwm/bspwmrc
 
-super+d
-  rofi -show run
+# super+d
+#   dmenu_run -nb "$fg" -nf "$bg"j-sb "$bg" -sf "$fg"
+  # rofi -show run
 ctrl+alt+delete
   bspc quit
 
