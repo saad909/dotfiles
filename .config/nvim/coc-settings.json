@@ -98,9 +98,9 @@
   "explorer.width": 30,
   "explorer.file.root.template": "[icon] [git] [hidden & 1][root]",
   "explorer.icon.enableNerdfont": true,
-  "explorer.previewAction.onHover": true,
+  "explorer.previewAction.onHover": false,
   "explorer.icon.enableVimDevicons": true,
-  "explorer.file.showHiddenFiles": true,
+  "explorer.file.showHiddenFiles": false,
   "explorer.keyMappings.global": {
      "i": false, // cancel default mapkey
 

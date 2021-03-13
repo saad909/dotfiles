@@ -23,7 +23,7 @@ ctrl+F9
 
 # un-mount drives
 ctrl+shift+F9
-  dmenuumount
+  dmenumount
 
 # wifi
 ctrl+F10
@@ -150,6 +150,9 @@ super+shift+r
   # rofi -show run
 ctrl+alt+delete
   bspc quit
+
+super F5
+  nvim-qt "/home/saad/Documents/Codes/Python/pyqt/FYP/main.py"
 
 # layout
 

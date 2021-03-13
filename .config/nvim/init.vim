@@ -55,12 +55,12 @@ else
   source $HOME/.config/nvim/plug-config/neovide.vim
   luafile $HOME/.config/nvim/lua/plug-colorizer.lua
   source $HOME/.config/nvim/plug-config/vimspector.vim
-  " source $HOME/.config/nvim/plug-config/sneak.vim
-  " source $HOME/.config/nvim/plug-config/rainbow.vim
-  " source $HOME/.config/nvim/plug-config/illuminate.vim
-  " source $HOME/.config/nvim/plug-config/vista.vim
-  " source $HOME/.config/nvim/plug-config/xtabline.vim
-  " source $HOME/.config/nvim/plug-config/ale.vim
+  source $HOME/.config/nvim/plug-config/sneak.vim
+  source $HOME/.config/nvim/plug-config/rainbow.vim
+  source $HOME/.config/nvim/plug-config/illuminate.vim
+  source $HOME/.config/nvim/plug-config/vista.vim
+  source $HOME/.config/nvim/plug-config/xtabline.vim
+  source $HOME/.config/nvim/plug-config/ale.vim
 endif
 source $HOME/.config/nvim/plug-config/quickscope.vim
 
@@ -94,3 +94,5 @@ let g:vim_pbcopy_local_cmd = "pbcopy"
 let g:vim_pbcopy_escape_backslashes = 0
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 let g:tex_flavour='latex'
+set guifont=FiraCode\ Nerd\ Font\ Mono:h12
+let g:kite_supported_languages = ['python']

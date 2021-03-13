@@ -19,6 +19,7 @@ do ~/Documents
 os /home/ExternalHDD/OSs
 mm ~/Music
 vv ~/Videos
+vV /home/ExternalHDD/Videos
 pp ~/Pictures
 cf ~/.config
 ra ~/.config/ranger
@@ -36,7 +37,7 @@ fO /usr/share/fonts
 # py  ~/Documents/Python
 pa /home/saad/Documents/Codes/Python/networkAutomation
 as /home/saad/Documents/Assignments
-us /media/saad
+us /run/media/saad
 tm /tmp
 ca ~/.cache
 ki /run/media/saad/Kindle

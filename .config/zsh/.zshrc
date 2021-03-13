@@ -1,8 +1,7 @@
 # oh-my-zsh
 export ZSH="/home/saad/.oh-my-zsh"
 # ZSH_THEME="crunch"
-ZSH_THEME="agnoster"
-# ZSH_THEME="robbyrussell"
+ZSH_THEME="robbyrussell"
 plugins=(git extract zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
@@ -116,6 +115,7 @@ alias cls="clear"
 alias bbat="bluetooth_battery 41:42:F3:39:6C:5E"
 alias tp="nvim /tmp/python_test.py"
 alias open="xdg-open"
+alias pom=pomodoro
 # alias script="mkdir ~/cisco-configs;cd cisco-config/"
 
 

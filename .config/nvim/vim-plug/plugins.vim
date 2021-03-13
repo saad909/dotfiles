@@ -14,7 +14,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
 let g:vim_pbcopy_escape_backslashes = 0
     " Using plug
-    Plug 'dylanaraps/wal.vim'    
+    " Plug 'dylanaraps/wal.vim'    
+
+    " Plug 'https://github.com/kiteco/vim-plugin/'
     Plug 'lervag/vimtex'
     Plug 'https://github.com/dbeniamine/cheat.sh-vim'
     Plug 'https://github.com/ahw/vim-pbcopy'
@@ -25,21 +27,21 @@ let g:vim_pbcopy_escape_backslashes = 0
     " Better Comments
     Plug 'tpope/vim-commentary'
     " Change dates fast
-    Plug 'tpope/vim-speeddating'
+     Plug 'tpope/vim-speeddating'
     " Convert binary, hex, etc..
-    Plug 'glts/vim-radical'
+     Plug 'glts/vim-radical'
     " Repeat stuff
-    Plug 'tpope/vim-repeat'
+     Plug 'tpope/vim-repeat'
     " Text Navigation
-    Plug 'unblevable/quick-scope'
+     Plug 'unblevable/quick-scope'
     " Useful for React Commenting 
-    Plug 'suy/vim-context-commentstring'
+     Plug 'suy/vim-context-commentstring'
     " highlight all matches under cursor
-    Plug 'RRethy/vim-illuminate'
+     Plug 'RRethy/vim-illuminate'
 
   if exists('g:vscode')
     " Easy motion for VSCode
-    " Plug 'asvetliakov/vim-easymotion'
+     Plug 'asvetliakov/vim-easymotion'
     Plug 'ChristianChiarulli/vscode-easymotion'
     Plug 'machakann/vim-highlightedyank'
   else
@@ -50,11 +52,11 @@ let g:vim_pbcopy_escape_backslashes = 0
     " Surround
     Plug 'tpope/vim-surround'
     " Have the file system follow you around
-    Plug 'airblade/vim-rooter'
+     Plug 'airblade/vim-rooter'
     " auto set indent settings
     Plug 'tpope/vim-sleuth'
     " Better Syntax Support
-    Plug 'sheerun/vim-polyglot'
+     Plug 'sheerun/vim-polyglot'
     " Treesitter
     Plug 'nvim-treesitter/nvim-treesitter'
     Plug 'nvim-treesitter/playground'
@@ -85,9 +87,9 @@ let g:vim_pbcopy_escape_backslashes = 0
     " Terminal
     Plug 'voldikss/vim-floaterm'
     " Start Screen
-    Plug 'mhinz/vim-startify'
+     Plug 'mhinz/vim-startify'
     " Vista
-    Plug 'liuchengxu/vista.vim'
+     Plug 'liuchengxu/vista.vim'
     " See what keys do like in emacs
     Plug 'liuchengxu/vim-which-key'
     " Zen mode
@@ -96,29 +98,29 @@ let g:vim_pbcopy_escape_backslashes = 0
     Plug 'honza/vim-snippets'
     Plug 'mattn/emmet-vim'
     " Interactive code
-    Plug 'metakirby5/codi.vim'
+     Plug 'metakirby5/codi.vim'
     " Better tabline
-    Plug 'romgrk/barbar.nvim'
+     Plug 'romgrk/barbar.nvim'
     " undo time travel
-    Plug 'mbbill/undotree'
+     Plug 'mbbill/undotree'
     " Find and replace
-    Plug 'ChristianChiarulli/far.vim'
+     Plug 'ChristianChiarulli/far.vim'
     " Auto change html tags
-    Plug 'AndrewRadev/tagalong.vim'
+     Plug 'AndrewRadev/tagalong.vim'
     " live server
-    Plug 'turbio/bracey.vim'
+     Plug 'turbio/bracey.vim'
     " Smooth scroll
     Plug 'psliwka/vim-smoothie'
     " " async tasks
-    Plug 'skywind3000/asynctasks.vim'
-    Plug 'skywind3000/asyncrun.vim'
+     Plug 'skywind3000/asynctasks.vim'
+     Plug 'skywind3000/asyncrun.vim'
     " Swap windows
-    Plug 'wesQ3/vim-windowswap'
+     Plug 'wesQ3/vim-windowswap'
     " Markdown Preview
-    Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
+     Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
     " Easily Create Gists
-    Plug 'mattn/vim-gist'
-    Plug 'mattn/webapi-vim'
+     Plug 'mattn/vim-gist'
+     Plug 'mattn/webapi-vim'
     " Colorizer
     Plug 'norcalli/nvim-colorizer.lua'
     " Intuitive buffer closing
@@ -127,7 +129,7 @@ let g:vim_pbcopy_escape_backslashes = 0
     Plug 'puremourning/vimspector'
     Plug 'szw/vim-maximizer'
     " Neovim in Browser
-    Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
+     Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
   endif
 
 call plug#end()

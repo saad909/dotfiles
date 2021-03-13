@@ -52,7 +52,7 @@ bindsym $Mod+Control+Shift+minus gaps outer all     minus 5
 # 1}}}
 # font {{{1
 # font pango:UbuntuMono Nerd Font Mono Medium 14
-font pango:Comic Mono 14
+font pango:FiraCode Nerd Font Mono 9
 # font pango:FantasqueSansMono Nerd Font Mono 9
 # font pango:FantasqueSansMono Nerd Font Mono 9
 # 1}}}
@@ -76,7 +76,7 @@ exec_always --no-startup-id xrdb -load ~/.Xresources
 #bindsym Mod1+F1 exec --no-startup-id rofi_run -r
 # launchers
 # bindsym $Mod+d exec --no-startup-id rofi -show run
-bindsym $Mod+d exec "dmenu_run -nf '#F8F8F2' -nb '#282A36' -sb '#6272A4' -sf '#F8F8F2' -fn 'monospace-10' -p 'run:'"
+bindsym $Mod+d exec rofi -show run
 # Screenshot {{{1
 bindsym Print exec --no-startup-id "scrot '%S.png' -e 'mv $f $$(xdg-user-dir PICTURES)/ArchLabs-%S-$wx$h.png ; feh $$(xdg-user-dir PICTURES)/ArchLabs-%S-$wx$h.png'"
 # 1}}}
@@ -294,6 +294,7 @@ set $i3_resurrect i3-resurrect
  }
  bindsym MOD1+r mode "restore"
 #Open Programs in the respective workspaces
+assign [class="nvim-qt"] $ws7
 assign [class="PacketTracer7"] $ws4
 assign [class="Transmission-gtk"] $ws7 
 assign [class="Wireshark"] $ws6
@@ -379,7 +380,8 @@ floating_modifier $Mod
 exec_always --no-startup-id $HOME/.config/polybar/default/launch.sh
 
 # exec setbg
-exec_always setbg "/home/ExternalHDD/Pictures/pop"
+#exec_always setbg "/home/ExternalHDD/Pictures/pop"
+exec setbg 
 # exec echo 123 | sudo -S virsh net-autostart default
 #exec echo " " > /tmp/recordingicon
 exec touchpad
@@ -388,7 +390,7 @@ exec compton
 exec_always autotiling
 # }}}
 ##### i3-gaps ##############
-for_window [class=".*"] border pixel 3 #*
+for_window [class=".*"] border pixel 6 #*
 gaps inner 10
 gaps outer 10
 #gaps horizontal 2
@@ -424,6 +426,7 @@ workspace 8 output LVDS-1
 for_window [class="mpv"] focus
 exec  nm-applet
 exec blueman-applet
+exec flameshot
 
 # bindsym $MOD1+1 exec $HOME/.config/i3/i3_focus_or_run.sh 1
 # bindsym $MOD1+2 exec $HOME/.config/i3/i3_focus_or_run.sh 2
