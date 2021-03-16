@@ -1,8 +1,6 @@
 # You can add comments to these files with #
 cf  ${XDG_CONFIG_HOME:-$HOME/.config}
-mn  /mnt
 pp  ${XDG_PICTURES_DIR:-$HOME/Pictures}
-sc  ~/.local/bin
 wa /home/saad/Pictures/Wallpapers
 wA /home/ExternalHDD/Pictures/Wallpapers
 da  /home/ExternalHDD/
@@ -20,13 +18,9 @@ os /home/ExternalHDD/OSs
 mm ~/Music
 vv ~/Videos
 vV /home/ExternalHDD/Videos
-pp ~/Pictures
 cf ~/.config
 ra ~/.config/ranger
-no  ~/Documents/Notes
 bo ~/Documents/Books
-bO /home/ExternalHDD/Documents/Books
-ex ~/Documents/Experiments
 xl ~/Documents/Office/Excel
 wo ~/Documents/Office/Word
 pre ~/Documents/Office/Presentations
@@ -34,30 +28,17 @@ h /home/saad
 vm ~/.config/nvim
 fo ~/.local/share/fonts
 fO /usr/share/fonts
-# py  ~/Documents/Python
-pa /home/saad/Documents/Codes/Python/networkAutomation
-as /home/saad/Documents/Assignments
 us /run/media/saad
 tm /tmp
 ca ~/.cache
 ki /run/media/saad/Kindle
 mo /home/ExternalHDD/Movies
-eD /home/ExternalHDD/Downloads
 pp /home/ExternalHDD/Pictures
-ewa /home/ExternalHDD/Pictures/Wallpapers
-edo /home/ExternalHDD/Documents
-mm /home/ExternalHDD/Music
-ev /home/ExternalHDD/Videos
 cu /home/ExternalHDD/Courses-UnderStudy
-cb ~/configsBackup
 pro /home/saad/Documents/Codes/Python/pyqt/FYP
 qt /home/saad/Documents/Codes/Python/pyqt
-la /home/saad/Documents/Latex/learning
 ci /home/saad/cisco-configs
-ns $HOME/GNS3/
 po $HOME/.config/polybar/
-dO $HOME/Documents/documentation
-an /run/media/saad
 
 
 

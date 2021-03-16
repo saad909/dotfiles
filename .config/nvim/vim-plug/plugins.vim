@@ -16,7 +16,7 @@ let g:vim_pbcopy_escape_backslashes = 0
     " Using plug
     " Plug 'dylanaraps/wal.vim'    
 
-    " Plug 'https://github.com/kiteco/vim-plugin/'
+    Plug 'https://github.com/kiteco/vim-plugin/'
     Plug 'lervag/vimtex'
     Plug 'https://github.com/dbeniamine/cheat.sh-vim'
     Plug 'https://github.com/ahw/vim-pbcopy'
