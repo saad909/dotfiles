@@ -113,7 +113,7 @@ super + Return
 
 # file manager
 super + F3
-  pcmanfm
+  thunar
 
 # reload keys
 super + shift + c
@@ -152,7 +152,7 @@ ctrl+alt+delete
   bspc quit
 
 super F5
-  nvim-qt "/home/saad/Documents/Codes/Python/pyqt/FYP/main.py"
+ nvim-qt "/home/saad/Documents/Codes/Python/pyqt/FYP/main.py"
 
 # layout
 

@@ -96,7 +96,7 @@ bindkey -s '^z' 'zsh\n'
 bindkey -s '^t' 'tto\n'
 cat /home/$USER/.cache/wal/sequences
 ##########test rmd file for configs#########
-alias test="vim /home/$USER/Documents/Experiments/test.cfg"
+alias test="nvim-qt /home/$USER/Documents/Experiments/test.cfg"
 
 
 
@@ -113,12 +113,11 @@ alias mux='pgrep -vx tmux > /dev/null && \
 #source $(dirname $(gem which colorls))/tab_complete.sh
 alias cls="clear"
 alias bbat="bluetooth_battery 41:42:F3:39:6C:5E"
-alias tp="nvim /tmp/python_test.py"
+alias tp="nvim-qt /tmp/python_test.py"
 alias open="xdg-open"
 alias pom=pomodoro
 # alias script="mkdir ~/cisco-configs;cd cisco-config/"
 
 
-# cls
 # neofetch
 

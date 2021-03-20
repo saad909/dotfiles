@@ -1,17 +1,17 @@
-2021-03-13 23:48:33 INFO run.py:219 GNS3 server version 2.2.19
-2021-03-13 23:48:33 INFO run.py:221 Copyright (c) 2007-2021 GNS3 Technologies Inc.
-2021-03-13 23:48:33 INFO run.py:224 Config file /home/saad/.config/GNS3/2.2/gns3_server.conf loaded
-2021-03-13 23:48:33 WARNING run.py:230 Local mode is enabled. Beware, clients will have full control on your filesystem
-2021-03-13 23:48:33 INFO run.py:237 HTTP authentication is enabled with username 'admin'
-2021-03-13 23:48:33 INFO run.py:243 Running with Python 3.9.2 and has PID 7867
-2021-03-13 23:48:33 INFO run.py:79 Current locale is en_US.UTF-8
-2021-03-13 23:48:33 INFO web_server.py:318 Starting server on localhost:3080
-2021-03-13 23:48:33 INFO __init__.py:62 Load controller configuration file /home/saad/.config/GNS3/2.2/gns3_controller.conf
-2021-03-13 23:48:33 INFO __init__.py:66 Controller is starting
-2021-03-13 23:48:33 INFO compute.py:64 Create compute local
-2021-03-13 23:48:33 INFO compute.py:364 Connecting to compute 'local'
-2021-03-13 23:48:33 INFO web_log.py:233 ::1 [13/Mar/2021:18:48:33 +0000] "GET /v2/compute/capabilities HTTP/1.1" 200 552 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-13 23:48:33 ERROR web_protocol.py:355 Error handling request
+2021-03-20 19:50:35 INFO run.py:219 GNS3 server version 2.2.19
+2021-03-20 19:50:35 INFO run.py:221 Copyright (c) 2007-2021 GNS3 Technologies Inc.
+2021-03-20 19:50:35 INFO run.py:224 Config file /home/saad/.config/GNS3/2.2/gns3_server.conf loaded
+2021-03-20 19:50:35 WARNING run.py:230 Local mode is enabled. Beware, clients will have full control on your filesystem
+2021-03-20 19:50:35 INFO run.py:237 HTTP authentication is enabled with username 'admin'
+2021-03-20 19:50:35 INFO run.py:243 Running with Python 3.9.2 and has PID 15944
+2021-03-20 19:50:35 INFO run.py:79 Current locale is en_US.UTF-8
+2021-03-20 19:50:35 INFO web_server.py:318 Starting server on localhost:3080
+2021-03-20 19:50:35 INFO __init__.py:62 Load controller configuration file /home/saad/.config/GNS3/2.2/gns3_controller.conf
+2021-03-20 19:50:35 INFO __init__.py:66 Controller is starting
+2021-03-20 19:50:35 INFO compute.py:64 Create compute local
+2021-03-20 19:50:35 INFO compute.py:364 Connecting to compute 'local'
+2021-03-20 19:50:35 INFO web_log.py:233 ::1 [20/Mar/2021:14:50:35 +0000] "GET /v2/compute/capabilities HTTP/1.1" 200 552 "-" "Python/3.9 aiohttp/3.6.2"
+2021-03-20 19:50:35 ERROR web_protocol.py:355 Error handling request
 Traceback (most recent call last):
   File "/home/saad/.local/lib/python3.9/site-packages/aiohttp/web_protocol.py", line 275, in data_received
     messages, upgraded, tail = self._request_parser.feed_data(data)
@@ -20,198 +20,99 @@ Traceback (most recent call last):
   File "/home/saad/.local/lib/python3.9/site-packages/aiohttp/http_parser.py", line 437, in parse_message
     raise BadStatusLine(method)
 aiohttp.http_exceptions.BadStatusLine: /version
-2021-03-13 23:48:33 INFO notification_handler.py:50 New client has connected to compute WebSocket
-2021-03-13 23:48:33 INFO compute.py:434 Connected to compute 'local' WebSocket 'http://localhost:3080/v2/compute/notifications/ws'
-2021-03-13 23:48:33 INFO web_log.py:233 ::1 [13/Mar/2021:18:48:33 +0000] "GET /v2/version HTTP/1.1" 200 227 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:48:33 INFO web_log.py:233 ::1 [13/Mar/2021:18:48:33 +0000] "GET /v2/templates HTTP/1.1" 200 17094 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:48:33 INFO web_log.py:233 ::1 [13/Mar/2021:18:48:33 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:48:33 INFO notification_handler.py:73 New client has connected to controller WebSocket
-2021-03-13 23:48:33 INFO web_log.py:233 ::1 [13/Mar/2021:18:48:33 +0000] "GET /v2/appliances?symbol_theme=Classic HTTP/1.1" 200 784752 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:48:33 INFO web_log.py:233 ::1 [13/Mar/2021:18:48:33 +0000] "GET /v2/projects HTTP/1.1" 200 22415 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:48:33 INFO web_log.py:233 ::1 [13/Mar/2021:18:48:33 +0000] "GET /v2/projects HTTP/1.1" 200 22415 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:48:37 INFO project.py:78 Project 500c20ea-fc8a-4815-83c9-6b14482d0fa1 with path '/home/saad/GNS3/projects/lab#29' created
-2021-03-13 23:48:37 INFO web_log.py:233 ::1 [13/Mar/2021:18:48:37 +0000] "POST /v2/compute/projects HTTP/1.1" 201 301 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-13 23:48:37 INFO iou_vm.py:73 IOU "S1" [3ac8eddb-b8b3-4a47-bf51-8821f6036c37]: assigned with application ID 1
-2021-03-13 23:48:37 INFO iou_vm.py:848 IOU "S1" [3ac8eddb-b8b3-4a47-bf51-8821f6036c37]: number of Ethernet adapters changed to 2
-2021-03-13 23:48:37 INFO iou_vm.py:876 IOU "S1" [3ac8eddb-b8b3-4a47-bf51-8821f6036c37]: number of Serial adapters changed to 2
-2021-03-13 23:48:37 INFO iou_vm.py:316 IOU "S1" [3ac8eddb-b8b3-4a47-bf51-8821f6036c37]: NVRAM updated from 128KB to 16KB
-2021-03-13 23:48:37 INFO iou_vm.py:848 IOU "S1" [3ac8eddb-b8b3-4a47-bf51-8821f6036c37]: number of Ethernet adapters changed to 4
-2021-03-13 23:48:37 INFO iou_vm.py:145 IOU "S1" [3ac8eddb-b8b3-4a47-bf51-8821f6036c37]: IOU image updated to "/home/saad/GNS3/images/IOU/i86bi-linux-l2-adventerprisek9-15.1a.bin"
-2021-03-13 23:48:37 INFO iou_vm.py:876 IOU "S1" [3ac8eddb-b8b3-4a47-bf51-8821f6036c37]: number of Serial adapters changed to 0
-2021-03-13 23:48:37 INFO web_log.py:233 127.0.0.1 [13/Mar/2021:18:48:37 +0000] "POST /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/iou/nodes HTTP/1.1" 201 863 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-13 23:48:37 INFO iou_vm.py:73 IOU "S3" [39d3cdf2-c244-45fa-90ac-8911e2e801a6]: assigned with application ID 2
-2021-03-13 23:48:37 INFO iou_vm.py:848 IOU "S3" [39d3cdf2-c244-45fa-90ac-8911e2e801a6]: number of Ethernet adapters changed to 2
-2021-03-13 23:48:37 INFO iou_vm.py:876 IOU "S3" [39d3cdf2-c244-45fa-90ac-8911e2e801a6]: number of Serial adapters changed to 2
-2021-03-13 23:48:37 INFO iou_vm.py:316 IOU "S3" [39d3cdf2-c244-45fa-90ac-8911e2e801a6]: NVRAM updated from 128KB to 16KB
-2021-03-13 23:48:37 INFO iou_vm.py:848 IOU "S3" [39d3cdf2-c244-45fa-90ac-8911e2e801a6]: number of Ethernet adapters changed to 4
-2021-03-13 23:48:37 INFO iou_vm.py:145 IOU "S3" [39d3cdf2-c244-45fa-90ac-8911e2e801a6]: IOU image updated to "/home/saad/GNS3/images/IOU/i86bi-linux-l2-adventerprisek9-15.1a.bin"
-2021-03-13 23:48:37 INFO iou_vm.py:876 IOU "S3" [39d3cdf2-c244-45fa-90ac-8911e2e801a6]: number of Serial adapters changed to 0
-2021-03-13 23:48:37 INFO web_log.py:233 ::1 [13/Mar/2021:18:48:37 +0000] "POST /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/iou/nodes HTTP/1.1" 201 863 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-13 23:48:37 INFO iou_vm.py:73 IOU "S2" [675ae7ec-96c1-44ec-a999-721c289e5c3f]: assigned with application ID 3
-2021-03-13 23:48:37 INFO iou_vm.py:848 IOU "S2" [675ae7ec-96c1-44ec-a999-721c289e5c3f]: number of Ethernet adapters changed to 2
-2021-03-13 23:48:37 INFO iou_vm.py:876 IOU "S2" [675ae7ec-96c1-44ec-a999-721c289e5c3f]: number of Serial adapters changed to 2
-2021-03-13 23:48:37 INFO iou_vm.py:316 IOU "S2" [675ae7ec-96c1-44ec-a999-721c289e5c3f]: NVRAM updated from 128KB to 16KB
-2021-03-13 23:48:37 INFO iou_vm.py:848 IOU "S2" [675ae7ec-96c1-44ec-a999-721c289e5c3f]: number of Ethernet adapters changed to 4
-2021-03-13 23:48:37 INFO iou_vm.py:145 IOU "S2" [675ae7ec-96c1-44ec-a999-721c289e5c3f]: IOU image updated to "/home/saad/GNS3/images/IOU/i86bi-linux-l2-adventerprisek9-15.1a.bin"
-2021-03-13 23:48:37 INFO iou_vm.py:876 IOU "S2" [675ae7ec-96c1-44ec-a999-721c289e5c3f]: number of Serial adapters changed to 0
-2021-03-13 23:48:37 INFO web_log.py:233 127.0.0.1 [13/Mar/2021:18:48:37 +0000] "POST /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/iou/nodes HTTP/1.1" 201 863 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-13 23:48:37 INFO web_log.py:233 ::1 [13/Mar/2021:18:48:37 +0000] "POST /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-13 23:48:37 INFO web_log.py:233 127.0.0.1 [13/Mar/2021:18:48:37 +0000] "POST /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-13 23:48:37 INFO iou_vm.py:902 IOU "S1" [3ac8eddb-b8b3-4a47-bf51-8821f6036c37]: NIO UDP added to 0/0
-2021-03-13 23:48:37 INFO web_log.py:233 ::1 [13/Mar/2021:18:48:37 +0000] "POST /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/iou/nodes/3ac8eddb-b8b3-4a47-bf51-8821f6036c37/adapters/0/ports/0/nio HTTP/1.1" 201 377 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-13 23:48:37 INFO iou_vm.py:902 IOU "S2" [675ae7ec-96c1-44ec-a999-721c289e5c3f]: NIO UDP added to 0/0
-2021-03-13 23:48:37 INFO web_log.py:233 127.0.0.1 [13/Mar/2021:18:48:37 +0000] "POST /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/iou/nodes/675ae7ec-96c1-44ec-a999-721c289e5c3f/adapters/0/ports/0/nio HTTP/1.1" 201 377 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-13 23:48:37 INFO web_log.py:233 ::1 [13/Mar/2021:18:48:37 +0000] "POST /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-13 23:48:37 INFO web_log.py:233 127.0.0.1 [13/Mar/2021:18:48:37 +0000] "POST /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-13 23:48:37 INFO iou_vm.py:902 IOU "S1" [3ac8eddb-b8b3-4a47-bf51-8821f6036c37]: NIO UDP added to 0/1
-2021-03-13 23:48:37 INFO web_log.py:233 ::1 [13/Mar/2021:18:48:37 +0000] "POST /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/iou/nodes/3ac8eddb-b8b3-4a47-bf51-8821f6036c37/adapters/0/ports/1/nio HTTP/1.1" 201 377 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-13 23:48:37 INFO iou_vm.py:902 IOU "S2" [675ae7ec-96c1-44ec-a999-721c289e5c3f]: NIO UDP added to 0/1
-2021-03-13 23:48:37 INFO web_log.py:233 127.0.0.1 [13/Mar/2021:18:48:37 +0000] "POST /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/iou/nodes/675ae7ec-96c1-44ec-a999-721c289e5c3f/adapters/0/ports/1/nio HTTP/1.1" 201 377 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-13 23:48:37 INFO web_log.py:233 ::1 [13/Mar/2021:18:48:37 +0000] "POST /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-13 23:48:37 INFO web_log.py:233 127.0.0.1 [13/Mar/2021:18:48:37 +0000] "POST /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-13 23:48:37 INFO iou_vm.py:902 IOU "S2" [675ae7ec-96c1-44ec-a999-721c289e5c3f]: NIO UDP added to 0/2
-2021-03-13 23:48:37 INFO web_log.py:233 ::1 [13/Mar/2021:18:48:37 +0000] "POST /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/iou/nodes/675ae7ec-96c1-44ec-a999-721c289e5c3f/adapters/0/ports/2/nio HTTP/1.1" 201 377 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-13 23:48:37 INFO iou_vm.py:902 IOU "S3" [39d3cdf2-c244-45fa-90ac-8911e2e801a6]: NIO UDP added to 0/2
-2021-03-13 23:48:37 INFO web_log.py:233 127.0.0.1 [13/Mar/2021:18:48:37 +0000] "POST /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/iou/nodes/39d3cdf2-c244-45fa-90ac-8911e2e801a6/adapters/0/ports/2/nio HTTP/1.1" 201 377 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-13 23:48:37 INFO web_log.py:233 ::1 [13/Mar/2021:18:48:37 +0000] "POST /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-13 23:48:37 INFO web_log.py:233 127.0.0.1 [13/Mar/2021:18:48:37 +0000] "POST /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-13 23:48:37 INFO iou_vm.py:902 IOU "S2" [675ae7ec-96c1-44ec-a999-721c289e5c3f]: NIO UDP added to 0/3
-2021-03-13 23:48:37 INFO web_log.py:233 ::1 [13/Mar/2021:18:48:37 +0000] "POST /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/iou/nodes/675ae7ec-96c1-44ec-a999-721c289e5c3f/adapters/0/ports/3/nio HTTP/1.1" 201 377 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-13 23:48:37 INFO iou_vm.py:902 IOU "S3" [39d3cdf2-c244-45fa-90ac-8911e2e801a6]: NIO UDP added to 0/3
-2021-03-13 23:48:37 INFO web_log.py:233 127.0.0.1 [13/Mar/2021:18:48:37 +0000] "POST /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/iou/nodes/39d3cdf2-c244-45fa-90ac-8911e2e801a6/adapters/0/ports/3/nio HTTP/1.1" 201 377 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-13 23:48:37 INFO web_log.py:233 ::1 [13/Mar/2021:18:48:37 +0000] "POST /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-13 23:48:37 INFO web_log.py:233 127.0.0.1 [13/Mar/2021:18:48:37 +0000] "POST /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-13 23:48:37 INFO iou_vm.py:902 IOU "S1" [3ac8eddb-b8b3-4a47-bf51-8821f6036c37]: NIO UDP added to 0/2
-2021-03-13 23:48:37 INFO web_log.py:233 ::1 [13/Mar/2021:18:48:37 +0000] "POST /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/iou/nodes/3ac8eddb-b8b3-4a47-bf51-8821f6036c37/adapters/0/ports/2/nio HTTP/1.1" 201 377 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-13 23:48:37 INFO iou_vm.py:902 IOU "S3" [39d3cdf2-c244-45fa-90ac-8911e2e801a6]: NIO UDP added to 0/0
-2021-03-13 23:48:37 INFO web_log.py:233 127.0.0.1 [13/Mar/2021:18:48:37 +0000] "POST /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/iou/nodes/39d3cdf2-c244-45fa-90ac-8911e2e801a6/adapters/0/ports/0/nio HTTP/1.1" 201 377 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-13 23:48:37 INFO web_log.py:233 ::1 [13/Mar/2021:18:48:37 +0000] "POST /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-13 23:48:37 INFO web_log.py:233 127.0.0.1 [13/Mar/2021:18:48:37 +0000] "POST /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-13 23:48:37 INFO iou_vm.py:902 IOU "S1" [3ac8eddb-b8b3-4a47-bf51-8821f6036c37]: NIO UDP added to 0/3
-2021-03-13 23:48:37 INFO web_log.py:233 ::1 [13/Mar/2021:18:48:37 +0000] "POST /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/iou/nodes/3ac8eddb-b8b3-4a47-bf51-8821f6036c37/adapters/0/ports/3/nio HTTP/1.1" 201 377 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-13 23:48:37 INFO iou_vm.py:902 IOU "S3" [39d3cdf2-c244-45fa-90ac-8911e2e801a6]: NIO UDP added to 0/1
-2021-03-13 23:48:37 INFO web_log.py:233 127.0.0.1 [13/Mar/2021:18:48:37 +0000] "POST /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/iou/nodes/39d3cdf2-c244-45fa-90ac-8911e2e801a6/adapters/0/ports/1/nio HTTP/1.1" 201 377 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-13 23:48:37 INFO web_log.py:233 ::1 [13/Mar/2021:18:48:37 +0000] "POST /v2/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/open HTTP/1.1" 201 736 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:48:37 INFO project_handler.py:271 New client has connected to the notification stream for project ID '500c20ea-fc8a-4815-83c9-6b14482d0fa1' (WebSocket method)
-2021-03-13 23:48:37 INFO web_log.py:233 ::1 [13/Mar/2021:18:48:37 +0000] "GET /v2/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/nodes HTTP/1.1" 200 20308 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:48:37 INFO web_log.py:233 ::1 [13/Mar/2021:18:48:37 +0000] "GET /v2/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/links HTTP/1.1" 200 8037 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:48:37 INFO web_log.py:233 ::1 [13/Mar/2021:18:48:37 +0000] "GET /v2/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/drawings HTTP/1.1" 200 205 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:48:49 INFO docker_vm.py:1058 Docker container "NetworkingTools-1" [c2ea3407-9b77-4666-ad6b-cfdf6969eebd]: number of Ethernet adapters changed to 1
-2021-03-13 23:48:49 INFO docker_vm.py:324 Image 'roxron/rus_tem:mgmt_srv' is missing, pulling it from Docker hub...
-2021-03-13 23:48:50 INFO web_log.py:233 ::1 [13/Mar/2021:18:48:50 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:48:56 INFO web_log.py:233 ::1 [13/Mar/2021:18:48:56 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:48:58 INFO web_log.py:233 ::1 [13/Mar/2021:18:48:58 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:49:00 INFO web_log.py:233 ::1 [13/Mar/2021:18:49:00 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:49:02 INFO web_log.py:233 ::1 [13/Mar/2021:18:49:02 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:49:04 INFO web_log.py:233 ::1 [13/Mar/2021:18:49:04 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:49:06 INFO web_log.py:233 ::1 [13/Mar/2021:18:49:06 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:49:08 INFO web_log.py:233 ::1 [13/Mar/2021:18:49:08 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:49:10 INFO web_log.py:233 ::1 [13/Mar/2021:18:49:10 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:49:12 INFO web_log.py:233 ::1 [13/Mar/2021:18:49:12 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:49:14 INFO web_log.py:233 ::1 [13/Mar/2021:18:49:14 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:49:16 INFO web_log.py:233 ::1 [13/Mar/2021:18:49:16 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:49:18 INFO web_log.py:233 ::1 [13/Mar/2021:18:49:18 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:49:20 INFO web_log.py:233 ::1 [13/Mar/2021:18:49:20 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:49:22 INFO web_log.py:233 ::1 [13/Mar/2021:18:49:22 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:49:24 INFO web_log.py:233 ::1 [13/Mar/2021:18:49:24 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:49:26 INFO web_log.py:233 ::1 [13/Mar/2021:18:49:26 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:49:28 INFO web_log.py:233 ::1 [13/Mar/2021:18:49:28 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:49:30 INFO web_log.py:233 ::1 [13/Mar/2021:18:49:30 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:49:32 INFO web_log.py:233 ::1 [13/Mar/2021:18:49:32 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:49:34 INFO web_log.py:233 ::1 [13/Mar/2021:18:49:34 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:49:36 INFO web_log.py:233 ::1 [13/Mar/2021:18:49:36 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:49:38 INFO web_log.py:233 ::1 [13/Mar/2021:18:49:38 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:49:40 INFO web_log.py:233 ::1 [13/Mar/2021:18:49:40 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:49:42 INFO web_log.py:233 ::1 [13/Mar/2021:18:49:42 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:49:44 INFO web_log.py:233 ::1 [13/Mar/2021:18:49:44 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:49:46 INFO web_log.py:233 ::1 [13/Mar/2021:18:49:46 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:49:48 INFO web_log.py:233 ::1 [13/Mar/2021:18:49:48 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:49:50 INFO web_log.py:233 ::1 [13/Mar/2021:18:49:50 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:49:52 INFO web_log.py:233 ::1 [13/Mar/2021:18:49:52 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:49:54 INFO web_log.py:233 ::1 [13/Mar/2021:18:49:54 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:49:56 INFO web_log.py:233 ::1 [13/Mar/2021:18:49:56 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:49:58 INFO web_log.py:233 ::1 [13/Mar/2021:18:49:58 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:50:00 INFO web_log.py:233 ::1 [13/Mar/2021:18:50:00 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:50:02 INFO web_log.py:233 ::1 [13/Mar/2021:18:50:02 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:50:04 INFO web_log.py:233 ::1 [13/Mar/2021:18:50:04 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:50:08 INFO web_log.py:233 ::1 [13/Mar/2021:18:50:08 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:50:10 INFO web_log.py:233 ::1 [13/Mar/2021:18:50:10 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:50:12 INFO web_log.py:233 ::1 [13/Mar/2021:18:50:12 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:50:15 INFO web_log.py:233 ::1 [13/Mar/2021:18:50:15 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:50:17 INFO web_log.py:233 ::1 [13/Mar/2021:18:50:17 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:50:20 INFO web_log.py:233 ::1 [13/Mar/2021:18:50:20 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:50:22 INFO web_log.py:233 ::1 [13/Mar/2021:18:50:22 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:50:24 INFO web_log.py:233 ::1 [13/Mar/2021:18:50:24 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:50:26 INFO web_log.py:233 ::1 [13/Mar/2021:18:50:26 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:50:28 INFO web_log.py:233 ::1 [13/Mar/2021:18:50:28 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:50:30 INFO web_log.py:233 ::1 [13/Mar/2021:18:50:30 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:50:32 INFO web_log.py:233 ::1 [13/Mar/2021:18:50:32 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:50:34 INFO web_log.py:233 ::1 [13/Mar/2021:18:50:34 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:50:36 INFO web_log.py:233 ::1 [13/Mar/2021:18:50:36 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:50:40 INFO web_log.py:233 ::1 [13/Mar/2021:18:50:40 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:50:42 INFO web_log.py:233 ::1 [13/Mar/2021:18:50:42 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:50:44 INFO web_log.py:233 ::1 [13/Mar/2021:18:50:44 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:50:46 INFO web_log.py:233 ::1 [13/Mar/2021:18:50:46 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:50:48 INFO web_log.py:233 ::1 [13/Mar/2021:18:50:48 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:50:50 INFO web_log.py:233 ::1 [13/Mar/2021:18:50:50 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:50:53 INFO web_log.py:233 ::1 [13/Mar/2021:18:50:53 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:50:55 INFO web_log.py:233 ::1 [13/Mar/2021:18:50:55 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:50:57 INFO web_log.py:233 ::1 [13/Mar/2021:18:50:57 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:50:59 INFO web_log.py:233 ::1 [13/Mar/2021:18:50:59 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:51:02 INFO web_log.py:233 ::1 [13/Mar/2021:18:51:02 +0000] "GET /v2/computes HTTP/1.1" 200 1021 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:51:06 INFO web_log.py:233 ::1 [13/Mar/2021:18:51:06 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:51:08 INFO web_log.py:233 ::1 [13/Mar/2021:18:51:08 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:51:10 INFO web_log.py:233 ::1 [13/Mar/2021:18:51:10 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:51:12 INFO web_log.py:233 ::1 [13/Mar/2021:18:51:12 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:51:14 INFO web_log.py:233 ::1 [13/Mar/2021:18:51:14 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:51:16 INFO web_log.py:233 ::1 [13/Mar/2021:18:51:16 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:51:18 INFO web_log.py:233 ::1 [13/Mar/2021:18:51:18 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:51:20 INFO web_log.py:233 ::1 [13/Mar/2021:18:51:20 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:51:22 INFO web_log.py:233 ::1 [13/Mar/2021:18:51:22 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:51:24 INFO web_log.py:233 ::1 [13/Mar/2021:18:51:24 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:51:26 INFO web_log.py:233 ::1 [13/Mar/2021:18:51:26 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:51:28 INFO web_log.py:233 ::1 [13/Mar/2021:18:51:28 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:51:30 INFO web_log.py:233 ::1 [13/Mar/2021:18:51:30 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:51:32 INFO web_log.py:233 ::1 [13/Mar/2021:18:51:32 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:51:34 INFO web_log.py:233 ::1 [13/Mar/2021:18:51:34 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:51:36 INFO web_log.py:233 ::1 [13/Mar/2021:18:51:36 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:51:39 INFO docker_vm.py:406 Docker container 'NetworkingTools-1' [c2ea3407-9b77-4666-ad6b-cfdf6969eebd] created
-2021-03-13 23:51:40 INFO web_log.py:233 ::1 [13/Mar/2021:18:48:49 +0000] "POST /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/docker/nodes HTTP/1.1" 201 941 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-13 23:51:40 INFO web_log.py:233 ::1 [13/Mar/2021:18:48:49 +0000] "POST /v2/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/templates/611f87d9-4f3c-4466-b3c6-a310f670d685 HTTP/1.1" 201 1921 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:51:40 INFO web_log.py:233 ::1 [13/Mar/2021:18:51:40 +0000] "PUT /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/docker/nodes/c2ea3407-9b77-4666-ad6b-cfdf6969eebd HTTP/1.1" 200 946 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-13 23:51:40 INFO web_log.py:233 ::1 [13/Mar/2021:18:51:40 +0000] "PUT /v2/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/nodes/c2ea3407-9b77-4666-ad6b-cfdf6969eebd HTTP/1.1" 200 1995 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:53:23 INFO web_log.py:233 ::1 [13/Mar/2021:18:53:23 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.19"
-2021-03-13 23:58:23 INFO web_log.py:233 ::1 [13/Mar/2021:18:58:23 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.19"
-2021-03-14 00:00:01 INFO base_node.py:331 Docker: 'NetworkingTools-1' [c2ea3407-9b77-4666-ad6b-cfdf6969eebd]: is closing
-2021-03-14 00:00:01 INFO docker_vm.py:872 Docker container 'NetworkingTools-1' [roxron/rus_tem:mgmt_srv] removed
-2021-03-14 00:00:01 INFO web_log.py:233 ::1 [13/Mar/2021:19:00:01 +0000] "DELETE /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/docker/nodes/c2ea3407-9b77-4666-ad6b-cfdf6969eebd HTTP/1.1" 204 241 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-14 00:00:01 INFO web_log.py:233 ::1 [13/Mar/2021:19:00:01 +0000] "DELETE /v2/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/nodes/c2ea3407-9b77-4666-ad6b-cfdf6969eebd HTTP/1.1" 204 226 "-" "GNS3 QT Client v2.2.19"
-2021-03-14 00:00:04 INFO web_log.py:233 ::1 [13/Mar/2021:19:00:04 +0000] "GET /v2/gns3vm HTTP/1.1" 200 377 "-" "GNS3 QT Client v2.2.19"
-2021-03-14 00:00:04 INFO web_log.py:233 ::1 [13/Mar/2021:19:00:04 +0000] "GET /v2/iou_license HTTP/1.1" 200 278 "-" "GNS3 QT Client v2.2.19"
-2021-03-14 00:00:04 INFO __init__.py:62 Load controller configuration file /home/saad/.config/GNS3/2.2/gns3_controller.conf
-2021-03-14 00:00:04 INFO web_log.py:233 ::1 [13/Mar/2021:19:00:04 +0000] "GET /v2/gns3vm/engines HTTP/1.1" 200 1316 "-" "GNS3 QT Client v2.2.19"
-2021-03-14 00:00:05 INFO __init__.py:572 Searching for VMware VMs in inventory file "/home/saad/.vmware/inventory.vmls"
-2021-03-14 00:00:05 INFO web_log.py:233 ::1 [13/Mar/2021:19:00:04 +0000] "GET /v2/gns3vm/engines/vmware/vms HTTP/1.1" 200 314 "-" "GNS3 QT Client v2.2.19"
-2021-03-14 00:00:13 INFO notification_handler.py:82 Client has disconnected from controller WebSocket
-2021-03-14 00:00:13 INFO server_handler.py:53 Start shutting down the server
-2021-03-14 00:00:13 INFO iou_vm.py:1268 saving startup-config to /home/saad/GNS3/projects/lab#29/project-files/iou/675ae7ec-96c1-44ec-a999-721c289e5c3f/startup-config.cfg
-2021-03-14 00:00:13 INFO web_log.py:233 ::1 [13/Mar/2021:19:00:13 +0000] "POST /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/iou/nodes/675ae7ec-96c1-44ec-a999-721c289e5c3f/stop HTTP/1.1" 204 243 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-14 00:00:13 INFO iou_vm.py:1268 saving startup-config to /home/saad/GNS3/projects/lab#29/project-files/iou/39d3cdf2-c244-45fa-90ac-8911e2e801a6/startup-config.cfg
-2021-03-14 00:00:13 INFO iou_vm.py:1268 saving startup-config to /home/saad/GNS3/projects/lab#29/project-files/iou/3ac8eddb-b8b3-4a47-bf51-8821f6036c37/startup-config.cfg
-2021-03-14 00:00:13 INFO web_log.py:233 127.0.0.1 [13/Mar/2021:19:00:13 +0000] "POST /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/iou/nodes/39d3cdf2-c244-45fa-90ac-8911e2e801a6/stop HTTP/1.1" 204 243 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-14 00:00:13 INFO web_log.py:233 ::1 [13/Mar/2021:19:00:13 +0000] "POST /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/iou/nodes/3ac8eddb-b8b3-4a47-bf51-8821f6036c37/stop HTTP/1.1" 204 243 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-14 00:00:13 INFO base_node.py:331 IOU: 'S3' [39d3cdf2-c244-45fa-90ac-8911e2e801a6]: is closing
-2021-03-14 00:00:13 INFO iou_vm.py:1268 saving startup-config to /home/saad/GNS3/projects/lab#29/project-files/iou/39d3cdf2-c244-45fa-90ac-8911e2e801a6/startup-config.cfg
-2021-03-14 00:00:13 INFO base_node.py:331 IOU: 'S2' [675ae7ec-96c1-44ec-a999-721c289e5c3f]: is closing
-2021-03-14 00:00:13 INFO iou_vm.py:1268 saving startup-config to /home/saad/GNS3/projects/lab#29/project-files/iou/675ae7ec-96c1-44ec-a999-721c289e5c3f/startup-config.cfg
-2021-03-14 00:00:13 INFO base_node.py:331 IOU: 'S1' [3ac8eddb-b8b3-4a47-bf51-8821f6036c37]: is closing
-2021-03-14 00:00:13 INFO iou_vm.py:1268 saving startup-config to /home/saad/GNS3/projects/lab#29/project-files/iou/3ac8eddb-b8b3-4a47-bf51-8821f6036c37/startup-config.cfg
-2021-03-14 00:00:13 INFO project.py:361 Project 500c20ea-fc8a-4815-83c9-6b14482d0fa1 with path '/home/saad/GNS3/projects/lab#29' closed
-2021-03-14 00:00:13 INFO web_log.py:233 127.0.0.1 [13/Mar/2021:19:00:13 +0000] "POST /v2/compute/projects/500c20ea-fc8a-4815-83c9-6b14482d0fa1/close HTTP/1.1" 204 224 "-" "Python/3.9 aiohttp/3.6.2"
-2021-03-14 00:00:13 INFO web_server.py:113 Closing 2 websocket connections...
-2021-03-14 00:00:13 INFO web_log.py:233 ::1 [13/Mar/2021:19:00:13 +0000] "POST /v2/shutdown HTTP/1.1" 201 194 "-" "GNS3 QT Client v2.2.19"
-2021-03-14 00:00:13 INFO compute.py:460 Connection closed to compute 'local' WebSocket 'http://localhost:3080/v2/compute/notifications/ws'
-2021-03-14 00:00:13 INFO project_handler.py:280 Client has disconnected from notification stream for project ID '500c20ea-fc8a-4815-83c9-6b14482d0fa1' (WebSocket method)
-2021-03-14 00:00:13 INFO notification_handler.py:59 Client has disconnected from compute WebSocket
-2021-03-14 00:00:13 INFO __init__.py:130 Controller is stopping
-2021-03-14 00:00:13 INFO run.py:272 Remove PID file /home/saad/.config/GNS3/2.2/gns3_server.pid
+2021-03-20 19:50:35 INFO notification_handler.py:50 New client has connected to compute WebSocket
+2021-03-20 19:50:35 INFO compute.py:434 Connected to compute 'local' WebSocket 'http://localhost:3080/v2/compute/notifications/ws'
+2021-03-20 19:50:36 INFO web_log.py:233 127.0.0.1 [20/Mar/2021:14:50:36 +0000] "GET /v2/version HTTP/1.1" 200 227 "-" "GNS3 QT Client v2.2.19"
+2021-03-20 19:50:36 INFO web_log.py:233 127.0.0.1 [20/Mar/2021:14:50:36 +0000] "GET /v2/templates HTTP/1.1" 200 17094 "-" "GNS3 QT Client v2.2.19"
+2021-03-20 19:50:36 INFO notification_handler.py:73 New client has connected to controller WebSocket
+2021-03-20 19:50:36 INFO web_log.py:233 127.0.0.1 [20/Mar/2021:14:50:36 +0000] "GET /v2/computes HTTP/1.1" 200 1023 "-" "GNS3 QT Client v2.2.19"
+2021-03-20 19:50:36 INFO web_log.py:233 127.0.0.1 [20/Mar/2021:14:50:36 +0000] "GET /v2/appliances?symbol_theme=Classic HTTP/1.1" 200 784752 "-" "GNS3 QT Client v2.2.19"
+2021-03-20 19:50:36 INFO web_log.py:233 127.0.0.1 [20/Mar/2021:14:50:36 +0000] "GET /v2/projects HTTP/1.1" 200 23693 "-" "GNS3 QT Client v2.2.19"
+2021-03-20 19:50:36 INFO web_log.py:233 127.0.0.1 [20/Mar/2021:14:50:36 +0000] "GET /v2/projects HTTP/1.1" 200 23693 "-" "GNS3 QT Client v2.2.19"
+2021-03-20 19:50:39 INFO project.py:78 Project 2a56fee1-bb43-4cda-a5f5-1ab3c90677e4 with path '/home/saad/GNS3/projects/lab_for_programming' created
+2021-03-20 19:50:39 INFO web_log.py:233 ::1 [20/Mar/2021:14:50:39 +0000] "POST /v2/compute/projects HTTP/1.1" 201 314 "-" "Python/3.9 aiohttp/3.6.2"
+2021-03-20 19:50:39 INFO iou_vm.py:73 IOU "R1" [526b3262-a87e-4f9b-ad6e-30c40ecdf14c]: assigned with application ID 1
+2021-03-20 19:50:39 INFO iou_vm.py:848 IOU "R1" [526b3262-a87e-4f9b-ad6e-30c40ecdf14c]: number of Ethernet adapters changed to 2
+2021-03-20 19:50:39 INFO iou_vm.py:876 IOU "R1" [526b3262-a87e-4f9b-ad6e-30c40ecdf14c]: number of Serial adapters changed to 2
+2021-03-20 19:50:39 INFO iou_vm.py:316 IOU "R1" [526b3262-a87e-4f9b-ad6e-30c40ecdf14c]: NVRAM updated from 128KB to 64KB
+2021-03-20 19:50:39 INFO iou_vm.py:848 IOU "R1" [526b3262-a87e-4f9b-ad6e-30c40ecdf14c]: number of Ethernet adapters changed to 3
+2021-03-20 19:50:39 INFO iou_vm.py:145 IOU "R1" [526b3262-a87e-4f9b-ad6e-30c40ecdf14c]: IOU image updated to "/home/saad/GNS3/images/IOU/i86bi-linux-l3-adventerprisek9-ms.155-2.T.bin"
+2021-03-20 19:50:39 INFO iou_vm.py:876 IOU "R1" [526b3262-a87e-4f9b-ad6e-30c40ecdf14c]: number of Serial adapters changed to 1
+2021-03-20 19:50:39 INFO web_log.py:233 127.0.0.1 [20/Mar/2021:14:50:39 +0000] "POST /v2/compute/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4/iou/nodes HTTP/1.1" 201 881 "-" "Python/3.9 aiohttp/3.6.2"
+2021-03-20 19:50:39 INFO iou_vm.py:73 IOU "S1" [c627637e-2cf0-4ca2-828d-53d39361b357]: assigned with application ID 2
+2021-03-20 19:50:39 INFO iou_vm.py:848 IOU "S1" [c627637e-2cf0-4ca2-828d-53d39361b357]: number of Ethernet adapters changed to 2
+2021-03-20 19:50:39 INFO iou_vm.py:876 IOU "S1" [c627637e-2cf0-4ca2-828d-53d39361b357]: number of Serial adapters changed to 2
+2021-03-20 19:50:39 INFO iou_vm.py:316 IOU "S1" [c627637e-2cf0-4ca2-828d-53d39361b357]: NVRAM updated from 128KB to 16KB
+2021-03-20 19:50:39 INFO iou_vm.py:848 IOU "S1" [c627637e-2cf0-4ca2-828d-53d39361b357]: number of Ethernet adapters changed to 4
+2021-03-20 19:50:39 INFO iou_vm.py:145 IOU "S1" [c627637e-2cf0-4ca2-828d-53d39361b357]: IOU image updated to "/home/saad/GNS3/images/IOU/i86bi-linux-l2-adventerprisek9-15.1a.bin"
+2021-03-20 19:50:39 INFO iou_vm.py:876 IOU "S1" [c627637e-2cf0-4ca2-828d-53d39361b357]: number of Serial adapters changed to 0
+2021-03-20 19:50:39 INFO web_log.py:233 ::1 [20/Mar/2021:14:50:39 +0000] "POST /v2/compute/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4/iou/nodes HTTP/1.1" 201 876 "-" "Python/3.9 aiohttp/3.6.2"
+2021-03-20 19:50:39 INFO docker_vm.py:1058 Docker container "debian-1" [12019ce8-f8ff-4a54-b226-3fc9f4b4b4c2]: number of Ethernet adapters changed to 1
+2021-03-20 19:50:39 INFO docker_vm.py:406 Docker container 'debian-1' [12019ce8-f8ff-4a54-b226-3fc9f4b4b4c2] created
+2021-03-20 19:50:39 INFO web_log.py:233 127.0.0.1 [20/Mar/2021:14:50:39 +0000] "POST /v2/compute/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4/docker/nodes HTTP/1.1" 201 935 "-" "Python/3.9 aiohttp/3.6.2"
+2021-03-20 19:50:39 INFO nat.py:51 NAT node 'NAT1' configured to use NAT interface 'virbr0'
+2021-03-20 19:50:39 INFO base_node.py:655 Starting new uBridge hypervisor localhost:45403
+2021-03-20 19:50:39 INFO hypervisor.py:169 starting ubridge: ['/sbin/ubridge', '-H', 'localhost:45403']
+2021-03-20 19:50:39 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/lab_for_programming/project-files/builtin/ca859fb8-59bf-4a2a-abd1-6b3d3157defb/ubridge.log
+2021-03-20 19:50:39 INFO hypervisor.py:179 ubridge started PID=15978
+2021-03-20 19:50:39 INFO base_node.py:658 Hypervisor localhost:45403 has successfully started
+2021-03-20 19:50:40 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:45403 after 0.1025 seconds
+2021-03-20 19:50:40 INFO cloud.py:215 Cloud "NAT1" [ca859fb8-59bf-4a2a-abd1-6b3d3157defb] has been created
+2021-03-20 19:50:40 INFO web_log.py:233 ::1 [20/Mar/2021:14:50:39 +0000] "POST /v2/compute/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4/nat/nodes HTTP/1.1" 201 553 "-" "Python/3.9 aiohttp/3.6.2"
+2021-03-20 19:50:40 INFO web_log.py:233 127.0.0.1 [20/Mar/2021:14:50:40 +0000] "POST /v2/compute/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
+2021-03-20 19:50:40 INFO web_log.py:233 ::1 [20/Mar/2021:14:50:40 +0000] "POST /v2/compute/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
+2021-03-20 19:50:40 INFO docker_vm.py:960 Docker container 'debian-1' [12019ce8-f8ff-4a54-b226-3fc9f4b4b4c2]: NIO UDP added to adapter 0
+2021-03-20 19:50:40 INFO web_log.py:233 127.0.0.1 [20/Mar/2021:14:50:40 +0000] "POST /v2/compute/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4/docker/nodes/12019ce8-f8ff-4a54-b226-3fc9f4b4b4c2/adapters/0/ports/0/nio HTTP/1.1" 201 380 "-" "Python/3.9 aiohttp/3.6.2"
+2021-03-20 19:50:40 INFO iou_vm.py:902 IOU "S1" [c627637e-2cf0-4ca2-828d-53d39361b357]: NIO UDP added to 0/0
+2021-03-20 19:50:40 INFO web_log.py:233 ::1 [20/Mar/2021:14:50:40 +0000] "POST /v2/compute/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4/iou/nodes/c627637e-2cf0-4ca2-828d-53d39361b357/adapters/0/ports/0/nio HTTP/1.1" 201 377 "-" "Python/3.9 aiohttp/3.6.2"
+2021-03-20 19:50:40 INFO web_log.py:233 127.0.0.1 [20/Mar/2021:14:50:40 +0000] "POST /v2/compute/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
+2021-03-20 19:50:40 INFO web_log.py:233 ::1 [20/Mar/2021:14:50:40 +0000] "POST /v2/compute/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
+2021-03-20 19:50:40 INFO iou_vm.py:902 IOU "S1" [c627637e-2cf0-4ca2-828d-53d39361b357]: NIO UDP added to 0/1
+2021-03-20 19:50:40 INFO web_log.py:233 127.0.0.1 [20/Mar/2021:14:50:40 +0000] "POST /v2/compute/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4/iou/nodes/c627637e-2cf0-4ca2-828d-53d39361b357/adapters/0/ports/1/nio HTTP/1.1" 201 377 "-" "Python/3.9 aiohttp/3.6.2"
+2021-03-20 19:50:40 INFO iou_vm.py:902 IOU "R1" [526b3262-a87e-4f9b-ad6e-30c40ecdf14c]: NIO UDP added to 0/0
+2021-03-20 19:50:40 INFO web_log.py:233 ::1 [20/Mar/2021:14:50:40 +0000] "POST /v2/compute/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4/iou/nodes/526b3262-a87e-4f9b-ad6e-30c40ecdf14c/adapters/0/ports/0/nio HTTP/1.1" 201 377 "-" "Python/3.9 aiohttp/3.6.2"
+2021-03-20 19:50:40 INFO web_log.py:233 127.0.0.1 [20/Mar/2021:14:50:40 +0000] "POST /v2/compute/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
+2021-03-20 19:50:40 INFO web_log.py:233 ::1 [20/Mar/2021:14:50:40 +0000] "POST /v2/compute/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4/ports/udp HTTP/1.1" 201 243 "-" "Python/3.9 aiohttp/3.6.2"
+2021-03-20 19:50:40 INFO iou_vm.py:902 IOU "R1" [526b3262-a87e-4f9b-ad6e-30c40ecdf14c]: NIO UDP added to 0/1
+2021-03-20 19:50:40 INFO web_log.py:233 127.0.0.1 [20/Mar/2021:14:50:40 +0000] "POST /v2/compute/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4/iou/nodes/526b3262-a87e-4f9b-ad6e-30c40ecdf14c/adapters/0/ports/1/nio HTTP/1.1" 201 377 "-" "Python/3.9 aiohttp/3.6.2"
+2021-03-20 19:50:40 INFO cloud.py:396 Cloud "NAT1" [ca859fb8-59bf-4a2a-abd1-6b3d3157defb]: NIO NIO UDP bound to port 0
+2021-03-20 19:50:40 INFO web_log.py:233 ::1 [20/Mar/2021:14:50:40 +0000] "POST /v2/compute/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4/nat/nodes/ca859fb8-59bf-4a2a-abd1-6b3d3157defb/adapters/0/ports/0/nio HTTP/1.1" 201 377 "-" "Python/3.9 aiohttp/3.6.2"
+2021-03-20 19:50:40 INFO web_log.py:233 127.0.0.1 [20/Mar/2021:14:50:39 +0000] "POST /v2/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4/open HTTP/1.1" 201 774 "-" "GNS3 QT Client v2.2.19"
+2021-03-20 19:50:40 INFO project_handler.py:271 New client has connected to the notification stream for project ID '2a56fee1-bb43-4cda-a5f5-1ab3c90677e4' (WebSocket method)
+2021-03-20 19:50:40 INFO web_log.py:233 127.0.0.1 [20/Mar/2021:14:50:40 +0000] "GET /v2/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4/nodes HTTP/1.1" 200 17680 "-" "GNS3 QT Client v2.2.19"
+2021-03-20 19:50:40 INFO web_log.py:233 127.0.0.1 [20/Mar/2021:14:50:40 +0000] "GET /v2/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4/links HTTP/1.1" 200 4120 "-" "GNS3 QT Client v2.2.19"
+2021-03-20 19:50:40 INFO web_log.py:233 127.0.0.1 [20/Mar/2021:14:50:40 +0000] "GET /v2/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4/drawings HTTP/1.1" 200 2717 "-" "GNS3 QT Client v2.2.19"
+2021-03-20 19:50:43 INFO iou_vm.py:414 Checking IOU license in '/tmp/tmprnqnemlz/iourc'
+2021-03-20 19:50:43 INFO iou_vm.py:414 Checking IOU license in '/tmp/tmp4m0qlbuv/iourc'
+2021-03-20 19:50:43 INFO base_node.py:655 Starting new uBridge hypervisor localhost:46387
+2021-03-20 19:50:43 INFO base_node.py:655 Starting new uBridge hypervisor localhost:41911
+2021-03-20 19:50:43 INFO hypervisor.py:169 starting ubridge: ['/sbin/ubridge', '-H', 'localhost:46387']
+2021-03-20 19:50:43 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/lab_for_programming/project-files/iou/c627637e-2cf0-4ca2-828d-53d39361b357/ubridge.log
+2021-03-20 19:50:43 INFO hypervisor.py:179 ubridge started PID=16013
+2021-03-20 19:50:43 INFO base_node.py:658 Hypervisor localhost:46387 has successfully started
+2021-03-20 19:50:43 INFO hypervisor.py:169 starting ubridge: ['/sbin/ubridge', '-H', 'localhost:41911']
+2021-03-20 19:50:43 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/lab_for_programming/project-files/iou/526b3262-a87e-4f9b-ad6e-30c40ecdf14c/ubridge.log
+2021-03-20 19:50:43 INFO hypervisor.py:179 ubridge started PID=16016
+2021-03-20 19:50:43 INFO base_node.py:658 Hypervisor localhost:41911 has successfully started
+2021-03-20 19:50:43 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:46387 after 0.1022 seconds
+2021-03-20 19:50:43 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:41911 after 0.1011 seconds
+2021-03-20 19:50:43 INFO base_node.py:655 Starting new uBridge hypervisor localhost:39079
+2021-03-20 19:50:43 INFO hypervisor.py:169 starting ubridge: ['/sbin/ubridge', '-H', 'localhost:39079']
+2021-03-20 19:50:43 INFO hypervisor.py:171 logging to /home/saad/GNS3/projects/lab_for_programming/project-files/docker/12019ce8-f8ff-4a54-b226-3fc9f4b4b4c2/ubridge.log
+2021-03-20 19:50:43 INFO hypervisor.py:179 ubridge started PID=16080
+2021-03-20 19:50:43 INFO base_node.py:658 Hypervisor localhost:39079 has successfully started
+2021-03-20 19:50:43 INFO iou_vm.py:753 IOU S1 [id=c627637e-2cf0-4ca2-828d-53d39361b357]: NETMAP file created
+2021-03-20 19:50:43 INFO iou_vm.py:753 IOU R1 [id=526b3262-a87e-4f9b-ad6e-30c40ecdf14c]: NETMAP file created
+2021-03-20 19:50:43 INFO iou_vm.py:551 Starting IOU: ['/home/saad/GNS3/images/IOU/i86bi-linux-l3-adventerprisek9-ms.155-2.T.bin', '-e', '3', '-s', '1', '1']
+2021-03-20 19:50:43 INFO iou_vm.py:551 Starting IOU: ['/home/saad/GNS3/images/IOU/i86bi-linux-l2-adventerprisek9-15.1a.bin', '-e', '4', '-s', '0', '2']
+2021-03-20 19:50:43 INFO iou_vm.py:560 IOU instance 526b3262-a87e-4f9b-ad6e-30c40ecdf14c started PID=16092
+2021-03-20 19:50:43 INFO iou_vm.py:560 IOU instance c627637e-2cf0-4ca2-828d-53d39361b357 started PID=16094
+2021-03-20 19:50:43 INFO web_log.py:233 ::1 [20/Mar/2021:14:50:43 +0000] "POST /v2/compute/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4/iou/nodes/526b3262-a87e-4f9b-ad6e-30c40ecdf14c/start HTTP/1.1" 200 976 "-" "Python/3.9 aiohttp/3.6.2"
+2021-03-20 19:50:43 INFO web_log.py:233 127.0.0.1 [20/Mar/2021:14:50:43 +0000] "POST /v2/compute/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4/iou/nodes/c627637e-2cf0-4ca2-828d-53d39361b357/start HTTP/1.1" 200 966 "-" "Python/3.9 aiohttp/3.6.2"
+2021-03-20 19:50:43 INFO web_log.py:233 ::1 [20/Mar/2021:14:50:43 +0000] "POST /v2/compute/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4/nat/nodes/ca859fb8-59bf-4a2a-abd1-6b3d3157defb/start HTTP/1.1" 204 244 "-" "Python/3.9 aiohttp/3.6.2"
+2021-03-20 19:50:43 INFO ubridge_hypervisor.py:83 Connected to uBridge hypervisor on localhost:39079 after 0.1014 seconds
+2021-03-20 19:50:44 INFO docker_vm.py:499 Docker container 'debian-1' [debian:latest] started listen for telnet on 5002
+2021-03-20 19:50:44 INFO web_log.py:233 127.0.0.1 [20/Mar/2021:14:50:43 +0000] "POST /v2/compute/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4/docker/nodes/12019ce8-f8ff-4a54-b226-3fc9f4b4b4c2/start HTTP/1.1" 204 247 "-" "Python/3.9 aiohttp/3.6.2"
+2021-03-20 19:50:44 INFO web_log.py:233 127.0.0.1 [20/Mar/2021:14:50:43 +0000] "POST /v2/projects/2a56fee1-bb43-4cda-a5f5-1ab3c90677e4/nodes/start HTTP/1.1" 204 222 "-" "GNS3 QT Client v2.2.19"
+2021-03-20 19:50:44 INFO web_log.py:233 127.0.0.1 [20/Mar/2021:14:50:44 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.19"
+2021-03-20 19:53:08 INFO web_log.py:233 ::1 [20/Mar/2021:14:53:08 +0000] "GET /v2/computes HTTP/1.1" 200 1022 "-" "GNS3 QT Client v2.2.19"

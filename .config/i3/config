@@ -228,7 +228,8 @@ bindsym $Mod+Right focus right
 # 1}}}
 # container layout {{{1
 # horizontal split {{{2
-bindsym $Mod+v split v default_orientation horizontal
+bindsym $mod+shift+V split horizontal
+bindsym $mod+v split  vertical
 # 2}}}
 # toggle fullscreen Mode for the focused container {{{2
 bindsym $Mod+f fullscreen toggle
@@ -249,7 +250,7 @@ bindsym --release Print exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~
 bindsym --release Ctrl+Print exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`' && echo -n $(ls -l -t ~/Pictures/screenshots | head -n 2 | grep sc | awk '{ printf "/home/$USER/Pictures/screenshots/" $9}') | xclip -selection c  &&  kolourpaint $(xclip -selection c -o)
 #
 # OSX-like area selection screenshots
-bindsym --release Shift+Print exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Documents/Notes/pictures/ && mv $f ~/Documents/Notes/pictures/ && xclip -selection clipboard -t image/png -i ~/Documents/Notes/pictures/`ls -1 -t ~/Documents/Notes/pictures/ | head -1`'  && echo -n $(ls -l -t ~/Documents/Notes/pictures | head -n 2 | grep sc | awk '{ printf "/home/$USER/Documents/Notes/pictures/" $9}') | xclip -selection c
+bindsym --release Shift+Print exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots`ls -1 -t ~/Pictures/screenshots | head -1`'  && echo -n $(ls -l -t ~/Documents/Notes/pictures | head -n 2 | grep sc | awk '{ printf "/home/$USER/Documents/Notes/pictures/" $9}') | xclip -selection c
 # OSX-like area selection screenshots and edit
 bindsym --release Ctrl+Shift+Print exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`'  && echo -n $(ls -l -t ~/Pictures/screenshots | head -n 2 | grep sc | awk '{ printf "/home/$USER/Pictures/screenshots/" $9}') | xclip -selection c && kolourpaint $(xclip -selection c -o)
 # 1}}}
@@ -294,6 +295,7 @@ set $i3_resurrect i3-resurrect
  }
  bindsym MOD1+r mode "restore"
 #Open Programs in the respective workspaces
+assign [class="KeePass2"] $ws8
 assign [class="nvim-qt"] $ws7
 assign [class="PacketTracer7"] $ws4
 assign [class="Transmission-gtk"] $ws7 
@@ -390,7 +392,7 @@ exec compton
 exec_always autotiling
 # }}}
 ##### i3-gaps ##############
-for_window [class=".*"] border pixel 6 #*
+for_window [class=".*"] border pixel 3 #*
 gaps inner 10
 gaps outer 10
 #gaps horizontal 2
@@ -427,6 +429,7 @@ for_window [class="mpv"] focus
 exec  nm-applet
 exec blueman-applet
 exec flameshot
+exec xfce4-power-manager
 
 # bindsym $MOD1+1 exec $HOME/.config/i3/i3_focus_or_run.sh 1
 # bindsym $MOD1+2 exec $HOME/.config/i3/i3_focus_or_run.sh 2

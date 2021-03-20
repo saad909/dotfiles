@@ -1,7 +1,7 @@
 import json
 import os
 
-qutewal_dynamic_loading = True
+qutewal_dynamic_loading = False
 
 home = os.getenv('HOME')
 colors_relative = '.cache/wal/colors.json'
@@ -105,6 +105,10 @@ if os.path.isfile(colors_absolute):
     # Font color for hints.
     # Type: QssColor
     c.colors.hints.fg = colors['special']['background']
+
+    # CSS border value for hints.
+    # Type: String
+    c.hints.border = '1px solid ' + bg
 
     # Font color for the matched part of hints.
     # Type: QssColor
@@ -339,5 +343,3 @@ if os.path.isfile(colors_absolute):
         iqutefyd = subprocess.Popen(
             [daemon_absolute, colors_absolute],
             preexec_fn=lambda: prctl.set_pdeathsig(signal.SIGTERM))
-
-config.source('qutewal.py')

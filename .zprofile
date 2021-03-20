@@ -16,7 +16,7 @@ export TERMINAL="alacritty"
 export BROWSER="firefox"
 # export READER="zathura"
 export READER="okular"
-export EXPLORER="pcmanfm"
+export EXPLORER="thunar"
 
 # ~/ Clean-up:
 export XDG_CONFIG_HOME="$HOME/.config"

@@ -5,9 +5,9 @@ syntax on
 " colorscheme nord
 " colorscheme nvcode
 " colorscheme dracula
-" colorscheme onedark
+colorscheme onedark
 " colorscheme TSnazzy
-colorscheme aurora
+" colorscheme aurora
 
 " colorscheme gruvbox-material
 " colorscheme wal
