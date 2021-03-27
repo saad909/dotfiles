@@ -1,8 +1,7 @@
 # vim: filetype=sh
 alias cf="cd ${XDG_CONFIG_HOME:-$HOME/.config} && ls -a" \
 pp="cd ${XDG_PICTURES_DIR:-$HOME/Pictures} && ls -a" \
-wa="cd /home/saad/Pictures/Wallpapers && ls -a" \
-wA="cd /home/ExternalHDD/Pictures/Wallpapers && ls -a" \
+wa="cd /home/ExternalHDD/Pictures/Wallpapers && ls -a" \
 da="cd /home/ExternalHDD/ && ls -a" \
 co="cd /home/ExternalHDD/Courses && ls -a" \
 ne="cd /home/ExternalHDD/Courses/Networking && ls -a" \

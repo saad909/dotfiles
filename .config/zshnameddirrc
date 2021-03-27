@@ -1,7 +1,6 @@
 hash -d cf=${XDG_CONFIG_HOME:-$HOME/.config} 
 hash -d pp=${XDG_PICTURES_DIR:-$HOME/Pictures} 
-hash -d wa=/home/saad/Pictures/Wallpapers 
-hash -d wA=/home/ExternalHDD/Pictures/Wallpapers 
+hash -d wa=/home/ExternalHDD/Pictures/Wallpapers 
 hash -d da=/home/ExternalHDD/ 
 hash -d co=/home/ExternalHDD/Courses 
 hash -d ne=/home/ExternalHDD/Courses/Networking 

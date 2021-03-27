@@ -94,5 +94,6 @@ let g:vim_pbcopy_local_cmd = "pbcopy"
 let g:vim_pbcopy_escape_backslashes = 0
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 let g:tex_flavour='latex'
-set guifont=FiraCode\ Nerd\ Font\ Mono:h12
+" set guifont=FiraCode\ Nerd\ Font\ Mono:h12
+set guifont=FantasqueSansMono\ Nerd\ Font\ Mono:h14
 let g:kite_supported_languages = ['python']

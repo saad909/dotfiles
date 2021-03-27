@@ -1,8 +1,7 @@
 # You can add comments to these files with #
 cf  ${XDG_CONFIG_HOME:-$HOME/.config}
 pp  ${XDG_PICTURES_DIR:-$HOME/Pictures}
-wa /home/saad/Pictures/Wallpapers
-wA /home/ExternalHDD/Pictures/Wallpapers
+wa /home/ExternalHDD/Pictures/Wallpapers
 da  /home/ExternalHDD/
 co /home/ExternalHDD/Courses
 ne /home/ExternalHDD/Courses/Networking

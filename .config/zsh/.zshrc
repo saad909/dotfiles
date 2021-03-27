@@ -13,9 +13,9 @@ source $ZSH/oh-my-zsh.sh
 # stty stop undef		# Disable ctrl-s to freeze terminal.
 
 # History in cache directory:
-HISTSIZE=10000
-SAVEHIST=10000
-HISTFILE=~/.cache/zsh/history
+# HISTSIZE=10000
+# SAVEHIST=10000
+# HISTFILE=~/.cache/zsh/history
 
 # Load aliases and shortcuts if existent.
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shortcutrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shortcutrc"
@@ -70,13 +70,13 @@ lfcd () {
         [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
     fi
 }
-bindkey -s '^o' 'lfcd\n'
+# bindkey -s '^o' 'lfcd\n'
 
 # bindkey -s '^a' 'bc -l\n'
 
 bindkey -s '^f' 'cd "$(dirname "$(fzf)")"\n'
 
-bindkey '^[[P' delete-char
+# bindkey '^[[P' delete-char
 
 # Edit line in vim with ctrl-e:
 autoload edit-command-line; zle -N edit-command-line
@@ -120,4 +120,5 @@ alias pom=pomodoro
 
 
 # neofetch
+unix
 

@@ -12,7 +12,7 @@
 
 #. ~/.xprofile
 . ~/.config/startup
-wal -i "$(< "${HOME}/.cache/wal/wal")"
+# wal -i "$(< "${HOME}/.cache/wal/wal")"
 # Your default LARBS WM is determined in your `~/.profile` on login.  Here we
 # run the proper command to run when the graphical environment starts.
 

@@ -39,7 +39,7 @@ bindsym $Mod+shift+b border toggle
 # changing border style
 bindsym $Mod+n border normal
 bindsym $Mod+y border 1 pixel
-bindsym $Mod+u border none
+# bindsym $Mod+u border none
 # change gaps
 bindsym $Mod+plus                gaps inner current plus  5
 bindsym $Mod+minus               gaps inner current minus 5
@@ -52,7 +52,7 @@ bindsym $Mod+Control+Shift+minus gaps outer all     minus 5
 # 1}}}
 # font {{{1
 # font pango:UbuntuMono Nerd Font Mono Medium 14
-font pango:FiraCode Nerd Font Mono 9
+font pango:FantasqueSansMono Nerd Font Mono 9
 # font pango:FantasqueSansMono Nerd Font Mono 9
 # font pango:FantasqueSansMono Nerd Font Mono 9
 # 1}}}
@@ -381,9 +381,9 @@ floating_modifier $Mod
 #exec_always --no-startup-id /home/$USER/.config/i3blocks/scripts/i3-battery-popup
 exec_always --no-startup-id $HOME/.config/polybar/default/launch.sh
 
-# exec setbg
+exec setbg
 #exec_always setbg "/home/ExternalHDD/Pictures/pop"
-exec setbg 
+# exec setbg 
 # exec echo 123 | sudo -S virsh net-autostart default
 #exec echo " " > /tmp/recordingicon
 exec touchpad
@@ -402,7 +402,7 @@ smart_borders no_gaps
 border_radius 3
 # exec '/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)'
 # exec flameshot
-bindsym $mod+return exec alacritty
+# bindsym $mod+return exec kitty
 exec_always key_changed
 title_align center
 # bindsym $mod+F1 exec i3-resurrect restore -w $ws3
@@ -441,3 +441,11 @@ exec xfce4-power-manager
 
 # set sensitivity
 exec xinput --set-prop 15 'libinput Accel Speed' 1
+
+# scratchpad
+exec --no-startup-id alacritty --config-file=$HOME/.config/alacritty/alacritty_dropdown.yml --class terminal_dropdown &
+bindsym ctrl+u [instance="terminal_dropdown"] scratchpad show, move position center
+for_window [instance="terminal_dropdown"] floating enable, resize set 700 500, move scratchpad
+
+
+
