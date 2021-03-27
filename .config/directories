@@ -14,7 +14,7 @@ sc /home/saad/.local/bin
 D ~/Downloads
 do ~/Documents
 os /home/ExternalHDD/OSs
-mm ~/Music
+mm /home/ExternalHDD/Music
 vv ~/Videos
 vV /home/ExternalHDD/Videos
 cf ~/.config

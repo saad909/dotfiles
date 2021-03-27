@@ -445,7 +445,7 @@ exec xinput --set-prop 15 'libinput Accel Speed' 1
 # scratchpad
 exec --no-startup-id alacritty --config-file=$HOME/.config/alacritty/alacritty_dropdown.yml --class terminal_dropdown &
 bindsym ctrl+u [instance="terminal_dropdown"] scratchpad show, move position center
-for_window [instance="terminal_dropdown"] floating enable, resize set 700 500, move scratchpad
+for_window [instance="terminal_dropdown"] floating enable, resize set 990 700, move scratchpad
 
 
 
